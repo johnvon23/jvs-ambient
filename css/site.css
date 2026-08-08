@@ -1,0 +1,467 @@
+/* ============================================================
+   John von Seggern - ambient works
+   Single dark theme. One accent. No build step.
+   ============================================================ */
+
+:root{
+  /* ground runs slightly cold so the single warm accent has something to
+     push against. Never pure black. */
+  --ground:      #07080b;
+  --ground-2:    #0b0d12;
+  --ground-3:    #101319;
+
+  --bone:        #e8e4dc;
+  --bone-dim:    #a29e96;
+  --muted:       #84817a;   /* 5.1:1 on --ground, keeps the 10px caps legible */
+
+  --amber:       #c9873c;
+  --amber-hot:   #e2a460;
+
+  --line:        rgba(232,228,220,.12);
+  --line-soft:   rgba(232,228,220,.055);
+
+  --pad:         clamp(20px, 4vw, 72px);
+  --nav-h:       72px;
+  --maxw:        1440px;
+
+  --ease:        cubic-bezier(.22,.61,.36,1);
+  --ease-out:    cubic-bezier(.16,1,.3,1);
+
+  /* one radius system: everything sharp except pill CTAs */
+  --r-pill:      999px;
+}
+
+*,*::before,*::after{ box-sizing:border-box; }
+
+html{
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+}
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--bone);
+  font-family:Onest, system-ui, -apple-system, "Helvetica Neue", sans-serif;
+  font-weight:300;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+
+::selection{ background:var(--amber); color:var(--ground); }
+
+:focus-visible{
+  outline:2px solid var(--amber-hot);
+  outline-offset:3px;
+}
+
+.skip{
+  position:fixed; top:8px; left:8px; z-index:200;
+  padding:10px 16px; background:var(--bone); color:var(--ground);
+  transform:translateY(-160%);
+}
+.skip:focus{ transform:none; }
+
+/* ── atmosphere ─────────────────────────────────────────────
+   All three layers are fixed + pointer-events:none so they never
+   sit inside a scrolling container (GPU repaint killer on mobile). */
+
+#fog{
+  position:fixed; inset:0; z-index:0;
+  width:100%; height:100%;
+  pointer-events:none;
+  opacity:.85;
+  /* backing store is 1/10 scale; the blur hides the upscale seams */
+  filter:blur(22px);
+}
+.vignette{
+  position:fixed; inset:0; z-index:1; pointer-events:none;
+  background:
+    radial-gradient(120% 85% at 50% 0%, transparent 30%, rgba(3,4,6,.72) 100%),
+    radial-gradient(100% 60% at 50% 100%, transparent 40%, rgba(3,4,6,.6) 100%);
+}
+.grain{
+  position:fixed; inset:-50%; z-index:2; pointer-events:none;
+  opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation:grainshift 6s steps(6) infinite;
+}
+@keyframes grainshift{
+  0%{transform:translate(0,0)}      20%{transform:translate(-4%,2%)}
+  40%{transform:translate(3%,-3%)}  60%{transform:translate(-2%,-2%)}
+  80%{transform:translate(2%,3%)}   100%{transform:translate(0,0)}
+}
+@media (prefers-reduced-motion: reduce){ .grain{ animation:none; } }
+
+main, .nav, .foot, .rail{ position:relative; z-index:3; }
+
+/* ── nav ────────────────────────────────────────────────────── */
+
+.nav{
+  position:fixed; top:0; left:0; right:0; height:var(--nav-h);
+  display:flex; align-items:center; justify-content:space-between;
+  padding:0 var(--pad);
+  z-index:100;
+  transition:background .5s var(--ease), border-color .5s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.nav.stuck{
+  background:rgba(7,8,11,.82);
+  backdrop-filter:blur(14px) saturate(140%);
+  -webkit-backdrop-filter:blur(14px) saturate(140%);
+  border-bottom-color:var(--line-soft);
+}
+@media (prefers-reduced-transparency: reduce){
+  .nav.stuck{ background:var(--ground); backdrop-filter:none; -webkit-backdrop-filter:none; }
+}
+
+.brand{ display:flex; flex-direction:column; line-height:1.25; }
+.brand-name{ font-size:14px; font-weight:500; letter-spacing:.02em; }
+.brand-sub{ font-size:10px; color:var(--muted); letter-spacing:.22em; text-transform:uppercase; }
+
+.nav-links{ display:flex; align-items:center; gap:clamp(18px,2.4vw,38px); }
+.nav-links a{
+  font-size:11.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--bone-dim); transition:color .3s var(--ease);
+}
+.nav-links a:hover{ color:var(--bone); }
+.nav-cta{ color:var(--amber) !important; }
+.nav-cta:hover{ color:var(--amber-hot) !important; }
+
+@media (max-width:760px){
+  .nav-links a:not(.nav-cta){ display:none; }
+  .brand-sub{ display:none; }
+}
+
+/* scroll progress rail */
+.rail{
+  position:fixed; right:0; top:0; bottom:0; width:1px;
+  background:var(--line-soft); z-index:99;
+}
+.rail i{
+  display:block; width:100%; height:0;
+  background:linear-gradient(180deg, transparent, var(--amber));
+}
+@media (max-width:760px){ .rail{ display:none; } }
+
+/* ── shared type ────────────────────────────────────────────── */
+
+.eyebrow{
+  font-size:10.5px; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--muted); margin:0 0 22px;
+}
+
+.h2{
+  font-size:clamp(30px, 4.4vw, 60px);
+  font-weight:300; line-height:1.06; letter-spacing:-.025em;
+  margin:0 0 28px;
+}
+.h2.big{ font-size:clamp(48px, 10vw, 140px); letter-spacing:-.04em; }
+
+.lede{
+  font-size:clamp(17px, 1.5vw, 21px); line-height:1.62;
+  color:var(--bone); max-width:60ch; margin:0 0 22px; font-weight:300;
+}
+.body{
+  font-size:15.5px; line-height:1.75; color:var(--bone-dim);
+  max-width:62ch; margin:0 0 18px;
+}
+
+.todo{
+  color:var(--amber); font-size:.92em; letter-spacing:.04em;
+  border-bottom:1px dashed rgba(201,135,60,.4);
+}
+
+.sec{
+  padding:clamp(96px, 15vh, 190px) var(--pad);
+  max-width:var(--maxw); margin:0 auto;
+}
+
+/* ── buttons ────────────────────────────────────────────────── */
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  white-space:nowrap;                    /* CTA labels never wrap */
+  padding:14px 30px; border-radius:var(--r-pill);
+  font-size:12.5px; letter-spacing:.14em; text-transform:uppercase;
+  transition:transform .18s var(--ease), background .3s var(--ease),
+             color .3s var(--ease), border-color .3s var(--ease);
+}
+.btn:active{ transform:translateY(1px) scale(.985); }
+
+.btn-primary{
+  background:var(--amber); color:#120c04; font-weight:500;  /* 8.4:1 */
+  border:1px solid var(--amber);
+}
+.btn-primary:hover{ background:var(--amber-hot); border-color:var(--amber-hot); }
+
+.btn-ghost{
+  background:rgba(232,228,220,.03);
+  border:1px solid var(--line);
+  color:var(--bone);                                        /* 14:1 on ground */
+}
+.btn-ghost:hover{ border-color:var(--bone-dim); background:rgba(232,228,220,.07); }
+
+/* ── 01 hero ────────────────────────────────────────────────── */
+
+.hero{
+  position:relative;
+  min-height:100dvh;
+  display:flex; flex-direction:column; justify-content:center;
+  /* bottom padding reserves the lower band for the wordmark so the CTA row
+     never lands on top of the letterforms */
+  padding:calc(var(--nav-h) + 24px) var(--pad) clamp(120px, 21vh, 250px);
+  max-width:var(--maxw); margin:0 auto;
+  overflow:hidden;
+}
+.hero-inner{ max-width:min(980px, 94%); }
+
+.hero-h{
+  font-size:clamp(34px, 5.2vw, 68px);
+  font-weight:200; line-height:1.08; letter-spacing:-.035em;
+  margin:0 0 26px;
+}
+.hero-sub{
+  font-size:clamp(15px, 1.35vw, 18px); line-height:1.65;
+  color:var(--bone-dim); max-width:48ch; margin:0 0 38px;
+}
+.hero-cta{ display:flex; flex-wrap:wrap; gap:14px; }
+
+/* giant wordmark, bleeding both edges, parallax on scroll */
+.wordmark{
+  position:absolute; left:0; right:0; bottom:-2.5vw;
+  pointer-events:none; user-select:none;
+  z-index:-1;
+  overflow:hidden;
+}
+.wordmark span{
+  display:block;
+  font-size:21vw; font-weight:800; line-height:.78;
+  letter-spacing:-.045em;
+  text-align:center;
+  white-space:nowrap;
+  color:transparent;
+  -webkit-text-stroke:1px rgba(232,228,220,.16);
+  will-change:transform;
+}
+@supports not (-webkit-text-stroke: 1px black){
+  .wordmark span{ color:rgba(232,228,220,.07); }
+}
+
+/* ── 02 the record ──────────────────────────────────────────── */
+
+.record-grid{
+  display:grid; gap:clamp(40px, 6vw, 96px);
+  grid-template-columns:1fr;
+}
+@media (min-width:900px){
+  .record-grid{ grid-template-columns:1.55fr .85fr; align-items:start; }
+}
+
+.record-meta dl{ margin:0; border-top:1px solid var(--line); }
+.record-meta dl > div{
+  display:grid; grid-template-columns:1fr; gap:4px;
+  padding:18px 0; border-bottom:1px solid var(--line-soft);
+}
+.record-meta dt{
+  font-size:10px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--muted);
+}
+.record-meta dd{ margin:0; font-size:14.5px; color:var(--bone); line-height:1.5; }
+
+/* ── 03 the set ─────────────────────────────────────────────── */
+
+.set{ padding-top:clamp(60px, 8vh, 110px); }
+
+.pieces{
+  list-style:none; margin:0; padding:0;
+  display:grid; gap:0;
+  border-top:1px solid var(--line);
+}
+.piece{
+  display:grid;
+  grid-template-columns:44px 1fr auto;
+  align-items:baseline; gap:20px;
+  padding:26px 4px;
+  border-bottom:1px solid var(--line-soft);
+  transition:padding-left .4s var(--ease), background .4s var(--ease);
+}
+.piece:hover{ padding-left:18px; background:rgba(232,228,220,.02); }
+
+.piece-n{
+  font-size:11px; letter-spacing:.14em; color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+.piece-t{ font-size:clamp(18px, 2.2vw, 27px); font-weight:300; letter-spacing:-.02em; }
+.piece-d{
+  font-size:12px; letter-spacing:.1em; color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+
+/* Two columns that read DOWN the left before moving right, so the running
+   order stays 01-02-03 / 04-05 rather than the row-wise 01-03-05. */
+@media (min-width:1000px){
+  .pieces{
+    grid-auto-flow:column;
+    grid-template-rows:repeat(3, auto);
+    grid-template-columns:1fr 1fr;
+    column-gap:clamp(40px,6vw,90px);
+    border-top:0;
+  }
+  .piece:nth-child(1), .piece:nth-child(4){ border-top:1px solid var(--line); }
+}
+
+/* ── 04 gallery ─────────────────────────────────────────────── */
+
+.gallery{ padding-left:0; padding-right:0; max-width:none; }
+
+.gal-track{
+  display:flex; gap:clamp(14px,2vw,28px);
+  overflow-x:auto; scroll-snap-type:x mandatory;
+  padding:0 var(--pad) 26px;
+  scrollbar-width:none;
+  cursor:grab;
+}
+.gal-track::-webkit-scrollbar{ display:none; }
+
+.gal-item{
+  flex:0 0 min(78vw, 760px);
+  scroll-snap-align:center;
+  margin:0;
+}
+.gal-item figcaption{
+  margin-top:14px; font-size:12px; letter-spacing:.1em;
+  color:var(--muted); text-transform:uppercase;
+}
+
+/* Placeholder tone field. Delete this rule once real images land. */
+.slot{
+  aspect-ratio:16/11;
+  background:
+    radial-gradient(90% 70% at 30% 20%, var(--ground-3), transparent 70%),
+    linear-gradient(160deg, var(--ground-2), #06070a);
+  border:1px solid var(--line-soft);
+  display:grid; place-items:center;
+  position:relative;
+}
+.slot::after{
+  content:attr(data-slot);
+  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--muted);
+}
+
+.gal-bar{
+  height:1px; background:var(--line-soft);
+  margin:0 var(--pad);
+}
+.gal-bar i{ display:block; height:100%; width:0; background:var(--amber); }
+
+/* ── 05 lineage ─────────────────────────────────────────────── */
+
+.lineage{ text-align:center; }
+
+.manifesto{
+  margin:0 auto clamp(56px, 9vh, 110px);
+  max-width:24ch;
+  font-size:clamp(28px, 4.6vw, 62px);
+  font-weight:200; line-height:1.14; letter-spacing:-.03em;
+  color:var(--bone);
+}
+
+.credits{
+  display:grid; gap:clamp(28px,4vw,56px);
+  grid-template-columns:1fr;
+  text-align:left;
+  max-width:1100px; margin:0 auto;
+}
+@media (min-width:860px){
+  .credits{ grid-template-columns:repeat(3, 1fr); }
+}
+.credit{ border-top:1px solid var(--line); padding-top:20px; }
+.credit h3{
+  margin:0 0 8px; font-size:16px; font-weight:400; letter-spacing:-.01em;
+}
+.credit p{ margin:0; font-size:14px; color:var(--bone-dim); line-height:1.65; }
+
+/* ── 06 listen ──────────────────────────────────────────────── */
+
+.listen{ text-align:center; padding-bottom:clamp(110px,18vh,220px); }
+.listen-sub{
+  max-width:46ch; margin:0 auto 40px;
+  font-size:clamp(15px,1.4vw,18px); color:var(--bone-dim);
+}
+.listen-cta{ display:flex; flex-wrap:wrap; gap:14px; justify-content:center; }
+
+/* ── footer ─────────────────────────────────────────────────── */
+
+.foot{
+  display:flex; flex-wrap:wrap; gap:18px;
+  justify-content:space-between; align-items:center;
+  padding:28px var(--pad); border-top:1px solid var(--line-soft);
+  font-size:11.5px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--muted);
+}
+.foot nav{ display:flex; gap:22px; }
+.foot a:hover{ color:var(--bone); }
+
+/* ── scroll-driven animation ────────────────────────────────
+   Native CSS scroll timelines. No scroll event listeners anywhere in
+   this project. Where unsupported, these elements simply sit at their
+   start state, which is why all three are decorative only. */
+
+@supports (animation-timeline: scroll()){
+  @media (prefers-reduced-motion: no-preference){
+
+    /* right-edge progress rail */
+    .rail i{
+      height:100%;
+      transform-origin:top;
+      animation:railgrow linear both;
+      animation-timeline:scroll(root block);
+    }
+    @keyframes railgrow{ from{ transform:scaleY(0) } to{ transform:scaleY(1) } }
+
+    /* wordmark drifts up as the hero leaves. Communicates depth between
+       the type plane and the copy plane. */
+    .wordmark span{
+      animation:wmdrift linear both;
+      animation-timeline:view();
+      animation-range:exit 0% exit 100%;
+    }
+    @keyframes wmdrift{
+      from{ transform:translateY(0) }
+      to  { transform:translateY(-22%) }
+    }
+
+    /* gallery position indicator, driven by the track's own inline scroll.
+       timeline-scope lifts the name out of .gal-track so its sibling can use it. */
+    .gallery{ timeline-scope:--galtl; }
+    .gal-bar i{
+      width:100%; transform-origin:left;
+      animation:galgrow linear both;
+      animation-timeline:--galtl;
+    }
+    .gal-track{ scroll-timeline:--galtl inline; }
+    @keyframes galgrow{ from{ transform:scaleX(.12) } to{ transform:scaleX(1) } }
+  }
+}
+
+/* ── reveal on scroll (IntersectionObserver driven) ─────────── */
+
+.reveal{
+  opacity:0; transform:translateY(22px);
+  transition:opacity .9s var(--ease-out) var(--d,0s),
+             transform .9s var(--ease-out) var(--d,0s);
+}
+.reveal.in{ opacity:1; transform:none; }
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{ opacity:1; transform:none; transition:none; }
+  .piece{ transition:none; }
+  .btn{ transition:none; }
+}

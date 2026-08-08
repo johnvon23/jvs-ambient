@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>John von Seggern - Ambient works for Chapman Stick and live electronics</title>
+<meta name="description" content="Long-form ambient played live on Chapman Stick and electronics by John von Seggern, who recorded and produced Jon Hassell's final two albums.">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="John von Seggern">
+<meta property="og:description" content="Long-form ambient played live on Chapman Stick and electronics.">
+<!-- TODO: og:image 1200x630, og:url once the domain is live -->
+<meta name="theme-color" content="#07080b">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<!-- Atmospheric layers. Fixed, pointer-events-none, never inside a scrolling container. -->
+<canvas id="fog" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#record">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top">
+    <span class="brand-name">John von Seggern</span>
+    <span class="brand-sub">Ambient works</span>
+  </a>
+  <nav class="nav-links" aria-label="Sections">
+    <a href="#record">The record</a>
+    <a href="#set">The set</a>
+    <a href="#lineage">Lineage</a>
+    <a href="#listen" class="nav-cta">Listen</a>
+  </nav>
+</header>
+
+<div class="rail" aria-hidden="true"><i id="railfill"></i></div>
+
+<main id="top">
+
+  <!-- ── 01 HERO ─ full-bleed cinematic ─────────────────────────────── -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow reveal">Solo ambient works</p>
+      <h1 class="hero-h reveal" style="--d:.08s">
+        Long-form ambient,<br>played live in one room.
+      </h1>
+      <p class="hero-sub reveal" style="--d:.16s">
+        Solo performances for Chapman Stick and live electronics. A new record,
+        captured at the Philosophical Research Society in Los Angeles.
+      </p>
+      <div class="hero-cta reveal" style="--d:.24s">
+        <a class="btn btn-primary" href="#listen">Listen</a>
+        <a class="btn btn-ghost" href="#listen">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="wordmark" aria-hidden="true"><span id="wm">SEGGERN</span></div>
+  </section>
+
+
+  <!-- ── 02 THE RECORD ─ asymmetric split ───────────────────────────── -->
+  <section class="sec record" id="record">
+    <div class="record-grid">
+      <div class="record-body">
+        <h2 class="h2 reveal">Live at the Philosophical<br>Research Society</h2>
+        <p class="lede reveal" style="--d:.06s">
+          A single evening of solo ambient, performed on Chapman Stick through
+          a chain of pedals and live processing. Nothing was overdubbed after
+          the fact. What the room heard is what the record is.
+        </p>
+        <p class="body reveal" style="--d:.12s">
+          The Stick is played as a sustaining instrument rather than a rhythmic
+          one. Long tones are captured, thrown into delay, and folded back on
+          themselves until the harmony moves on its own. The performer's job
+          becomes deciding what to let go of.
+        </p>
+        <p class="body reveal" style="--d:.16s">
+          <!-- TODO: replace with John's own two sentences about the night itself.
+               Placeholder prose above is written from the studio notes, not from
+               a statement he has approved. -->
+          The Philosophical Research Society has a room built for listening,
+          not for volume. It set the ceiling for how loud any of this could get,
+          and the music is better for it.
+        </p>
+      </div>
+
+      <aside class="record-meta reveal" style="--d:.1s">
+        <dl>
+          <div><dt>Instrument</dt><dd>Chapman Stick</dd></div>
+          <div><dt>Signal</dt><dd>Strymon BigSky, Strymon Timeline, Line 6 POD</dd></div>
+          <div><dt>Recorded</dt><dd><span class="todo">[ date ]</span></dd></div>
+          <div><dt>Venue</dt><dd>Philosophical Research Society, Los Angeles</dd></div>
+          <div><dt>Format</dt><dd><span class="todo">[ digital / vinyl ]</span></dd></div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+
+  <!-- ── 03 THE SET ─ grouped two-column list ───────────────────────── -->
+  <section class="sec set" id="set">
+    <h2 class="h2 reveal">The set</h2>
+    <!-- TODO: real titles and durations. Bracketed values are placeholders. -->
+    <ol class="pieces">
+      <li class="piece reveal">
+        <span class="piece-n">01</span>
+        <span class="piece-t"><span class="todo">[ title ]</span></span>
+        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
+      </li>
+      <li class="piece reveal" style="--d:.05s">
+        <span class="piece-n">02</span>
+        <span class="piece-t"><span class="todo">[ title ]</span></span>
+        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
+      </li>
+      <li class="piece reveal" style="--d:.1s">
+        <span class="piece-n">03</span>
+        <span class="piece-t"><span class="todo">[ title ]</span></span>
+        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
+      </li>
+      <li class="piece reveal" style="--d:.15s">
+        <span class="piece-n">04</span>
+        <span class="piece-t"><span class="todo">[ title ]</span></span>
+        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
+      </li>
+      <li class="piece reveal" style="--d:.2s">
+        <span class="piece-n">05</span>
+        <span class="piece-t"><span class="todo">[ title ]</span></span>
+        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
+      </li>
+    </ol>
+  </section>
+
+
+  <!-- ── 04 GALLERY ─ horizontal scroll-snap ────────────────────────── -->
+  <section class="sec gallery" id="gallery" aria-label="Photographs">
+    <div class="gal-track" id="galTrack" tabindex="0">
+      <!-- TODO: replace each .slot with <img src="assets/img/…" alt="…">.
+           Target 1600x1100, dark, grainy, low-key. Three images minimum. -->
+      <figure class="gal-item">
+        <div class="slot" data-slot="Performance, wide"></div>
+        <figcaption>The hall, mid-set.</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <div class="slot" data-slot="Stick and pedalboard"></div>
+        <figcaption>The signal chain, unhidden.</figcaption>
+      </figure>
+      <figure class="gal-item">
+        <div class="slot" data-slot="Portrait, low light"></div>
+        <figcaption>Los Angeles.</figcaption>
+      </figure>
+    </div>
+    <div class="gal-bar"><i id="galFill"></i></div>
+  </section>
+
+
+  <!-- ── 05 LINEAGE ─ editorial manifesto ───────────────────────────── -->
+  <section class="sec lineage" id="lineage">
+    <p class="eyebrow reveal">Lineage</p>
+    <blockquote class="manifesto reveal" style="--d:.08s">
+      I recorded and produced Jon Hassell's last two albums, and played in his
+      band through the 2010s. This music comes out of that decade.
+    </blockquote>
+    <div class="credits">
+      <div class="credit reveal" style="--d:.12s">
+        <h3>Seeing Through Sound</h3>
+        <p>Jon Hassell, 2020. Recording and production.</p>
+      </div>
+      <div class="credit reveal" style="--d:.18s">
+        <h3>Listening to Pictures</h3>
+        <p>Jon Hassell, 2018. Recording and production.</p>
+      </div>
+      <div class="credit reveal" style="--d:.24s">
+        <h3>A Fourth World Is Still Possible</h3>
+        <p>In progress. Chapman Stick, hand percussion, and a group of players
+           carrying the method forward.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── 06 LISTEN ─ closing ────────────────────────────────────────── -->
+  <section class="sec listen" id="listen">
+    <h2 class="h2 big reveal">Listen</h2>
+    <p class="listen-sub reveal" style="--d:.08s">
+      The record is finished and looking for a home. Labels, promoters, and
+      writers are welcome to get in touch directly.
+    </p>
+    <div class="listen-cta reveal" style="--d:.14s">
+      <!-- TODO: real streaming/SoundCloud URL and mailto address -->
+      <a class="btn btn-primary" href="#" data-todo="private SoundCloud link">Listen</a>
+      <a class="btn btn-ghost" href="mailto:REPLACE@EXAMPLE.COM">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>John von Seggern</span>
+  <nav aria-label="Elsewhere">
+    <!-- TODO: real profile URLs -->
+    <a href="#">Bandcamp</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+  </nav>
+</footer>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
