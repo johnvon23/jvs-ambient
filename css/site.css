@@ -546,6 +546,14 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   box-shadow:0 30px 80px rgba(3,4,6,.6);
 }
 
+/* when a supporting paragraph follows the manifesto, close the gap */
+.lineage .manifesto{ margin-bottom:clamp(28px, 5vh, 52px); }
+.lineage-body{
+  max-width:60ch; margin:0 auto;
+  font-size:15.5px; line-height:1.75; color:var(--bone-dim);
+  text-align:center;
+}
+
 .manifesto{
   margin:0 auto clamp(56px, 9vh, 110px);
   max-width:24ch;

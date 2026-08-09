@@ -6,7 +6,7 @@ Every word on `fourth-world.html`. Run `node build.js` after editing.
 A Fourth World Is Still Possible - John von Seggern
 
 ## meta.description
-John von Seggern recorded and co-produced Jon Hassell's final two albums. Now he is carrying the Fourth World method forward, with Chapman Stick as the lead voice.
+John von Seggern recorded, co-produced and performed on Jon Hassell's final two albums. Now he is carrying the Fourth World method forward, with Chapman Stick as the lead voice.
 
 ## meta.og.title
 A Fourth World Is Still Possible - John von Seggern
@@ -25,8 +25,8 @@ A Fourth World\
 Is Still Possible
 
 ## head.sub
-Jon Hassell's method, carried forward by the player who recorded and
-co-produced his final two albums.
+Jon Hassell's method, carried forward by the player who recorded,
+co-produced and performed on his final two albums.
 
 
 %% ── the story ──────────────────────────────────────────────────────── %%
@@ -46,9 +46,9 @@ since before I could name it.
 In the 2010s that influence became a working life. I joined Jon's
 band and stayed for the decade, on stage with him through his last
 concert in London in 2015, and in the studio for the two final
-albums, Listening to Pictures and Seeing Through Sound. I recorded
-and co-produced both. That music was built at close range, over years,
-in rooms Jon and I shared.
+albums, Listening to Pictures and Seeing Through Sound. I recorded,
+co-produced, and performed on both. That music was built at close
+range, over years, in rooms Jon and I shared.
 
 ## story.p3
 Jon is gone. The method is not. This record is my answer to the only

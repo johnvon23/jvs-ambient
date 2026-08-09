@@ -81,7 +81,7 @@ Jon Hassell
 Seeing Through Sound
 
 ## rel.seeing.role
-2020 &middot; Recorded and co-produced
+2020 &middot; Recorded, co-produced and performed
 
 ## rel.seeing.line
 Pentimento Volume Two.
@@ -93,7 +93,7 @@ Jon Hassell
 Listening to Pictures
 
 ## rel.listening.role
-2018 &middot; Recorded and co-produced
+2018 &middot; Recorded, co-produced and performed
 
 ## rel.listening.line
 Pentimento Volume One.
@@ -201,8 +201,16 @@ Chapman Stick, bass guitar and live electronics, under his own name.
 Lineage
 
 ## lineage.quote
-I recorded and co-produced Jon Hassell's last two albums, and played in
-his band through the 2010s. 
+Jon Hassell's music set my direction when I was a teenager learning
+jazz. Thirty years later, I was in his band.
+
+## lineage.body
+By the time we met, I had spent twenty years blending musical cultures
+of my own, from Tokyo jazz clubs to Cantopop arenas to cut-up laptop
+sets in Hong Kong. That is why Jon brought me into the band. I
+recorded, co-produced, and performed on his final two albums. Playing
+that music was the fulfillment of a lifetime's direction. Carrying it
+forward is what comes next.
 
 
 %% ── contact ─ why to reach out ─────────────────────────────────────── %%
