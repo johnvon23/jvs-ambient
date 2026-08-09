@@ -26,8 +26,18 @@ Then open http://localhost:4321
 
 ## Deploy
 
-Any static host works. Push to GitHub and turn on Pages, or drag the folder onto
-Netlify. There is nothing to compile.
+Any static host works. There is nothing to compile.
+
+- **GitHub Pages:** push, then Settings > Pages > deploy from `main`, root.
+  `.nojekyll` is already in place. Free tier requires the repo to be public.
+- **Vercel:** import the repo; no framework, no build command, output = root.
+  `vercel.json` turns on clean URLs (`/prs` instead of `/prs.html`).
+- The site currently carries `noindex` on every page. Remove those meta tags
+  at launch, once the placeholder content is gone (tracked in CONTENT.md).
+
+Keep this repo under a personal GitHub account, not the school account: the
+site is John's personal artist identity, and whichever host is used inherits
+the account the repo lives in.
 
 ## Design notes
 
