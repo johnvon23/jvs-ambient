@@ -6,9 +6,15 @@ no framework. Edit the files, refresh the browser.
 ```
 index.html      all the copy and structure
 css/site.css    one stylesheet, design tokens at the top
-js/site.js      reveals, nav scrim, gallery drag, fog canvas
-assets/img/     photographs go here
+js/site.js      reveals, nav scrim, video tiles, lightbox, fog canvas
+assets/web/     processed web-weight images and videos (committed)
+assets/img/     source photographs (gitignored, this machine only)
+assets/video/   source videos (gitignored, this machine only)
 ```
+
+Regenerate `assets/web/` derivatives with `sips` (images, max edge 900 to
+2400px, JPEG ~80) and `ffmpeg` (H.264, 720 wide, crf 27, faststart). The
+originals never ship: 211MB of source becomes about 20MB on the wire.
 
 ## Run it locally
 

@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>John von Seggern - Ambient works for Chapman Stick and live electronics</title>
-<meta name="description" content="Long-form ambient played live on Chapman Stick and electronics by John von Seggern, who recorded and produced Jon Hassell's final two albums.">
+<title>John von Seggern - Ambient works for bass guitar, Chapman Stick, and live electronics</title>
+<meta name="description" content="Long-form ambient by John von Seggern, who recorded and produced Jon Hassell's final two albums. Two records: Live at the Philosophical Research Society, and A Fourth World Is Still Possible.">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="John von Seggern">
-<meta property="og:description" content="Long-form ambient played live on Chapman Stick and electronics.">
-<!-- TODO: og:image 1200x630, og:url once the domain is live -->
+<meta property="og:description" content="Long-form ambient for bass guitar, Chapman Stick, and live electronics.">
+<meta property="og:image" content="assets/web/img/prs-stage.jpg">
+<!-- TODO: make og:image an absolute URL once the domain is live -->
 <meta name="theme-color" content="#07080b">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +25,7 @@
 <div class="vignette" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
-<a class="skip" href="#record">Skip to content</a>
+<a class="skip" href="#prs">Skip to content</a>
 
 <header class="nav" id="nav">
   <a class="brand" href="#top">
@@ -32,8 +33,8 @@
     <span class="brand-sub">Ambient works</span>
   </a>
   <nav class="nav-links" aria-label="Sections">
-    <a href="#record">The record</a>
-    <a href="#set">The set</a>
+    <a href="#prs">Records</a>
+    <a href="#visions">Visions</a>
     <a href="#lineage">Lineage</a>
     <a href="#listen" class="nav-cta">Listen</a>
   </nav>
@@ -43,16 +44,20 @@
 
 <main id="top">
 
-  <!-- ── 01 HERO ─ full-bleed cinematic ─────────────────────────────── -->
+  <!-- ── 01 HERO ─ layered: strings photograph, wordmark, copy, video tile ── -->
   <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="assets/web/img/strings.jpg" alt="" fetchpriority="high">
+    </div>
+
     <div class="hero-inner">
       <p class="eyebrow reveal">Solo ambient works</p>
       <h1 class="hero-h reveal" style="--d:.08s">
         Long-form ambient,<br>played live in one room.
       </h1>
       <p class="hero-sub reveal" style="--d:.16s">
-        Solo performances for Chapman Stick and live electronics. A new record,
-        captured at the Philosophical Research Society in Los Angeles.
+        Bass guitar, Chapman Stick, and live electronics. Two records:
+        one finished and looking for a label, one becoming the next major work.
       </p>
       <div class="hero-cta reveal" style="--d:.24s">
         <a class="btn btn-primary" href="#listen">Listen</a>
@@ -60,107 +65,137 @@
       </div>
     </div>
 
+    <!-- floating video tile, Kage-style -->
+    <button class="hero-tile reveal" style="--d:.3s" data-video="assets/web/video/wanderers.mp4"
+            data-title="Wanderers" aria-label="Play Wanderers video">
+      <video muted loop playsinline preload="none"
+             poster="assets/web/img/poster-wanderers.jpg"
+             src="assets/web/video/wanderers.mp4"></video>
+      <span class="hero-tile-label">Wanderers</span>
+    </button>
+
     <div class="wordmark" aria-hidden="true"><span id="wm">SEGGERN</span></div>
   </section>
 
 
-  <!-- ── 02 THE RECORD ─ asymmetric split ───────────────────────────── -->
-  <section class="sec record" id="record">
-    <div class="record-grid">
-      <div class="record-body">
-        <h2 class="h2 reveal">Live at the Philosophical<br>Research Society</h2>
-        <p class="lede reveal" style="--d:.06s">
-          A single evening of solo ambient, performed on Chapman Stick through
-          a chain of pedals and live processing. Nothing was overdubbed after
-          the fact. What the room heard is what the record is.
-        </p>
-        <p class="body reveal" style="--d:.12s">
-          The Stick is played as a sustaining instrument rather than a rhythmic
-          one. Long tones are captured, thrown into delay, and folded back on
-          themselves until the harmony moves on its own. The performer's job
-          becomes deciding what to let go of.
-        </p>
-        <p class="body reveal" style="--d:.16s">
-          <!-- TODO: replace with John's own two sentences about the night itself.
-               Placeholder prose above is written from the studio notes, not from
-               a statement he has approved. -->
-          The Philosophical Research Society has a room built for listening,
-          not for volume. It set the ceiling for how loud any of this could get,
-          and the music is better for it.
-        </p>
+  <!-- ── 02 LIVE AT THE PRS ─ full-bleed stage photograph ──────────── -->
+  <section class="album" id="prs">
+    <div class="album-bg" aria-hidden="true">
+      <img src="assets/web/img/prs-stage.jpg" alt="" loading="lazy">
+    </div>
+
+    <div class="album-inner">
+      <p class="album-status reveal">Finished. Seeking a label.</p>
+      <h2 class="h2 reveal" style="--d:.06s">Live at the Philosophical<br>Research Society</h2>
+
+      <div class="album-grid">
+        <div class="album-body">
+          <p class="lede reveal" style="--d:.1s">
+            A single evening of ambient bass guitar and live electronics,
+            performed in one take. Nothing was overdubbed after the fact.
+            What the room heard is what the record is.
+          </p>
+          <p class="body reveal" style="--d:.14s">
+            The bass is played as a sustaining instrument. Long tones are
+            captured, thrown into delay, and folded back on themselves until
+            the harmony moves on its own. The performer's job becomes deciding
+            what to let go of.
+          </p>
+          <dl class="album-meta reveal" style="--d:.18s">
+            <div><dt>Instrument</dt><dd>Bass guitar and live electronics</dd></div>
+            <div><dt>Recorded</dt><dd><span class="todo">[ date ]</span>, Philosophical Research Society, Los Angeles</dd></div>
+            <div><dt>Format</dt><dd><span class="todo">[ digital / vinyl ]</span></dd></div>
+          </dl>
+        </div>
+
+        <figure class="album-art reveal" style="--d:.14s">
+          <img src="assets/web/img/cover-prs.jpg" loading="lazy"
+               alt="Album cover: hands on bass guitar strings, blurred black and white">
+          <figcaption>The record, in motion blur.</figcaption>
+        </figure>
       </div>
-
-      <aside class="record-meta reveal" style="--d:.1s">
-        <dl>
-          <div><dt>Instrument</dt><dd>Chapman Stick</dd></div>
-          <div><dt>Signal</dt><dd>Strymon BigSky, Strymon Timeline, Line 6 POD</dd></div>
-          <div><dt>Recorded</dt><dd><span class="todo">[ date ]</span></dd></div>
-          <div><dt>Venue</dt><dd>Philosophical Research Society, Los Angeles</dd></div>
-          <div><dt>Format</dt><dd><span class="todo">[ digital / vinyl ]</span></dd></div>
-        </dl>
-      </aside>
     </div>
   </section>
 
 
-  <!-- ── 03 THE SET ─ grouped two-column list ───────────────────────── -->
-  <section class="sec set" id="set">
-    <h2 class="h2 reveal">The set</h2>
-    <!-- TODO: real titles and durations. Bracketed values are placeholders. -->
-    <ol class="pieces">
-      <li class="piece reveal">
-        <span class="piece-n">01</span>
-        <span class="piece-t"><span class="todo">[ title ]</span></span>
-        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
-      </li>
-      <li class="piece reveal" style="--d:.05s">
-        <span class="piece-n">02</span>
-        <span class="piece-t"><span class="todo">[ title ]</span></span>
-        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
-      </li>
-      <li class="piece reveal" style="--d:.1s">
-        <span class="piece-n">03</span>
-        <span class="piece-t"><span class="todo">[ title ]</span></span>
-        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
-      </li>
-      <li class="piece reveal" style="--d:.15s">
-        <span class="piece-n">04</span>
-        <span class="piece-t"><span class="todo">[ title ]</span></span>
-        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
-      </li>
-      <li class="piece reveal" style="--d:.2s">
-        <span class="piece-n">05</span>
-        <span class="piece-t"><span class="todo">[ title ]</span></span>
-        <span class="piece-d"><span class="todo">[ 00:00 ]</span></span>
-      </li>
-    </ol>
-  </section>
-
-
-  <!-- ── 04 GALLERY ─ horizontal scroll-snap ────────────────────────── -->
-  <section class="sec gallery" id="gallery" aria-label="Photographs">
-    <div class="gal-track" id="galTrack" tabindex="0">
-      <!-- TODO: replace each .slot with <img src="assets/img/…" alt="…">.
-           Target 1600x1100, dark, grainy, low-key. Three images minimum. -->
-      <figure class="gal-item">
-        <div class="slot" data-slot="Performance, wide"></div>
-        <figcaption>The hall, mid-set.</figcaption>
-      </figure>
-      <figure class="gal-item">
-        <div class="slot" data-slot="Stick and pedalboard"></div>
-        <figcaption>The signal chain, unhidden.</figcaption>
-      </figure>
-      <figure class="gal-item">
-        <div class="slot" data-slot="Portrait, low light"></div>
-        <figcaption>Los Angeles.</figcaption>
-      </figure>
+  <!-- ── 03 A FOURTH WORLD ─ full-bleed desert aerial ──────────────── -->
+  <section class="album album-alt" id="fourthworld">
+    <div class="album-bg" aria-hidden="true">
+      <img src="assets/web/img/desert-above.jpg" alt="" loading="lazy">
     </div>
-    <div class="gal-bar"><i id="galFill"></i></div>
+
+    <div class="album-inner">
+      <p class="album-status reveal">In progress. The next major work.</p>
+      <h2 class="h2 reveal" style="--d:.06s">A Fourth World<br>Is Still Possible</h2>
+
+      <div class="album-grid album-grid-flip">
+        <figure class="album-art reveal" style="--d:.14s">
+          <img src="assets/web/img/cover-fourthworld.jpg" loading="lazy"
+               alt="Album cover: Roman ruins with standing columns, black and white">
+          <figcaption>Cover study.</figcaption>
+        </figure>
+
+        <div class="album-body">
+          <p class="lede reveal" style="--d:.1s">
+            A continuation of Jon Hassell's Fourth World method, carried by the
+            players who were in the room with him. Chapman Stick takes the lead
+            voice. Hand percussion and synthesizer beds hold the ground.
+          </p>
+          <p class="body reveal" style="--d:.14s">
+            Everything is going into this one. It moves at the pace the method
+            demands: improvisations gathered, processed, and composed until the
+            music sounds like a place rather than a performance.
+          </p>
+          <dl class="album-meta reveal" style="--d:.18s">
+            <div><dt>Lead voice</dt><dd>Chapman Stick, processed and harmonized</dd></div>
+            <div><dt>Ground</dt><dd>Hand percussion, synthesizer beds</dd></div>
+            <div><dt>Status</dt><dd>In the studio now</dd></div>
+          </dl>
+        </div>
+      </div>
+    </div>
   </section>
 
 
-  <!-- ── 05 LINEAGE ─ editorial manifesto ───────────────────────────── -->
+  <!-- ── 04 VISIONS ─ clickable video tiles ────────────────────────── -->
+  <section class="sec visions" id="visions">
+    <h2 class="h2 reveal">Visions</h2>
+    <p class="visions-sub reveal" style="--d:.06s">
+      Moving images from the studio and the desert. Sound on when you open them.
+    </p>
+
+    <div class="tiles">
+      <!-- TODO: confirm titles for the video pieces -->
+      <button class="tile reveal" data-video="assets/web/video/portal-iii.mp4" data-title="Portal III">
+        <video muted loop playsinline preload="none"
+               poster="assets/web/img/poster-portal-iii.jpg"
+               src="assets/web/video/portal-iii.mp4"></video>
+        <span class="tile-label">Portal III</span>
+      </button>
+
+      <button class="tile reveal" style="--d:.08s" data-video="assets/web/video/portal-vi.mp4" data-title="Portal VI">
+        <video muted loop playsinline preload="none"
+               poster="assets/web/img/poster-portal-vi.jpg"
+               src="assets/web/video/portal-vi.mp4"></video>
+        <span class="tile-label">Portal VI</span>
+      </button>
+
+      <button class="tile tile-mono reveal" style="--d:.16s" data-video="assets/web/video/walking.mp4" data-title="Walking">
+        <video muted loop playsinline preload="none"
+               poster="assets/web/img/poster-walking.jpg"
+               src="assets/web/video/walking.mp4"></video>
+        <span class="tile-label">Walking</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- ── 05 LINEAGE ─ editorial manifesto over silhouette ──────────── -->
   <section class="sec lineage" id="lineage">
+    <figure class="lineage-figure reveal">
+      <img src="assets/web/img/prs-silhouette.jpg" loading="lazy"
+           alt="John von Seggern silhouetted with bass guitar against a projection screen">
+    </figure>
     <p class="eyebrow reveal">Lineage</p>
     <blockquote class="manifesto reveal" style="--d:.08s">
       I recorded and produced Jon Hassell's last two albums, and played in his
@@ -176,9 +211,8 @@
         <p>Jon Hassell, 2018. Recording and production.</p>
       </div>
       <div class="credit reveal" style="--d:.24s">
-        <h3>A Fourth World Is Still Possible</h3>
-        <p>In progress. Chapman Stick, hand percussion, and a group of players
-           carrying the method forward.</p>
+        <h3>The band, live</h3>
+        <p>Through the 2010s, including Hassell's final concert, London 2015.</p>
       </div>
     </div>
   </section>
@@ -188,8 +222,8 @@
   <section class="sec listen" id="listen">
     <h2 class="h2 big reveal">Listen</h2>
     <p class="listen-sub reveal" style="--d:.08s">
-      The record is finished and looking for a home. Labels, promoters, and
-      writers are welcome to get in touch directly.
+      Live at the Philosophical Research Society is finished and looking for a
+      home. Labels, promoters, and writers are welcome to get in touch directly.
     </p>
     <div class="listen-cta reveal" style="--d:.14s">
       <!-- TODO: real streaming/SoundCloud URL and mailto address -->
@@ -209,6 +243,13 @@
     <a href="#">YouTube</a>
   </nav>
 </footer>
+
+<!-- video lightbox -->
+<dialog id="lightbox" class="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">Close</button>
+  <video id="lightboxVideo" controls playsinline></video>
+  <p class="lightbox-title" id="lightboxTitle"></p>
+</dialog>
 
 <script src="js/site.js" defer></script>
 </body>

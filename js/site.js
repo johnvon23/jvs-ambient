@@ -44,38 +44,55 @@
     }).observe(sentinel);
   }
 
-  /* ── gallery: drag to pan ────────────────────────────────────
-     Feedback only. The track is already keyboard and trackpad scrollable;
-     this makes the mouse behave the way the layout implies it should. */
+  /* ── inline video tiles ──────────────────────────────────────
+     Muted loops that only run while on screen, so five videos cost
+     roughly as much as one. Under reduced motion they stay posters. */
 
-  const track = document.getElementById('galTrack');
-  if (track) {
-    let down = false, startX = 0, startLeft = 0;
+  const tileVideos = document.querySelectorAll('.tile video, .hero-tile video');
 
-    track.addEventListener('pointerdown', e => {
-      if (e.pointerType === 'touch') return;   // native touch scroll is better
-      down = true;
-      startX = e.clientX;
-      startLeft = track.scrollLeft;
-      track.setPointerCapture(e.pointerId);
-      track.style.cursor = 'grabbing';
-    });
-
-    track.addEventListener('pointermove', e => {
-      if (!down) return;
-      track.scrollLeft = startLeft - (e.clientX - startX);
-    });
-
-    const release = e => {
-      if (!down) return;
-      down = false;
-      track.style.cursor = '';
-      if (e.pointerId != null && track.hasPointerCapture?.(e.pointerId)) {
-        track.releasePointerCapture(e.pointerId);
+  if (!reduced && 'IntersectionObserver' in window) {
+    const vio = new IntersectionObserver(entries => {
+      for (const e of entries) {
+        const v = e.target;
+        if (e.isIntersecting) {
+          v.play().catch(() => {});        // autoplay can be denied; poster stands in
+        } else {
+          v.pause();
+        }
       }
+    }, { threshold: 0.25 });
+
+    tileVideos.forEach(v => vio.observe(v));
+  }
+
+  /* ── lightbox: click a tile, watch it with sound ───────────── */
+
+  const box   = document.getElementById('lightbox');
+  const boxV  = document.getElementById('lightboxVideo');
+  const boxT  = document.getElementById('lightboxTitle');
+
+  if (box && boxV && typeof box.showModal === 'function') {
+    document.querySelectorAll('[data-video]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        boxV.src = btn.dataset.video;
+        boxT.textContent = btn.dataset.title || '';
+        box.showModal();
+        boxV.play().catch(() => {});
+      });
+    });
+
+    const shut = () => {
+      boxV.pause();
+      boxV.removeAttribute('src');         // stop the download, free the decoder
+      boxV.load();
+      if (box.open) box.close();
     };
-    track.addEventListener('pointerup', release);
-    track.addEventListener('pointercancel', release);
+
+    document.getElementById('lightboxClose').addEventListener('click', shut);
+    box.addEventListener('close', shut);
+    box.addEventListener('click', e => {   // click on the backdrop closes
+      if (e.target === box) shut();
+    });
   }
 
   /* ── atmosphere: slow drifting fog ───────────────────────────
