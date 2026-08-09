@@ -260,10 +260,14 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 }
 .hero-cta{ display:flex; flex-wrap:wrap; gap:14px; }
 
-/* floating video tile, Kage-style: vertical pane, bottom right, above the wordmark */
+/* floating video tile, Kage-style: vertical pane centered in the space
+   right of the copy column. `translate` (not transform) does the centering
+   so the reveal/hover transforms compose instead of clobbering it. */
 .hero-tile{
-  position:absolute; right:var(--pad); bottom:clamp(90px, 16vh, 190px);
-  width:clamp(224px, 20vw, 320px);
+  position:absolute; left:calc(75% + 60px); top:50%;
+  translate:-50% -50%;
+  /* 500px-tall 9:16 video = 281px wide; shrinks on narrower screens */
+  width:min(281px, 50vw - 240px);
   z-index:4;
   text-align:left;
   border:1px solid var(--line);
