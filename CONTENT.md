@@ -1,17 +1,28 @@
 # What the site still needs
 
-## New since the multi-page restructure
+## New since the main-page refocus (2026-08-09)
 
-- [ ] **History timeline (home page).** The career skeleton needs John's own
-      account: jazz years (where, with whom), electronic-music era (book
-      titles, teaching posts), and the film work John mentioned (titles,
-      roles). All marked in amber on the page.
-- [ ] **Fourth World story.** Written in first person from John's framing
-      (fan since high school, biggest influence, 2010s role, carrying the
-      legacy forward). The sketches-with-Jon detail was deliberately left
-      out at John's request. John should read the three paragraphs and make
-      them his own words.
-- [ ] **Demo player on the PRS page** is a labeled placeholder slot.
+The home page now leads with what John has already done: a curated releases
+grid (Ambient Bass Guitar, the two Hassell records, Simplexity), a trimmed
+timeline (LA underground, film, Hassell band, now), and an On Stage section
+for promoters. The Two Records section is gone; the forthcoming albums live
+only in the nav tabs.
+
+- [ ] **Release cover art (4).** Drop source images anywhere in `assets/img/`
+      for: Ambient Bass Guitar, Listening to Pictures, Seeing Through Sound,
+      Extreme Measures. They get processed to `assets/web/img/cover-*.jpg`.
+      Amber `[ cover ]` slots mark them on the page.
+- [ ] **Simplexity role credit.** The card reads `[ role credit ]`. What
+      should it say: bass and production? co-founder?
+- [ ] **LA underground details.** `[ aliases, nights, releases to name ]` in
+      the timeline. Or keep it general.
+- [ ] **Film work.** WALL-E (sound design and effects, Thomas Newman's score)
+      is on the page from John's published bios; confirm wording. Other
+      soundtrack credits marked `[ other soundtrack work ]`.
+- [ ] **Upcoming live release.** A commented slot is reserved in the releases
+      grid; add the card when it is announced.
+- [ ] **On Stage copy.** Written to pitch promoters (solo sets now, Fourth
+      World live coming). John should confirm the framing.
 - [ ] **Routines to keep the site current** (John's ask): not built yet.
       Candidate: a periodic check that compares working-self/board state
       against the site's status pills and drafts updates.
@@ -29,16 +40,18 @@ can ship by accident.
       filenames. Confirm or rename.
 - [ ] **Fourth World copy.** The two paragraphs are written from studio notes
       and one line of John's own framing ("everything is going into this one").
-      Confirm the collaborator framing: "carried by the players who were in the
-      room with him."
+      John should read the three story paragraphs and make them his own words.
+- [ ] **Demo player on the PRS page** is a labeled placeholder slot.
 
 ## Links
 
-- [ ] **Contact address.** Search `REPLACE@EXAMPLE.COM` in `index.html`.
-- [ ] **Listen link.** The Listen button points at `#`. Private SoundCloud is
-      fine for now; swap for the release link later.
-- [ ] **Footer profiles:** Bandcamp, Instagram, YouTube.
-- [ ] **og:image** needs an absolute URL once the domain exists.
+- [ ] **Contact address.** Search `REPLACE@EXAMPLE.COM` in all three pages.
+- [x] **Listen link.** Now points at johnvon.bandcamp.com. The PRS demo link
+      is still open.
+- [ ] **Footer profiles:** Bandcamp done (johnvon.bandcamp.com); Instagram
+      and YouTube still `#`. Any others (Spotify, SoundCloud)?
+- [ ] **Hassell record links.** The two Hassell release cards are unlinked;
+      add Bandcamp/label URLs if John wants them clickable.
 
 ## Assets in use
 
@@ -65,7 +78,11 @@ pensive in desert.
 
 ## Facts to double check before this goes public
 
-The Hassell credits read "recorded and produced" for *Seeing Through Sound*
-(2020) and *Listening to Pictures* (2018), plus band membership through the
-2010s and the final concert, London 2015. Confirm exact wording before the
-site is indexed.
+- The Hassell credits read "recorded and produced" for *Seeing Through Sound*
+  (2020) and *Listening to Pictures* (2018), plus band membership through the
+  2010s and the final concert, London 2015. Confirm exact wording before the
+  site is indexed.
+- Simplexity facts on the page (Extreme Measures, 2010, with John Beasley,
+  Steve Tavaglione, Gary Novak, Walt Fowler) come from Discogs/press; John
+  confirms.
+- WALL-E credit wording comes from John's published bios; John confirms.

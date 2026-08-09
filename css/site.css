@@ -386,63 +386,57 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 .page-title{ margin-bottom:20px; }
 .page-head .hero-sub{ margin-bottom:0; }
 
-/* ── project cards (home) ─ Kage chapter tiles, but navigable ─ */
+/* ── releases grid (home) ─ the shelf of past records ────────── */
 
-.cards{
+.rel-grid{
   display:grid; gap:clamp(16px, 2.2vw, 30px);
   grid-template-columns:1fr;
 }
-@media (min-width:860px){ .cards{ grid-template-columns:1fr 1fr; } }
+@media (min-width:560px){ .rel-grid{ grid-template-columns:1fr 1fr; } }
+@media (min-width:1020px){ .rel-grid{ grid-template-columns:repeat(4, 1fr); } }
 
-.card{
-  position:relative; display:block; overflow:hidden;
-  min-height:clamp(360px, 52vh, 520px);
+.rel{
+  display:flex; flex-direction:column;
   border:1px solid var(--line);
   background:var(--ground-2);
   transition:border-color .35s var(--ease), transform .35s var(--ease);
 }
-.card:hover{ border-color:var(--bone-dim); transform:translateY(-4px); }
+a.rel:hover{ border-color:var(--bone-dim); transform:translateY(-4px); }
 
-.card-bg{ position:absolute; inset:0; }
-.card-bg img{
+.rel-art{
+  aspect-ratio:1/1; overflow:hidden;
+  border-bottom:1px solid var(--line-soft);
+}
+.rel-art img{
   width:100%; height:100%; object-fit:cover;
-  opacity:.45;
-  transition:opacity .5s var(--ease), transform .8s var(--ease);
+  opacity:.9;
+  transition:opacity .4s var(--ease), transform .6s var(--ease);
 }
-.card:hover .card-bg img{ opacity:.62; transform:scale(1.03); }
-.card-bg::after{
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(3,4,6,.1) 30%, rgba(3,4,6,.88) 100%);
+a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
+.rel-art-empty{
+  display:grid; place-items:center;
+  background:var(--ground-3);
 }
 
-.card-body{
-  position:relative; z-index:1;
-  display:flex; flex-direction:column; justify-content:flex-end;
-  gap:10px;
-  height:100%; min-height:inherit;
-  padding:clamp(20px, 2.6vw, 34px);
+.rel-meta{
+  display:flex; flex-direction:column; gap:6px;
+  padding:16px 18px 20px;
 }
-.card-status{
-  font-size:10px; letter-spacing:.26em; text-transform:uppercase;
-  color:var(--amber);
+.rel-artist{
+  font-size:10px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--muted);
 }
-.card-title{
-  font-size:clamp(21px, 2.1vw, 30px);
-  font-weight:300; line-height:1.15; letter-spacing:-.02em;
+.rel-title{
+  font-size:16.5px; font-weight:400; line-height:1.3; letter-spacing:-.01em;
   color:var(--bone);
 }
-.card-line{
-  font-size:14px; line-height:1.6; color:var(--bone-dim);
-  max-width:44ch;
+.rel-role{
+  font-size:12.5px; color:var(--bone-dim); letter-spacing:.03em;
 }
-.card-go{
-  margin-top:8px;
-  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
-  color:var(--bone);
-  transition:color .3s var(--ease);
+.rel-line{
+  font-size:13px; line-height:1.6; color:var(--bone-dim);
+  margin-top:2px;
 }
-.card-go::after{ content:"  \2192"; white-space:pre; }
-.card:hover .card-go{ color:var(--amber-hot); }
 
 /* ── history timeline (home) ────────────────────────────────── */
 
