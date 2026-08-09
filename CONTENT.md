@@ -1,5 +1,21 @@
 # What the site still needs
 
+## New since the multi-page restructure
+
+- [ ] **History timeline (home page).** The career skeleton needs John's own
+      account: jazz years (where, with whom), electronic-music era (book
+      titles, teaching posts), and the film work John mentioned (titles,
+      roles). All marked in amber on the page.
+- [ ] **Fourth World story.** Written in first person from John's framing
+      (fan since high school, biggest influence, 2010s role, carrying the
+      legacy forward). The sketches-with-Jon detail was deliberately left
+      out at John's request. John should read the three paragraphs and make
+      them his own words.
+- [ ] **Demo player on the PRS page** is a labeled placeholder slot.
+- [ ] **Routines to keep the site current** (John's ask): not built yet.
+      Candidate: a periodic check that compares working-self/board state
+      against the site's status pills and drafts updates.
+
 Bracketed amber text on the page marks placeholders visually, so nothing fake
 can ship by accident.
 

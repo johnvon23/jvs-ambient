@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Live at the Philosophical Research Society - John von Seggern</title>
+<meta name="description" content="A single evening of ambient bass guitar and live electronics, recorded in one take at the Philosophical Research Society in Los Angeles. Finished, and seeking a label.">
+
+<meta property="og:type" content="music.album">
+<meta property="og:title" content="Live at the Philosophical Research Society - John von Seggern">
+<meta property="og:description" content="Ambient bass guitar and live electronics, one evening, one take. Seeking a label.">
+<meta property="og:image" content="assets/web/img/prs-stage.jpg">
+<!-- TODO: make og:image an absolute URL once the domain is live -->
+<meta name="theme-color" content="#07080b">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<canvas id="fog" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#record">Skip to content</a>
+
+<header class="nav" id="nav">
+  <a class="brand" href="index.html">
+    <span class="brand-name">John von Seggern</span>
+    <span class="brand-sub">Ambient works</span>
+  </a>
+  <nav class="nav-links" aria-label="Pages">
+    <a href="index.html">About</a>
+    <a href="prs.html" aria-current="page">Live at the PRS</a>
+    <a href="fourth-world.html">Fourth World</a>
+    <a href="#contact" class="nav-cta">Get in touch</a>
+  </nav>
+</header>
+
+<div class="rail" aria-hidden="true"><i id="railfill"></i></div>
+
+<main id="top">
+
+  <!-- ── page head ─ full-bleed stage photograph ───────────────────── -->
+  <section class="page-head">
+    <div class="album-bg" aria-hidden="true">
+      <img src="assets/web/img/prs-stage.jpg" alt="" fetchpriority="high">
+    </div>
+    <div class="page-head-inner">
+      <p class="album-status reveal">Finished. Seeking a label.</p>
+      <h1 class="h2 page-title reveal" style="--d:.06s">
+        Live at the Philosophical<br>Research Society
+      </h1>
+      <p class="hero-sub reveal" style="--d:.12s">
+        A single evening of ambient bass guitar and live electronics,
+        recorded in one take in Los Angeles.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ── the record ────────────────────────────────────────────────── -->
+  <section class="sec" id="record">
+    <div class="album-grid">
+      <div class="album-body">
+        <h2 class="h2 reveal">One evening, one take</h2>
+        <p class="lede reveal" style="--d:.06s">
+          Nothing was overdubbed after the fact. What the room heard is what
+          the record is.
+        </p>
+        <p class="body reveal" style="--d:.1s">
+          The bass is played as a sustaining instrument. Long tones are
+          captured, thrown into delay, and folded back on themselves until
+          the harmony moves on its own. The performer's job becomes deciding
+          what to let go of.
+        </p>
+        <dl class="album-meta reveal" style="--d:.14s">
+          <div><dt>Instrument</dt><dd>Bass guitar and live electronics</dd></div>
+          <div><dt>Recorded</dt><dd><span class="todo">[ date ]</span>, Philosophical Research Society, Los Angeles</dd></div>
+          <div><dt>Format</dt><dd><span class="todo">[ digital / vinyl ]</span></dd></div>
+        </dl>
+      </div>
+
+      <figure class="album-art reveal" style="--d:.1s">
+        <img src="assets/web/img/cover-prs.jpg" loading="lazy"
+             alt="Album cover: hands on bass guitar strings, blurred black and white">
+        <figcaption>The record, in motion blur.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+
+  <!-- ── demo for labels ───────────────────────────────────────────── -->
+  <section class="sec demo-sec">
+    <h2 class="h2 reveal">Hear it</h2>
+    <p class="body reveal" style="--d:.06s">
+      A private demo is available for labels and press.
+    </p>
+    <!-- TODO: replace with a real embed or <audio> once the private
+         SoundCloud (or file) exists. The block below is a labeled
+         placeholder, deliberately obvious. -->
+    <div class="demo-slot reveal" style="--d:.1s">
+      <span class="todo">[ demo player: private SoundCloud embed or audio file ]</span>
+    </div>
+  </section>
+
+
+  <!-- ── the room ──────────────────────────────────────────────────── -->
+  <section class="album" id="room">
+    <div class="album-bg" aria-hidden="true">
+      <img src="assets/web/img/prs-stage.jpg" alt="" loading="lazy">
+    </div>
+    <div class="album-inner">
+      <div class="room-quote">
+        <p class="manifesto reveal">
+          The Philosophical Research Society has a room built for listening,
+          not for volume.
+        </p>
+        <!-- TODO: replace with two sentences in John's own words about the
+             night itself. Placeholder written from studio notes. -->
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── contact ───────────────────────────────────────────────────── -->
+  <section class="sec listen" id="contact">
+    <h2 class="h2 big reveal">For labels</h2>
+    <p class="listen-sub reveal" style="--d:.08s">
+      The record is finished and ready to place. If it belongs on your label,
+      say hello.
+    </p>
+    <div class="listen-cta reveal" style="--d:.14s">
+      <!-- TODO: real mailto address -->
+      <a class="btn btn-primary" href="mailto:REPLACE@EXAMPLE.COM">Get in touch</a>
+      <a class="btn btn-ghost" href="fourth-world.html">The next record</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <span>John von Seggern</span>
+  <nav aria-label="Elsewhere">
+    <!-- TODO: real profile URLs -->
+    <a href="#">Bandcamp</a>
+    <a href="#">Instagram</a>
+    <a href="#">YouTube</a>
+  </nav>
+</footer>
+
+<dialog id="lightbox" class="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">Close</button>
+  <video id="lightboxVideo" controls playsinline></video>
+  <p class="lightbox-title" id="lightboxTitle"></p>
+</dialog>
+
+<script src="js/site.js" defer></script>
+</body>
+</html>
