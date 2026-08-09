@@ -38,7 +38,7 @@ can ship by accident.
 - [ ] **Track titles.** The set list section was removed until real titles
       exist; it can return to the PRS section when they do.
 - [ ] **Video titles.** The tiles currently say "Portal III", "Portal VI",
-      "Walking", and the hero tile says "Wanderers", taken from the source
+      "Walking", and the hero tile also uses "Portal VI", taken from the source
       filenames. Confirm or rename.
 - [ ] **Fourth World copy.** The two paragraphs are written from studio notes
       and one line of John's own framing ("everything is going into this one").
@@ -64,7 +64,7 @@ on this machine only.
 | On the page | Source |
 |---|---|
 | Hero background | abstractbassguitarstrings.JPG |
-| Hero video tile | wanderers_square.mov |
+| Hero video tile | Portal VI-edit.mp4 |
 | PRS section background | jvsplayingcomputerliveatPRSending.JPG |
 | PRS cover | ambientbassguitar.jpg |
 | Fourth World background | jvstraversingdesertseenfromabove.jpeg |

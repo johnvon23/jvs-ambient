@@ -260,10 +260,10 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 }
 .hero-cta{ display:flex; flex-wrap:wrap; gap:14px; }
 
-/* floating video tile, Kage-style: bottom right, above the wordmark */
+/* floating video tile, Kage-style: vertical pane, bottom right, above the wordmark */
 .hero-tile{
   position:absolute; right:var(--pad); bottom:clamp(90px, 16vh, 190px);
-  width:clamp(150px, 15vw, 230px);
+  width:clamp(112px, 10vw, 160px);
   z-index:4;
   text-align:left;
   border:1px solid var(--line);
@@ -272,7 +272,7 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 }
 .hero-tile:hover{ border-color:var(--bone-dim); transform:translateY(-3px); }
 .hero-tile video{
-  display:block; width:100%; aspect-ratio:1/1; object-fit:cover;
+  display:block; width:100%; aspect-ratio:9/16; object-fit:cover;
   opacity:.85;
 }
 .hero-tile-label{
