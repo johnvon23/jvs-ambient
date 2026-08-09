@@ -14,7 +14,7 @@ John von Seggern: ambient producer and performer. Recorded and co-produced Jon H
 John von Seggern
 
 ## meta.og.description
-Ambient producer and performer. Recorded and co-produced Jon Hassell's final two albums. Carrying the Fourth World forward.
+Ambient producer and performer. A decade recording and performing with Jon Hassell. New worlds out of sound.
 
 
 %% ── hero ───────────────────────────────────────────────────────────── %%
@@ -32,7 +32,6 @@ warehouse gigs in LA's electronic underground, and worked on sound
 design for major Hollywood films including Pixar's WALL-E.\
 Then the better part of a decade recording and performing with Jon
 Hassell, co-producing his final two albums.\
-Now I'm making the music all of it was pointing toward.
 
 ## hero.cta.primary
 The releases
@@ -122,7 +121,7 @@ A working life in sound
 New York City
 
 ## era.study.p
-Full performance scholarship to the New School Jazz Program in
+Full performance scholarship to the New School Jazz program in
 Manhattan; studied with Gary Peacock and Reggie Workman.
 
 ## era.tokyo.when
@@ -145,9 +144,9 @@ Hong Kong
 ## era.hk.p
 Bass guitar for some of the biggest Asian pop stars: five world tours
 and a long run of album sessions. Off tour, a fixture in Hong Kong's
-clubs and at the Foreign Correspondents' Club, often alongside jazz
-musician Alan Youngblood.\
-Turned laptop DJ around 2000 and formed Digital Cutup Lounge with
+clubs and at the Foreign Correspondents' Club, often alongside US jazz
+musician Allen Youngblood.\
+Turned experimental laptop DJ around 2000 and formed Digital Cutup Lounge with
 British partner Stephen Ives: early innovators in live laptop performance, cutting
 styles of music against each other. Two albums, *Cutup Mixdown*
 and *Network Effects*.
@@ -159,9 +158,8 @@ and *Network Effects*.
 Los Angeles
 
 ## era.la.p
-Experimental breaks and ambient groove in LA's underground scene.
-Performed as Electro Tec Services and under my own name at warehouses
-and other underground venues across the city.\
+Experimental electro and ambient groove in LA's underground scene.
+Performed with Aaron Raab as Electro Tec Services and under my own name at warehouses and other underground venues across the city.\
 Later I joined Native Instruments, where I trained artists including
 Herbie Hancock and Steve Vai and wrote the manual for the Massive
 synthesizer.
@@ -208,9 +206,9 @@ Jon Hassell's music set my direction when I was a teenager learning
 jazz. Thirty years later, I was in his band.
 
 ## lineage.body
-By the time we met, I had spent twenty years blending musical cultures
+By the time I met Jon, I had spent twenty years blending musical cultures
 of my own, from Tokyo jazz clubs to Cantopop arenas to cut-up laptop
-sets in Hong Kong. That is why Jon brought me into the band. I
+sets in Hong Kong, which is why Jon brought me into the band. I
 recorded, co-produced, and performed on his final two albums. Playing
 that music was the fulfillment of a lifetime's direction. Carrying it
 forward is what comes next.
