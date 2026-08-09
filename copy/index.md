@@ -116,10 +116,10 @@ A working life in sound
 1991
 
 ## era.study.h3
-Training
+New York City
 
 ## era.study.p
-Full performance scholarship to the New School's jazz program in
+Full performance scholarship to the New School Jazz Program in
 Manhattan; studied with Gary Peacock and Reggie Workman.
 
 ## era.tokyo.when
@@ -130,7 +130,8 @@ Tokyo
 
 ## era.tokyo.p
 Working jazz bassist across the city, playing Tokyo's jazz clubs with
-a wide range of players.
+a wide range of players and getting involved in the city's burgeoning
+acid jazz scene.
 
 ## era.hk.when
 1995-2001
@@ -142,52 +143,27 @@ Hong Kong
 Bass guitar for some of the biggest Asian pop stars: five world tours
 and a long run of album sessions. Off tour, a fixture in Hong Kong's
 clubs and at the Foreign Correspondents' Club, often alongside jazz
-musician Alan Youngblood.
-
-## era.dcl.when
-2000
-
-## era.dcl.h3
-Digital Cut-Up Lounge
-
-## era.dcl.p
-Turned laptop DJ in Hong Kong and formed Digital Cut-Up Lounge with a
+musician Alan Youngblood.\
+Turned laptop DJ around 2000 and formed Digital Cut-Up Lounge with a
 British partner: early innovators in live laptop performance, cutting
 styles of music against each other. Two albums, *Cut Up Mixed Down*
-and *Network Effects*.
-
-## era.ma.when
-2000-02
-
-## era.ma.h3
-Ethnomusicology
-
-## era.ma.p
-Earned an M.A. in ethnomusicology, with graduate work at Hong Kong
-University and the University of California, Riverside. Thesis on the
-effects of the Internet on global music cultures.
+and *Network Effects*.\
+Began an M.A. in ethnomusicology at Hong Kong University, finished
+later at the University of California at Riverside, with a thesis on
+the effects of the Internet on global music cultures.
 
 ## era.la.when
 2000s
 
 ## era.la.h3
-The Los Angeles underground
+Los Angeles
 
 ## era.la.p
 Experimental breaks and ambient groove in LA's underground scene.
 Performed as Electro Tec Services and under his own name at warehouses
-and other underground venues across the city.
-
-## era.tech.when
-2000s
-
-## era.tech.h3
-Music technology
-
-## era.tech.p
-Wrote the books *Laptop Music Power!* and *Ableton Live 6 Power!*.
-At Native Instruments, trained artists including Herbie Hancock and
-Steve Vai.
+and other underground venues across the city.\
+Later trained artists including Herbie Hancock and Steve Vai at Native
+Instruments, and wrote the manual for the Massive synthesizer.
 
 ## era.film.when
 2000s
