@@ -50,9 +50,9 @@ is accessibility-hostile and hurts performance. The "scroll to enter" cue tells
 people something they already know. The vertical script column belongs to that
 project's subject, not to this one.
 
-- **Palette:** cold near-black ground, bone text, one warm amber accent. Tokens
-  live in `:root` at the top of `css/site.css`. Change `--amber` and the whole
-  page follows.
+- **Palette:** cold near-black ground, bone text, one cool accent sampled from
+  the PRS stage photo's projection screen. Tokens live in `:root` at the top
+  of `css/site.css`. Change `--accent` and the whole page follows.
 - **Type:** Onest, one family across the page, weights 200 to 800.
 - **Motion:** reveals run on IntersectionObserver. The progress rail, the
   wordmark parallax, and the gallery indicator run on native CSS scroll
@@ -66,5 +66,5 @@ project's subject, not to this one.
 
 ## What still needs real content
 
-See `CONTENT.md`. Everything currently bracketed in amber on the page is a
+See `CONTENT.md`. Everything currently bracketed in accent color on the page is a
 placeholder and is meant to be obvious.

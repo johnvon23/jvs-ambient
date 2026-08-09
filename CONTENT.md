@@ -27,7 +27,7 @@ only in the nav tabs.
       Candidate: a periodic check that compares working-self/board state
       against the site's status pills and drafts updates.
 
-Bracketed amber text on the page marks placeholders visually, so nothing fake
+Bracketed accent-color text on the page marks placeholders visually, so nothing fake
 can ship by accident.
 
 ## Words

@@ -4,7 +4,7 @@
    ============================================================ */
 
 :root{
-  /* ground runs slightly cold so the single warm accent has something to
+  /* ground runs slightly cold so the single accent has something to
      push against. Never pure black. */
   --ground:      #07080b;
   --ground-2:    #0b0d12;
@@ -14,8 +14,10 @@
   --bone-dim:    #a29e96;
   --muted:       #84817a;   /* 5.1:1 on --ground, keeps the 10px caps legible */
 
-  --amber:       #c9873c;
-  --amber-hot:   #e2a460;
+  /* sampled from the PRS stage photo: the projection-screen blue behind
+     the silhouette. Cool, not warm, on purpose. */
+  --accent:      #7fa3ab;
+  --accent-hot:  #a3c5cc;
 
   --line:        rgba(232,228,220,.12);
   --line-soft:   rgba(232,228,220,.055);
@@ -54,10 +56,10 @@ img{ max-width:100%; display:block; }
 a{ color:inherit; text-decoration:none; }
 button{ font:inherit; color:inherit; background:none; border:0; padding:0; cursor:pointer; }
 
-::selection{ background:var(--amber); color:var(--ground); }
+::selection{ background:var(--accent); color:var(--ground); }
 
 :focus-visible{
-  outline:2px solid var(--amber-hot);
+  outline:2px solid var(--accent-hot);
   outline-offset:3px;
 }
 
@@ -133,11 +135,11 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 .nav-links a:hover{ color:var(--bone); }
 .nav-links a[aria-current="page"]{
   color:var(--bone);
-  border-bottom:1px solid var(--amber);
+  border-bottom:1px solid var(--accent);
   padding-bottom:4px;
 }
-.nav-cta{ color:var(--amber) !important; }
-.nav-cta:hover{ color:var(--amber-hot) !important; }
+.nav-cta{ color:var(--accent) !important; }
+.nav-cta:hover{ color:var(--accent-hot) !important; }
 
 /* mobile: the nav is real navigation between pages now, so the links
    must survive. Two compact rows; the contact CTA lives on every page. */
@@ -160,7 +162,7 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 }
 .rail i{
   display:block; width:100%; height:0;
-  background:linear-gradient(180deg, transparent, var(--amber));
+  background:linear-gradient(180deg, transparent, var(--accent));
 }
 @media (max-width:760px){ .rail{ display:none; } }
 
@@ -188,8 +190,8 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 }
 
 .todo{
-  color:var(--amber); font-size:.92em; letter-spacing:.04em;
-  border-bottom:1px dashed rgba(201,135,60,.4);
+  color:var(--accent); font-size:.92em; letter-spacing:.04em;
+  border-bottom:1px dashed rgba(127,163,171,.4);
 }
 
 .sec{
@@ -210,10 +212,10 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 .btn:active{ transform:translateY(1px) scale(.985); }
 
 .btn-primary{
-  background:var(--amber); color:#120c04; font-weight:500;  /* 8.4:1 */
-  border:1px solid var(--amber);
+  background:var(--accent); color:#120c04; font-weight:500;  /* 7.2:1 */
+  border:1px solid var(--accent);
 }
-.btn-primary:hover{ background:var(--amber-hot); border-color:var(--amber-hot); }
+.btn-primary:hover{ background:var(--accent-hot); border-color:var(--accent-hot); }
 
 .btn-ghost{
   background:rgba(232,228,220,.03);
@@ -331,8 +333,8 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 .album-status{
   display:inline-block;
   font-size:10.5px; letter-spacing:.28em; text-transform:uppercase;
-  color:var(--amber);
-  border:1px solid rgba(201,135,60,.35);
+  color:var(--accent);
+  border:1px solid rgba(127,163,171,.35);
   padding:8px 16px; border-radius:var(--r-pill);
   margin:0 0 26px;
 }
@@ -476,7 +478,7 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 /* ── demo slot (prs) ────────────────────────────────────────── */
 
 .demo-slot{
-  border:1px dashed rgba(201,135,60,.4);
+  border:1px dashed rgba(127,163,171,.4);
   padding:clamp(28px, 5vh, 54px) clamp(18px, 3vw, 40px);
   text-align:center;
   max-width:720px;
