@@ -34,9 +34,10 @@ only in the nav tabs.
 - [ ] **New timeline facts to confirm** (from John's published bios): New
       School scholarship, Gary Peacock / Reggie Workman, M.A.
       ethnomusicology UC Riverside, Native Instruments training Herbie
-      Hancock and Steve Vai. Deliberately omitted: Tokyo/Hong Kong years
-      (per John), Futureproof Music School (school brand kept off the
-      artist page; John's call to add).
+      Hancock and Steve Vai. The Tokyo (1991-94), Hong Kong (1995-2001),
+      and Digital Cut-Up Lounge eras were added 2026-08-09 in John's own
+      words. Still deliberately omitted: Futureproof Music School (school
+      brand kept off the artist page; John's call to add).
 
 Bracketed accent-color text on the page marks placeholders visually, so nothing fake
 can ship by accident.
@@ -56,7 +57,7 @@ can ship by accident.
 
 ## Links
 
-- [ ] **Contact address.** Search `REPLACE@EXAMPLE.COM` in all three pages.
+- [x] **Contact address.** johnvon23@gmail.com, wired on all three pages.
 - [x] **Listen link.** Now points at johnvon.bandcamp.com. The PRS demo link
       is still open.
 - [ ] **Footer profiles:** Bandcamp done (johnvon.bandcamp.com); Instagram

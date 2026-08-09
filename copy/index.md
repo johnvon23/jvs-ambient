@@ -123,6 +123,40 @@ Full performance scholarship to the New School's jazz program in
 Manhattan; studied with Gary Peacock and Reggie Workman. Later earned
 an M.A. in ethnomusicology at UC Riverside.
 
+## era.tokyo.when
+1991-94
+
+## era.tokyo.h3
+Tokyo
+
+## era.tokyo.p
+Working jazz bassist across the city, playing Tokyo's jazz clubs with
+a wide range of players.
+
+## era.hk.when
+1995-2001
+
+## era.hk.h3
+Hong Kong
+
+## era.hk.p
+Bass guitar for some of the biggest Asian pop stars: five world tours
+and a long run of album sessions. Off tour, a fixture in Hong Kong's
+clubs and at the Foreign Correspondents' Club, often alongside jazz
+musician Alan Youngblood.
+
+## era.dcl.when
+2000
+
+## era.dcl.h3
+Digital Cut-Up Lounge
+
+## era.dcl.p
+Turned laptop DJ in Hong Kong and formed Digital Cut-Up Lounge with a
+British partner: early innovators in live laptop performance, cutting
+styles of music against each other. Two albums, *Cut Up Mixed Down*
+and *Network Effects*.
+
 ## era.la.when
 2000s
 
