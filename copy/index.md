@@ -145,9 +145,9 @@ Bass guitar for some of the biggest Asian pop stars: five world tours
 and a long run of album sessions. Off tour, a fixture in Hong Kong's
 clubs and at the Foreign Correspondents' Club, often alongside jazz
 musician Alan Youngblood.\
-Turned laptop DJ around 2000 and formed Digital Cut-Up Lounge with a
-British partner: early innovators in live laptop performance, cutting
-styles of music against each other. Two albums, *Cut Up Mixed Down*
+Turned laptop DJ around 2000 and formed Digital Cutup Lounge with
+British partner Stephen Ives: early innovators in live laptop performance, cutting
+styles of music against each other. Two albums, *Cutup Mixdown*
 and *Network Effects*.
 
 ## era.la.when
@@ -158,10 +158,11 @@ Los Angeles
 
 ## era.la.p
 Experimental breaks and ambient groove in LA's underground scene.
-Performed as Electro Tec Services and under his own name at warehouses
+Performed as Electro Tec Services and under my own name at warehouses
 and other underground venues across the city.\
-Later trained artists including Herbie Hancock and Steve Vai while working at Native
-Instruments, and wrote the manual for the Massive synthesizer.
+Later I joined Native Instruments, where I trained artists including
+Herbie Hancock and Steve Vai and wrote the manual for the Massive
+synthesizer.
 
 ## era.film.when
 2000s
@@ -192,7 +193,7 @@ Now
 Ambient producer and performer
 
 ## era.now.p
-Chapman Stick, bass guitar and live electronics, under his own name.
+Chapman Stick, bass guitar and live electronics, under my own name.
 
 
 %% ── lineage ────────────────────────────────────────────────────────── %%
@@ -218,10 +219,6 @@ forward is what comes next.
 ## contact.h2
 Work with me
 
-## contact.sub
-The records are made to be used: released, booked, licensed. Here is
-what I am looking for.
-
 ## contact.labels.h3
 Labels
 
@@ -234,7 +231,7 @@ Festivals and promoters
 
 ## contact.fest.p
 The Fourth World project live, and solo ambient sets on Chapman Stick
-and bass guitar. Built for rooms that listen.
+and bass guitar.
 
 ## contact.film.h3
 Film and media

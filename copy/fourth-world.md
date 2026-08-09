@@ -25,8 +25,8 @@ A Fourth World\
 Is Still Possible
 
 ## head.sub
-Jon Hassell's method, carried forward by the player who recorded,
-co-produced and performed on his final two albums.
+Jon Hassell's method, carried forward. I recorded, co-produced and
+performed on his final two albums.
 
 
 %% ── the story ──────────────────────────────────────────────────────── %%
