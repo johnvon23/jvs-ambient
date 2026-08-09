@@ -27,9 +27,10 @@ I build places\
 out of sound.
 
 ## hero.sub
-I came up through LA's electronic underground, did sound design for
-Pixar's WALL-E, and recorded and co-produced Jon Hassell's final two
-albums. The Fourth World lineage runs through everything I make.
+Jazz in Tokyo, world tours with Asia's biggest pop stars, LA's
+electronic underground, sound for Pixar's WALL-E. Then a decade with
+Jon Hassell, recording and co-producing his final two albums.
+Everything I make now carries the Fourth World forward.
 
 ## hero.cta.primary
 The releases
@@ -147,10 +148,7 @@ musician Alan Youngblood.\
 Turned laptop DJ around 2000 and formed Digital Cut-Up Lounge with a
 British partner: early innovators in live laptop performance, cutting
 styles of music against each other. Two albums, *Cut Up Mixed Down*
-and *Network Effects*.\
-Began an M.A. in ethnomusicology at Hong Kong University, finished
-later at the University of California at Riverside, with a thesis on
-the effects of the Internet on global music cultures.
+and *Network Effects*.
 
 ## era.la.when
 2000s
@@ -162,7 +160,7 @@ Los Angeles
 Experimental breaks and ambient groove in LA's underground scene.
 Performed as Electro Tec Services and under his own name at warehouses
 and other underground venues across the city.\
-Later trained artists including Herbie Hancock and Steve Vai at Native
+Later trained artists including Herbie Hancock and Steve Vai while working at Native
 Instruments, and wrote the manual for the Massive synthesizer.
 
 ## era.film.when
@@ -182,9 +180,9 @@ Oscar-nominated score for Pixar's *WALL-E*.
 The Jon Hassell band
 
 ## era.hassell.p
-Core member through the decade. Recorded and co-produced
+Core member through the decade. Recorded, co-produced and performed on
 *Listening to Pictures* (2018) and *Seeing Through Sound* (2020).
-Performed on Hassell's final concert, London 2015, soon to be released
+Also performed on Hassell's final concert, London 2015, soon to be released
 by Ndeya Records.
 
 ## era.now.when
@@ -194,8 +192,7 @@ Now
 Ambient producer and performer
 
 ## era.now.p
-Bass guitar, Chapman Stick, and live electronics, under his own name.
-Carrying the Fourth World method forward.
+Chapman Stick, bass guitar and live electronics, under his own name.
 
 
 %% ── lineage ────────────────────────────────────────────────────────── %%
@@ -205,7 +202,7 @@ Lineage
 
 ## lineage.quote
 I recorded and co-produced Jon Hassell's last two albums, and played in
-his band through the 2010s. This music comes out of that decade.
+his band through the 2010s. 
 
 
 %% ── contact ─ why to reach out ─────────────────────────────────────── %%
