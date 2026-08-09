@@ -580,6 +580,9 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 }
 .foot nav{ display:flex; gap:22px; }
 .foot a:hover{ color:var(--bone); }
+.foot-icons{ align-items:center; }
+.foot-icons a{ display:block; padding:4px; }
+.foot-icons svg{ display:block; }
 
 /* ── lightbox ───────────────────────────────────────────────── */
 

@@ -8,21 +8,23 @@ timeline (LA underground, film, Hassell band, now), and an On Stage section
 for promoters. The Two Records section is gone; the forthcoming albums live
 only in the nav tabs.
 
-- [ ] **Release cover art (4).** Drop source images anywhere in `assets/img/`
-      for: Ambient Bass Guitar, Listening to Pictures, Seeing Through Sound,
-      Extreme Measures. They get processed to `assets/web/img/cover-*.jpg`.
-      Amber `[ cover ]` slots mark them on the page.
-- [ ] **Simplexity role credit.** The card reads `[ role credit ]`. What
-      should it say: bass and production? co-founder?
-- [ ] **LA underground details.** `[ aliases, nights, releases to name ]` in
-      the timeline. Or keep it general.
-- [ ] **Film work.** WALL-E (sound design and effects, Thomas Newman's score)
-      is on the page from John's published bios; confirm wording. Other
-      soundtrack credits marked `[ other soundtrack work ]`.
-- [ ] **Upcoming live release.** A commented slot is reserved in the releases
-      grid; add the card when it is announced.
-- [ ] **On Stage copy.** Written to pitch promoters (solo sets now, Fourth
-      World live coming). John should confirm the framing.
+- [x] **Release cover art (4).** Pulled from Bandcamp and the album pages,
+      processed to `assets/web/img/cover-*.jpg`.
+- [x] **Simplexity role credit.** "Recorded, produced, electronics and beats."
+- [x] **LA underground details.** Performed as Electro Tech Services and
+      under his own name. NOTE: spelling of "Electro Tech Services" came from
+      a voice transcript; confirm before launch.
+- [x] **Film work.** "Numerous films, including Thomas Newman's
+      Oscar-nominated score for Pixar's WALL-E." No other titles named, per
+      John.
+- [ ] **YouTube track links.** The two Hassell cards and Extreme Measures
+      need the track links John picks (he supplies; do not choose for him).
+- [ ] **Upcoming live release.** A Hassell live record on Ndeya; details on
+      hold until it is announced (John has them). The timeline mentions it
+      generically. A commented slot is reserved in the releases grid.
+- [ ] **Social URLs.** Footer icons (Bandcamp, Instagram, YouTube) are in;
+      Bandcamp is live, the other two point at `#` until John supplies his
+      socials.
 - [ ] **Routines to keep the site current** (John's ask): not built yet.
       Candidate: a periodic check that compares working-self/board state
       against the site's status pills and drafts updates.
