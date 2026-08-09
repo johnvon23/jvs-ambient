@@ -1,16 +1,32 @@
 # John von Seggern - ambient works
 
-One-page site. Static HTML, CSS, and vanilla JS. No build step, no dependencies,
-no framework. Edit the files, refresh the browser.
+Three-page site. Static HTML, CSS, and vanilla JS. No framework, no
+dependencies. The only build step syncs the copy files into the pages.
 
 ```
-index.html      all the copy and structure
+copy/*.md       every word on the site (source of truth)
+build.js        writes copy/*.md into the pages
+index.html      structure for the home page
+prs.html        structure for Live at the PRS
+fourth-world.html
 css/site.css    one stylesheet, design tokens at the top
 js/site.js      reveals, nav scrim, video tiles, lightbox, fog canvas
 assets/web/     processed web-weight images and videos (committed)
 assets/img/     source photographs (gitignored, this machine only)
 assets/video/   source videos (gitignored, this machine only)
 ```
+
+## Editing the copy
+
+Open `copy/` in Obsidian (or any editor), change the words, then:
+
+```bash
+node build.js
+```
+
+The Markdown wins: text edited directly in an HTML file is overwritten on the
+next build. `node build.js --check` reports out-of-sync pages without writing.
+Details in CLAUDE.md.
 
 Regenerate `assets/web/` derivatives with `sips` (images, max edge 900 to
 2400px, JPEG ~80) and `ffmpeg` (H.264, 720 wide, crf 27, faststart). The
