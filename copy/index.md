@@ -23,14 +23,16 @@ Ambient producer and performer. Recorded and co-produced Jon Hassell's final two
 Ambient producer and performer
 
 ## hero.h1
-I build places\
+I create new worlds\
 out of sound.
 
 ## hero.sub
-Jazz in Tokyo, world tours with Asia's biggest pop stars, LA's
-electronic underground, sound for Pixar's WALL-E. Then a decade with
-Jon Hassell, recording and co-producing his final two albums.
-Everything I make now carries the Fourth World forward.
+I've played jazz in Tokyo, world tours with Asia's biggest pop stars,
+warehouse gigs in LA's electronic underground, and worked on sound
+design for major Hollywood films including Pixar's WALL-E.\
+Then the better part of a decade recording and performing with Jon
+Hassell, co-producing his final two albums.\
+Now I'm making the music all of it was pointing toward.
 
 ## hero.cta.primary
 The releases
