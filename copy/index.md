@@ -14,7 +14,7 @@ John von Seggern: ambient producer and performer. Recorded and co-produced Jon H
 John von Seggern
 
 ## meta.og.description
-Ambient producer and performer. A decade recording and performing with Jon Hassell. New worlds out of sound.
+Ambient producer and performer. A decade recording and performing with Jon Hassell. Worlds brought together in sound.
 
 
 %% ── hero ───────────────────────────────────────────────────────────── %%
@@ -23,15 +23,17 @@ Ambient producer and performer. A decade recording and performing with Jon Hasse
 Ambient producer and performer
 
 ## hero.h1
-I create new worlds\
-out of sound.
+I bring worlds together\
+in sound.
 
 ## hero.sub
-I've played jazz in Tokyo, world tours with Asia's biggest pop stars,
-warehouse gigs in LA's electronic underground, and worked on sound
-design for major Hollywood films including Pixar's WALL-E.\
+I've spent thirty years colliding musical worlds: jazz clubs in Tokyo,
+arena tours across Asia, laptop cut-ups in Hong Kong, LA's warehouse
+underground, and sound design for Hollywood films including Pixar's
+WALL-E.\
 Then the better part of a decade recording and performing with Jon
 Hassell, co-producing his final two albums.\
+Now I'm making the music all of it was pointing toward.
 
 ## hero.cta.primary
 The releases

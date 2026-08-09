@@ -263,7 +263,7 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 /* floating video tile, Kage-style: vertical pane, bottom right, above the wordmark */
 .hero-tile{
   position:absolute; right:var(--pad); bottom:clamp(90px, 16vh, 190px);
-  width:clamp(112px, 10vw, 160px);
+  width:clamp(224px, 20vw, 320px);
   z-index:4;
   text-align:left;
   border:1px solid var(--line);
