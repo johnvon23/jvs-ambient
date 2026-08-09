@@ -113,15 +113,14 @@ Ambient Bass Guitar, streaming from Bandcamp. Press play.
 A working life in sound
 
 ## era.study.when
-1990s
+1991
 
 ## era.study.h3
 Training
 
 ## era.study.p
 Full performance scholarship to the New School's jazz program in
-Manhattan; studied with Gary Peacock and Reggie Workman. Later earned
-an M.A. in ethnomusicology at UC Riverside.
+Manhattan; studied with Gary Peacock and Reggie Workman.
 
 ## era.tokyo.when
 1991-94
@@ -156,6 +155,17 @@ Turned laptop DJ in Hong Kong and formed Digital Cut-Up Lounge with a
 British partner: early innovators in live laptop performance, cutting
 styles of music against each other. Two albums, *Cut Up Mixed Down*
 and *Network Effects*.
+
+## era.ma.when
+2000-02
+
+## era.ma.h3
+Ethnomusicology
+
+## era.ma.p
+Earned an M.A. in ethnomusicology, with graduate work at Hong Kong
+University and the University of California, Riverside. Thesis on the
+effects of the Internet on global music cultures.
 
 ## era.la.when
 2000s
