@@ -440,6 +440,15 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   margin-top:2px;
 }
 
+/* ── hear ─ embedded Bandcamp player (home) ─────────────────── */
+
+.hear .embed{ max-width:720px; }
+.hear iframe{
+  display:block; width:100%; height:120px;
+  border:1px solid var(--line);
+  background:var(--ground-2);
+}
+
 /* ── history timeline (home) ────────────────────────────────── */
 
 .timeline{
@@ -559,6 +568,9 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   margin:0 0 8px; font-size:16px; font-weight:400; letter-spacing:-.01em;
 }
 .credit p{ margin:0; font-size:14px; color:var(--bone-dim); line-height:1.65; }
+
+/* the same three-column grid closes the home page as the work-with-me pitch */
+.contact-grid{ margin-bottom:clamp(40px, 7vh, 72px); }
 
 /* ── 06 listen ──────────────────────────────────────────────── */
 

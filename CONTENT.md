@@ -28,6 +28,15 @@ only in the nav tabs.
 - [ ] **Routines to keep the site current** (John's ask): not built yet.
       Candidate: a periodic check that compares working-self/board state
       against the site's status pills and drafts updates.
+- [ ] **Press quotes.** A press strip was considered and skipped: only one
+      independent quotable source found (Bass Magazine). Revisit when
+      Live at the PRS or the live record draws reviews.
+- [ ] **New timeline facts to confirm** (from John's published bios): New
+      School scholarship, Gary Peacock / Reggie Workman, M.A.
+      ethnomusicology UC Riverside, Native Instruments training Herbie
+      Hancock and Steve Vai. Deliberately omitted: Tokyo/Hong Kong years
+      (per John), Futureproof Music School (school brand kept off the
+      artist page; John's call to add).
 
 Bracketed accent-color text on the page marks placeholders visually, so nothing fake
 can ship by accident.

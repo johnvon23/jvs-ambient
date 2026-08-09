@@ -98,10 +98,30 @@ Listening to Pictures
 Pentimento Volume One.
 
 
+%% ── hear it ────────────────────────────────────────────────────────── %%
+
+## hear.h2
+Hear it
+
+## hear.sub
+Ambient Bass Guitar, streaming from Bandcamp. Press play.
+
+
 %% ── a working life in sound ────────────────────────────────────────── %%
 
 ## history.h2
 A working life in sound
+
+## era.study.when
+1990s
+
+## era.study.h3
+Training
+
+## era.study.p
+Full performance scholarship to the New School's jazz program in
+Manhattan; studied with Gary Peacock and Reggie Workman. Later earned
+an M.A. in ethnomusicology at UC Riverside.
 
 ## era.la.when
 2000s
@@ -113,6 +133,17 @@ The Los Angeles underground
 Experimental breaks and ambient groove in LA's underground scene.
 Performed as Electro Tec Services and under his own name at warehouses
 and other underground venues across the city.
+
+## era.tech.when
+2000s
+
+## era.tech.h3
+Music technology
+
+## era.tech.p
+Wrote the books *Laptop Music Power!* and *Ableton Live 6 Power!*.
+At Native Instruments, trained artists including Herbie Hancock and
+Steve Vai.
 
 ## era.film.when
 2000s
@@ -157,31 +188,35 @@ I recorded and co-produced Jon Hassell's last two albums, and played in
 his band through the 2010s. This music comes out of that decade.
 
 
-%% ── on stage ───────────────────────────────────────────────────────── %%
-
-## stage.h2
-On stage
-
-## stage.lede
-The Fourth World project is being built for the stage: Jon Hassell's
-live language, carried forward by a player who spent a decade inside it.
-
-## stage.body
-Solo ambient sets on Chapman Stick, bass guitar, and live electronics
-are ready now. Promoters and festivals can reach me directly.
-
-
-%% ── contact ────────────────────────────────────────────────────────── %%
+%% ── contact ─ why to reach out ─────────────────────────────────────── %%
 
 ## contact.h2
-Listen
+Work with me
 
 ## contact.sub
-The records are on Bandcamp. Labels, promoters, and writers are welcome
-to get in touch directly.
+The records are made to be used: released, booked, licensed. Here is
+what I am looking for.
+
+## contact.labels.h3
+Labels
+
+## contact.labels.p
+Live at the Philosophical Research Society is finished and seeking a
+home. The next Fourth World record is close behind it.
+
+## contact.fest.h3
+Festivals and promoters
+
+## contact.fest.p
+The Fourth World project live, and solo ambient sets on Chapman Stick
+and bass guitar. Built for rooms that listen.
+
+## contact.film.h3
+Film and media
+
+## contact.film.p
+Sound design and score work, from the LA underground to Pixar's WALL-E.
+Commissions welcome.
 
 ## contact.cta.primary
-Listen
-
-## contact.cta.secondary
 Get in touch
