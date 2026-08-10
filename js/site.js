@@ -95,6 +95,102 @@
     });
   }
 
+  /* ── audio player ────────────────────────────────────────────
+     One <audio> per [data-player]; we draw the controls. The scrub is
+     a real range input, so we only mirror state into it and paint --p.
+     Nothing but metadata loads until the visitor presses play. */
+
+  const players = document.querySelectorAll('[data-player]');
+
+  if (players.length) {
+    const clock = s =>
+      (!isFinite(s) || s < 0)
+        ? '--:--'
+        : Math.floor(s / 60) + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+
+    const audios = [];
+
+    players.forEach(box => {
+      const audio  = box.querySelector('audio');
+      const toggle = box.querySelector('.player-toggle');
+      const scrub  = box.querySelector('.player-scrub');
+      const now    = box.querySelector('.t-now');
+      const dur    = box.querySelector('.t-dur');
+      if (!audio || !toggle || !scrub) return;
+
+      audios.push(audio);
+      let scrubbing = false;
+
+      const paint = frac => scrub.style.setProperty('--p', frac.toFixed(4));
+
+      toggle.addEventListener('click', () => {
+        if (audio.paused) {
+          audios.forEach(a => { if (a !== audio) a.pause(); });   // one at a time
+          audio.play().catch(() => {});
+        } else {
+          audio.pause();
+        }
+      });
+
+      audio.addEventListener('play', () => {
+        box.classList.add('is-playing');
+        toggle.setAttribute('aria-label', 'Pause');
+      });
+
+      const idle = () => {
+        box.classList.remove('is-playing');
+        toggle.setAttribute('aria-label', 'Play');
+      };
+      audio.addEventListener('pause', idle);
+      audio.addEventListener('ended', () => {
+        idle();
+        audio.currentTime = 0;
+      });
+
+      // metadata often lands before this script runs (cached file, defer),
+      // in which case the event never fires again: read it directly too
+      const showDuration = () => { if (dur) dur.textContent = clock(audio.duration); };
+      audio.addEventListener('loadedmetadata', showDuration);
+      audio.addEventListener('durationchange', showDuration);
+      if (audio.readyState >= 1) showDuration();
+
+      audio.addEventListener('timeupdate', () => {
+        if (now) now.textContent = clock(audio.currentTime);
+        if (scrubbing || !isFinite(audio.duration) || !audio.duration) return;
+        const frac = audio.currentTime / audio.duration;
+        scrub.value = Math.round(frac * 1000);
+        paint(frac);
+      });
+
+      // dragging: follow the thumb, commit the seek on release
+      scrub.addEventListener('pointerdown', () => { scrubbing = true; });
+      scrub.addEventListener('input', () => {
+        const frac = scrub.value / 1000;
+        paint(frac);
+        if (now && isFinite(audio.duration)) now.textContent = clock(frac * audio.duration);
+      });
+      const commit = () => {
+        if (!scrubbing) return;
+        scrubbing = false;
+        if (isFinite(audio.duration) && audio.duration) {
+          audio.currentTime = (scrub.value / 1000) * audio.duration;
+        }
+      };
+      scrub.addEventListener('change', commit);      // keyboard arrows land here
+      scrub.addEventListener('pointerup', commit);
+      scrub.addEventListener('keydown', () => { scrubbing = true; });
+
+      // a missing or unplayable file should say so, not sit there dead
+      audio.addEventListener('error', () => {
+        box.classList.add('is-broken');
+        toggle.disabled = true;
+        if (dur) dur.textContent = '--:--';
+      });
+
+      paint(0);
+    });
+  }
+
   /* ── atmosphere: slow drifting fog ───────────────────────────
      Rendered at a fraction of viewport size and stretched by CSS. The blur
      hides the upscale entirely and the canvas stays a few thousand pixels,

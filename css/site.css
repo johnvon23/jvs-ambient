@@ -546,13 +546,80 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 }
 .demo .body{ margin-bottom:14px; }
 
-/* ── demo slot (prs) ────────────────────────────────────────── */
+/* ── audio player (prs) ─────────────────────────────────────────
+   One <audio> element, controls drawn by us. The scrub is a real
+   range input, so keyboard and screen readers get it for free;
+   JS only paints --p, the played fraction. */
 
-.demo-slot{
-  border:1px dashed rgba(127,163,171,.4);
-  padding:clamp(18px, 2.6vh, 30px) clamp(18px, 3vw, 40px);
-  text-align:center;
-  max-width:720px;
+.player{
+  display:flex; align-items:center; gap:clamp(14px, 2vw, 20px);
+  margin:0; max-width:560px;
+  padding:14px clamp(16px, 2vw, 20px);
+  background:rgba(232,228,220,.03);
+  border:1px solid var(--line);
+}
+.player audio{ display:none; }
+
+.player-toggle{
+  flex:0 0 auto;
+  width:44px; height:44px; border-radius:var(--r-pill);
+  display:grid; place-items:center;
+  background:var(--accent); color:#120c04;
+  transition:background .3s var(--ease), transform .18s var(--ease);
+}
+.player-toggle:hover{ background:var(--accent-hot); }
+.player-toggle:active{ transform:scale(.94); }
+.player-toggle svg{ width:22px; height:22px; fill:currentColor; }
+.player-toggle .i-pause,
+.player.is-playing .i-play{ display:none; }
+.player.is-playing .i-pause{ display:block; }
+
+.player-main{ flex:1 1 auto; min-width:0; }
+.player-title{
+  margin:0 0 9px;
+  font-size:11.5px; letter-spacing:.13em; text-transform:uppercase;
+  color:var(--bone-dim);
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+}
+
+.player-scrub{
+  -webkit-appearance:none; appearance:none;
+  display:block; width:100%; height:14px;
+  background:transparent; cursor:pointer;
+}
+.player-scrub::-webkit-slider-runnable-track{
+  height:3px;
+  background:linear-gradient(90deg,
+    var(--accent) 0 calc(var(--p, 0) * 100%),
+    var(--line) calc(var(--p, 0) * 100%) 100%);
+}
+.player-scrub::-moz-range-track{ height:3px; background:var(--line); }
+.player-scrub::-moz-range-progress{ height:3px; background:var(--accent); }
+.player-scrub::-webkit-slider-thumb{
+  -webkit-appearance:none; appearance:none;
+  width:11px; height:11px; margin-top:-4px;
+  border-radius:var(--r-pill); border:0;
+  background:var(--bone);
+}
+.player-scrub::-moz-range-thumb{
+  width:11px; height:11px; border-radius:var(--r-pill); border:0;
+  background:var(--bone);
+}
+
+.player-time{
+  flex:0 0 auto;
+  font-size:11.5px; letter-spacing:.06em;
+  color:var(--muted); font-variant-numeric:tabular-nums;
+}
+
+/* file missing or unplayable: go quiet rather than pretending */
+.player.is-broken{ opacity:.5; }
+.player.is-broken .player-toggle{ background:var(--line); color:var(--muted); cursor:default; }
+.player.is-broken .player-scrub{ pointer-events:none; }
+
+@media (max-width:520px){
+  .player{ gap:12px; padding:12px 14px; }
+  .player-time{ display:none; }   /* the scrub already says where you are */
 }
 
 /* ── 04 visions ─ clickable video tiles ─────────────────────── */
@@ -608,9 +675,10 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   box-shadow:0 30px 80px rgba(3,4,6,.6);
 }
 
-/* a photograph closing a page: no trailing margin under it */
-.closing-shot{ text-align:center; }
-.closing-shot .lineage-figure{ margin-bottom:0; }
+/* a photograph between two sections: its own padding is enough, and the
+   section below adds its own, so drop the figure's trailing margin */
+.photo-break{ text-align:center; padding-bottom:0; }
+.photo-break .lineage-figure{ margin-bottom:0; }
 
 /* when a supporting paragraph follows the manifesto, close the gap */
 .lineage .manifesto{ margin-bottom:clamp(28px, 5vh, 52px); }

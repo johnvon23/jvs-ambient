@@ -10,10 +10,11 @@ index.html      structure for the home page
 prs.html        structure for Live at the PRS
 fourth-world.html
 css/site.css    one stylesheet, design tokens at the top
-js/site.js      reveals, nav scrim, video tiles, lightbox, fog canvas
-assets/web/     processed web-weight images and videos (committed)
+js/site.js      reveals, nav scrim, video tiles, lightbox, audio player, fog
+assets/web/     processed web-weight images, video and audio (committed)
 assets/img/     source photographs (gitignored, this machine only)
 assets/video/   source videos (gitignored, this machine only)
+assets/sound/   source audio masters (gitignored, this machine only)
 ```
 
 ## Editing the copy
@@ -29,8 +30,16 @@ next build. `node build.js --check` reports out-of-sync pages without writing.
 Details in CLAUDE.md.
 
 Regenerate `assets/web/` derivatives with `sips` (images, max edge 900 to
-2400px, JPEG ~80) and `ffmpeg` (H.264, 720 wide, crf 27, faststart). The
-originals never ship: 211MB of source becomes about 20MB on the wire.
+2400px, JPEG ~80) and `ffmpeg` (H.264, 720 wide, crf 27, faststart). Audio for
+the player is the same idea, 320kbps master down to 192kbps:
+
+```bash
+ffmpeg -i "assets/sound/<master>.mp3" -c:a libmp3lame -b:a 192k \
+  -map_metadata -1 -metadata title="<title>" -metadata artist="John von Seggern" \
+  assets/web/audio/<slug>.mp3
+```
+
+The originals never ship: 211MB of source becomes about 20MB on the wire.
 
 ## Run it locally
 

@@ -56,12 +56,14 @@ Cover art, shot at the PRS gate.
 Hear it
 
 ## demo.body
-A private demo is available for labels and press.
+The opening track, straight off the record. The full album goes to labels and press on request.
 
-## demo.slot
-{{ demo player: private SoundCloud embed or audio file }}
-%% Replace the whole .demo-slot div in prs.html with a real embed or
-   <audio> element once the private file exists, then delete this block. %%
+## demo.track
+Antechamber of the Mind
+%% The player's own label. The audio file itself is
+   assets/web/audio/antechamber-of-the-mind.mp3, set in prs.html. %%
+%% The player's own label. The audio file itself is
+   assets/web/audio/prs-excerpt.mp3, set in prs.html. %%
 
 
 %% ── the venue ─ the PRS itself, below the fold ─────────────────────── %%

@@ -78,12 +78,27 @@
             <div><dt data-copy="record.meta.recorded.dt">Recorded</dt><dd data-copy="record.meta.recorded.dd">June 15, 2023, Philosophical Research Society, Los Angeles</dd></div>
           </dl>
 
-          <!-- TODO: replace .demo-slot with a real embed or <audio> once the
-               private SoundCloud (or file) exists. Deliberately obvious. -->
           <div class="demo reveal" style="--d:.22s">
             <h2 data-copy="demo.h2">Hear it</h2>
-            <p class="body" data-copy="demo.body">A private demo is available for labels and press.</p>
-            <div class="demo-slot" data-copy="demo.slot"><span class="todo">[ demo player: private SoundCloud embed or audio file ]</span></div>
+            <p class="body" data-copy="demo.body">The opening track, straight off the record. The full album goes to labels and press on request.</p>
+
+            <!-- audio file lives at assets/web/audio/; swap the src to change the track -->
+            <figure class="player" data-player>
+              <audio preload="metadata" src="assets/web/audio/antechamber-of-the-mind.mp3"></audio>
+
+              <button class="player-toggle" type="button" aria-label="Play">
+                <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.2v14H7zm6.8 0H17v14h-3.2z"/></svg>
+              </button>
+
+              <div class="player-main">
+                <figcaption class="player-title" data-copy="demo.track">Antechamber of the Mind</figcaption>
+                <input class="player-scrub" type="range" min="0" max="1000" value="0" step="1"
+                       aria-label="Seek within the track">
+              </div>
+
+              <span class="player-time"><span class="t-now">0:00</span> / <span class="t-dur">--:--</span></span>
+            </figure>
           </div>
         </div>
 
@@ -128,6 +143,15 @@
   </section>
 
 
+  <!-- ── the photograph that sets up the ask ───────────────────────── -->
+  <section class="sec photo-break">
+    <figure class="lineage-figure reveal">
+      <img src="assets/web/img/prs-silhouette.jpg" loading="lazy"
+           alt="John von Seggern silhouetted with bass guitar against a projection screen">
+    </figure>
+  </section>
+
+
   <!-- ── contact ───────────────────────────────────────────────────── -->
   <section class="sec listen" id="contact">
     <h2 class="h2 big reveal" data-copy="contact.h2">For labels</h2>
@@ -140,15 +164,6 @@
       <a class="btn btn-primary" href="mailto:johnvon23@gmail.com" data-copy="contact.cta.primary">Get in touch</a>
       <a class="btn btn-ghost" href="fourth-world.html" data-copy="contact.cta.secondary">The next record</a>
     </div>
-  </section>
-
-
-  <!-- ── closing photograph ────────────────────────────────────────── -->
-  <section class="sec closing-shot">
-    <figure class="lineage-figure reveal">
-      <img src="assets/web/img/prs-silhouette.jpg" loading="lazy"
-           alt="John von Seggern silhouetted with bass guitar against a projection screen">
-    </figure>
   </section>
 
 </main>
