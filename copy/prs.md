@@ -9,7 +9,7 @@ the top) and the venue (the PRS itself, on its own photograph).
 Live at the Philosophical Research Society - John von Seggern
 
 ## meta.description
-A single evening of ambient bass guitar and live electronics, recorded in one take at the Philosophical Research Society in Los Angeles. Finished, and seeking a label.
+An evening of ambient bass guitar and live electronics, recorded live at the Philosophical Research Society in Los Angeles. Finished, and seeking a label.
 
 ## meta.og.title
 Live at the Philosophical Research Society - John von Seggern
@@ -28,14 +28,10 @@ Live at the Philosophical\
 Research Society
 
 ## record.lede
-One evening of ambient bass guitar and live electronics, played straight
-through and recorded as it happened. Nothing was overdubbed afterward.
-What the room heard is what the record is.
+One evening of ambient bass guitar and electronics, recorded live, no overdubs.
 
 ## record.body
-The bass is played as a sustaining instrument. Long tones are captured,
-thrown into delay, and folded back on themselves until the harmony moves
-on its own. The performer's job becomes deciding what to let go of.
+I use the bass guitar on these recordings as an ambient sound source. Long tones are captured, looped, and folded back on themselves to create moving clouds of harmony and drone. 
 
 ## record.meta.instrument.dt
 Instrument
@@ -56,7 +52,7 @@ Cover art, shot at the PRS gate.
 Hear it
 
 ## demo.body
-The opening track, straight off the record. The full album goes to labels and press on request.
+The opening track, straight off the record. The full album is available to labels and press on request.
 
 ## demo.track
 Antechamber of the Mind
@@ -76,18 +72,14 @@ The Philosophical Research Society sits on Los Feliz Boulevard behind a
 granite Egyptian figure, the one on the cover of this record.
 
 ## venue.body
-Manly P. Hall founded it in 1934 as a library and a place to think, and
-built it in Mayan Revival: terra cotta and seafoam green, hand-carved
-doors, stepped triangles running along the garden wall. The architect was
-Robert Stacy-Judd. It is a Los Angeles Historic-Cultural Monument now,
-holding more than thirty thousand rare volumes, and the auditorium once
-housed the Hammond organ Korla Pandit played.
-
+Manly P. Hall founded the PRS in 1934 as a library and a place to think, and
+built it in Mayan Revival style: terra cotta and seafoam green, hand-carved
+doors, stepped triangles running along the garden wall. It is a Los Angeles Historic-Cultural Monument now, holding more than thirty thousand rare volumes of esoteric literature, and the auditorium where Hall once spoke is frequently used for performances and screenings.
 ## venue.body2
-Nobody arrives there by accident. An audience that turns up at the PRS
-has already agreed to sit still and listen, which is the one condition
-this music actually needs. The building has been gathering that kind of
-attention since 1934. I plugged in and played into it.
+Nobody arrives here by accident. An audience that turns up at the PRS
+has already agreed to sit still and listen, the vital condition
+this music needs. This building has been gathering that kind of
+focused attention since 1934. I plugged in and played into it.
 
 
 %% ── contact ────────────────────────────────────────────────────────── %%
