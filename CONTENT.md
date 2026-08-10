@@ -58,9 +58,11 @@ can ship by accident.
 - [x] **Demo player on the PRS page.** Live, playing the original
       Antechamber of the Mind master (copied as-is, 2026-08-10; the
       192kbps transcode is gone, per John: never re-encode).
-- [x] **Fourth World demo.** Same player, playing "Tinaja"
-      (`assets/web/audio/tinaja.mp3`, the original master copied as-is;
-      John swapped it in for Kujutu 2026-08-10).
+- [x] **Fourth World demos.** Two players: "Kujutu" then "Tinaja"
+      (`assets/web/audio/kujutu.mp3`, `tinaja.mp3`, original masters
+      copied as-is). NOTE: John typed the first title as "Kajutu" once;
+      the filename and his earlier message both say **Kujutu**, which is
+      what shipped. Confirm the spelling before launch.
 
 ## Links
 

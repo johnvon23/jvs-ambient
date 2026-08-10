@@ -62,17 +62,22 @@ In the studio now
 Cover study.
 
 
-%% ── demo ─ same player as the PRS page. The audio file is
-   assets/web/audio/tinaja.mp3, set in fourth-world.html: the original
-   master copied as-is from assets/sound/, never re-encoded. %%
+%% ── demo ─ same player as the PRS page, once per track. The audio
+   files are assets/web/audio/kujutu.mp3 and tinaja.mp3, set in
+   fourth-world.html: original masters copied as-is from assets/sound/,
+   never re-encoded. To add a third track, copy the <figure class="player">
+   block and add a demo.track.<slug> key here. %%
 
 ## demo.h2
 Hear it
 
 ## demo.body
-One track from the sessions, as the record takes shape.
+Two tracks from the sessions, as the record takes shape.
 
-## demo.track
+## demo.track.kujutu
+Kujutu
+
+## demo.track.tinaja
 Tinaja
 
 

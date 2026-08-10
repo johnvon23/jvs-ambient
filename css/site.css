@@ -720,6 +720,8 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   border:1px solid var(--line);
 }
 .player audio{ display:none; }
+/* more than one track: a stack of cards reading as a short track list */
+.player + .player{ margin-top:10px; }
 
 .player-toggle{
   flex:0 0 auto;

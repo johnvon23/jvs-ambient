@@ -80,11 +80,30 @@
 
           <div class="demo reveal" style="--d:.22s">
             <h2 data-copy="demo.h2">Hear it</h2>
-            <p class="body" data-copy="demo.body">One track from the sessions, as the record takes shape.</p>
+            <p class="body" data-copy="demo.body">Two tracks from the sessions, as the record takes shape.</p>
 
-            <!-- same player as prs.html. The file is the original master,
-                 copied as-is from assets/sound/ (John's rule: never
-                 re-encode, it degrades the quality). -->
+            <!-- same player as prs.html, once per track. Files are the
+                 original masters, copied as-is from assets/sound/ (John's
+                 rule: never re-encode, it degrades the quality). site.js
+                 pauses the others when one starts, so the stack behaves
+                 like a track list without any extra wiring. -->
+            <figure class="player" data-player>
+              <audio preload="metadata" src="assets/web/audio/kujutu.mp3"></audio>
+
+              <button class="player-toggle" type="button" aria-label="Play">
+                <svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                <svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5h3.2v14H7zm6.8 0H17v14h-3.2z"/></svg>
+              </button>
+
+              <div class="player-main">
+                <figcaption class="player-title" data-copy="demo.track.kujutu">Kujutu</figcaption>
+                <input class="player-scrub" type="range" min="0" max="1000" value="0" step="1"
+                       aria-label="Seek within the track">
+              </div>
+
+              <span class="player-time"><span class="t-now">0:00</span> / <span class="t-dur">--:--</span></span>
+            </figure>
+
             <figure class="player" data-player>
               <audio preload="metadata" src="assets/web/audio/tinaja.mp3"></audio>
 
@@ -94,7 +113,7 @@
               </button>
 
               <div class="player-main">
-                <figcaption class="player-title" data-copy="demo.track">Tinaja</figcaption>
+                <figcaption class="player-title" data-copy="demo.track.tinaja">Tinaja</figcaption>
                 <input class="player-scrub" type="range" min="0" max="1000" value="0" step="1"
                        aria-label="Seek within the track">
               </div>
