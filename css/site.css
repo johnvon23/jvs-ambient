@@ -314,6 +314,14 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
   position:relative;
   overflow:hidden;   /* clips the oversized parallax image */
   padding:clamp(110px, 18vh, 220px) var(--pad);
+
+  /* Own the stacking context. .album-bg sits at z-index:-1, and
+     position:relative alone does NOT make this element one, so the photo
+     would join main's context and paint *below* any background painted on
+     this section. The moment .album-framed added background:#000 the
+     photograph vanished behind it. isolation:isolate keeps the negative
+     layer inside the section: above its own background, below its copy. */
+  isolation:isolate;
 }
 
 /* photograph sits taller than the section and drifts as it scrolls through */
