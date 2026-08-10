@@ -2,20 +2,21 @@
 
 Every word on `fourth-world.html`. Run `node build.js` after editing.
 
-Same two-section shape as the PRS page: the record (everything about it, in
-one block at the top) and then one prose section on its own photograph.
+Three sections: the record (everything about it, with the demo player), the
+vision (Jon's handwritten definition, photographed on the wall of his
+house), and one prose section on its own photograph.
 
 ## meta.title
 A Fourth World Is Still Possible - John von Seggern
 
 ## meta.description
-John von Seggern recorded, co-produced and performed on Jon Hassell's final two albums. Now he is carrying the Fourth World method forward, with Chapman Stick as the lead voice.
+John von Seggern recorded, co-produced and performed on Jon Hassell's final two albums. Now he is carrying the Fourth World vision forward, with Chapman Stick, percussion, and synthesizers.
 
 ## meta.og.title
 A Fourth World Is Still Possible - John von Seggern
 
 ## meta.og.description
-Carrying Jon Hassell's Fourth World method forward. In progress.
+Carrying Jon Hassell's Fourth World vision forward. In progress.
 
 
 %% ── the record ─ the whole opening section ─────────────────────────── %%
@@ -28,26 +29,28 @@ A Fourth World\
 Is Still Possible
 
 ## record.lede
-Jon Hassell's method, carried forward. Chapman Stick takes the lead voice,
-processed and harmonized where the trumpet once stood, and hand percussion
-and synthesizer beds hold the ground.
+Jon Hassell's vision, carried forward. I am taking ideas from different
+periods of Jon's career and moving them forward with today's technology:
+Chapman Stick, percussion, and synthesizers, joined by many of the
+musicians Jon worked with over his last twenty years.
 
 ## record.body
-It moves at the pace the method demands: improvisations gathered,
-processed, and composed until the music sounds like a place rather than a
-performance. Everything is going into this one.
+Jon defined Fourth World as a search for balance between accumulated
+wisdom and the conditions created by new technologies. That is the work
+here: the old knowledge and the new tools, held in balance until the
+music sounds like a place rather than a performance.
 
-## record.meta.lead.dt
-Lead voice
+## record.meta.instruments.dt
+Instruments
 
-## record.meta.lead.dd
-Chapman Stick, processed and harmonized
+## record.meta.instruments.dd
+Chapman Stick, percussion, synthesizers
 
-## record.meta.ground.dt
-Ground
+## record.meta.players.dt
+With
 
-## record.meta.ground.dd
-Hand percussion, synthesizer beds
+## record.meta.players.dd
+Musicians from Jon's bands and sessions of his last twenty years
 
 ## record.meta.status.dt
 Status
@@ -57,6 +60,55 @@ In the studio now
 
 ## record.figcaption
 Cover study.
+
+
+%% ── demo ─ same player as the PRS page. The audio file is
+   assets/web/audio/tinaja.mp3, set in fourth-world.html: the original
+   master copied as-is from assets/sound/, never re-encoded. %%
+
+## demo.h2
+Hear it
+
+## demo.body
+One track from the sessions, as the record takes shape.
+
+## demo.track
+Tinaja
+
+
+%% ── the vision ─ Jon's definition, photographed on the wall of his
+   house. The transcription below is verbatim from the photograph,
+   including his own quotation marks and parentheses. %%
+
+## vision.h2
+The vision, in Jon's hand
+
+## vision.intro
+The clearest statement of what Fourth World means is the one Jon wrote
+himself. This page hangs on the wall of his house.
+
+## vision.quote.p1
+Fourth World is a viewpoint out of which evolve guidelines for finding
+balances between accumulated knowledge (&ldquo;wisdom&rdquo; in the
+pre-media epoch) and the conditions created by new technologies.
+
+## vision.quote.p2
+The variety of cultures whose characteristics are responses to a given
+&ldquo;place&rdquo; (isolated in the pre-media epoch) are our
+&ldquo;vocabulary&rdquo; in trying to think about ways to respond to our
+&ldquo;place&rdquo; in the new geography created by our media world
+(&ldquo;cyberspace&rdquo;).
+
+## vision.quote.p3
+These pre-media cultures function as elements do in chemistry, providing
+the (relatively) pure building blocks for the new compounds necessary
+for survival.
+
+## vision.attribution
+Jon Hassell
+
+## vision.figcaption
+Photographed on the wall of Jon's house.
 
 
 %% ── the story ─ below the fold, on its own photograph ──────────────── %%
@@ -81,7 +133,7 @@ co-produced, and performed on both. That music was built at close
 range, over years, in rooms Jon and I shared.
 
 ## story.body2
-Jon is gone. The method is not. This record is my answer to the only
+Jon is gone. The vision is not. This record is my answer to the only
 question worth asking after a loss like that: what happens to the
 music now? It is heavily shaped by my relationship with him, and it
 is made with the conviction the title states. A fourth world is

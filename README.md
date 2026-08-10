@@ -30,16 +30,12 @@ next build. `node build.js --check` reports out-of-sync pages without writing.
 Details in CLAUDE.md.
 
 Regenerate `assets/web/` derivatives with `sips` (images, max edge 900 to
-2400px, JPEG ~80) and `ffmpeg` (H.264, 720 wide, crf 27, faststart). Audio for
-the player is the same idea, 320kbps master down to 192kbps:
+2400px, JPEG ~80) and `ffmpeg` (H.264, 720 wide, crf 27, faststart).
 
-```bash
-ffmpeg -i "assets/sound/<master>.mp3" -c:a libmp3lame -b:a 192k \
-  -map_metadata -1 -metadata title="<title>" -metadata artist="John von Seggern" \
-  assets/web/audio/<slug>.mp3
-```
-
-The originals never ship: 211MB of source becomes about 20MB on the wire.
+Audio is the exception: player tracks are the original masters copied
+as-is from `assets/sound/` under a URL-safe name, never re-encoded
+(John's rule: a transcode degrades the quality). Images and video ship
+as derivatives; audio ships whole.
 
 ## Run it locally
 

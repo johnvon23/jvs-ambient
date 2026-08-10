@@ -616,6 +616,43 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 .album-prose .h2{ margin-bottom:22px; }
 .album-prose .body{ margin-top:18px; }
 
+/* ── the vision ─ Jon's handwritten definition (fourth world) ── */
+
+/* the transcription reads as his words, not the page's: rule down the
+   left, body scale but in the brighter bone so it carries the section */
+.vision-quote{
+  margin:clamp(26px, 4vh, 40px) 0 0;
+  padding-left:clamp(18px, 3vw, 30px);
+  border-left:2px solid var(--accent);
+  max-width:60ch;
+}
+.vision-quote p{
+  margin:0 0 16px;
+  font-size:16.5px; line-height:1.75; color:var(--bone);
+}
+.vision-quote footer{
+  margin-top:20px;
+  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--muted);
+}
+.vision-quote cite{ font-style:normal; }
+
+/* the artifact itself, framed like a cover, wide because the page is
+   landscape. Sized so the handwriting stays legible without zooming. */
+.vision-photo{
+  margin:clamp(44px, 7vh, 72px) 0 0;
+  max-width:860px;
+}
+.vision-photo img{
+  width:100%;
+  border:1px solid var(--line);
+  box-shadow:0 30px 80px rgba(3,4,6,.6);
+}
+.vision-photo figcaption{
+  margin-top:14px; font-size:12px; letter-spacing:.1em;
+  color:var(--muted); text-transform:uppercase;
+}
+
 /* ── the record opener (prs) ────────────────────────────────────── */
 
 /* An .album section that opens a page, so it clears the fixed nav. This

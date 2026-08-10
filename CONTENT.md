@@ -50,10 +50,17 @@ can ship by accident.
 - [ ] **Video titles.** The tiles currently say "Portal III", "Portal VI",
       "Walking", and the hero tile also uses "Portal VI", taken from the source
       filenames. Confirm or rename.
-- [ ] **Fourth World copy.** The two paragraphs are written from studio notes
-      and one line of John's own framing ("everything is going into this one").
-      John should read the three story paragraphs and make them his own words.
-- [ ] **Demo player on the PRS page** is a labeled placeholder slot.
+- [ ] **Fourth World copy.** Rewritten 2026-08-10 around Jon's handwritten
+      definition (now on the page, photographed on the wall of his house):
+      "vision" not "method", music described as ideas from across Jon's
+      career moved forward with today's technology. John should still read
+      the story paragraphs and make them his own words.
+- [x] **Demo player on the PRS page.** Live, playing the original
+      Antechamber of the Mind master (copied as-is, 2026-08-10; the
+      192kbps transcode is gone, per John: never re-encode).
+- [x] **Fourth World demo.** Same player, playing "Tinaja"
+      (`assets/web/audio/tinaja.mp3`, the original master copied as-is;
+      John swapped it in for Kujutu 2026-08-10).
 
 ## Links
 
