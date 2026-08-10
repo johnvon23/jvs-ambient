@@ -49,6 +49,18 @@ python3 -m http.server 4321
 
 Then open http://localhost:4321
 
+With that server up, `scripts/shot.mjs` screenshots any section headlessly.
+Sections are invisible until their `.reveal` elements are marked `.in`, so a
+plain `chrome --headless --screenshot` returns the hero or a black frame; this
+drives Chrome over the DevTools Protocol, scrolls to a selector and forces the
+reveals first. No dependencies.
+
+```bash
+node scripts/shot.mjs --at .hear --out /tmp/hear.png
+node scripts/shot.mjs --at .hear --mobile --out /tmp/hear-mobile.png
+node scripts/shot.mjs --url http://localhost:4321/prs.html --full --out /tmp/prs.png
+```
+
 ## Deploy
 
 Any static host works. There is nothing to compile.
