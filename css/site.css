@@ -486,10 +486,11 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 
 .story-body{ max-width:66ch; }
 
-/* the venue section: prose over the exterior photograph, not a pull quote */
-.venue-body{ max-width:64ch; }
-.venue-body .h2{ margin-bottom:22px; }
-.venue-body .body{ margin-top:18px; }
+/* prose over a full-bleed photograph: the venue block (prs) and the story
+   block (fourth world) */
+.album-prose{ max-width:64ch; }
+.album-prose .h2{ margin-bottom:22px; }
+.album-prose .body{ margin-top:18px; }
 
 /* ── the record opener (prs) ────────────────────────────────────── */
 
@@ -500,6 +501,15 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 .page-open{
   padding-top:calc(var(--nav-h) + clamp(24px, 3.5vh, 52px));
   padding-bottom:clamp(56px, 8vh, 104px);
+}
+/* This block carries small type (the status pill, the credit labels) over a
+   photograph that is not always dark, so it gets a scrim across the side the
+   copy sits on. The cover keeps the bright half of the frame. */
+.page-open .album-bg img{ opacity:.32; }
+.page-open .album-bg::after{
+  background:
+    linear-gradient(180deg, var(--ground) 0%, transparent 24%, transparent 72%, var(--ground) 100%),
+    linear-gradient(90deg, rgba(7,8,11,.88) 0%, rgba(7,8,11,.7) 44%, rgba(7,8,11,.2) 76%, transparent 100%);
 }
 .page-open .album-status{ margin-bottom:16px; }
 .page-open .page-title{
