@@ -28,11 +28,7 @@ in sound.
 
 ## hero.sub
 I've spent thirty years exploring new musical worlds and bringing them together.\
-Jazz carried me to Tokyo, and Tokyo pulled me deeper into Asia: ten
-years from late-night jazz clubs to arena tours with the region's
-biggest stars. Living inside all those musical worlds made me want to
-hear them collide, so I became one of Asia's first laptop DJs, then
-carried that sound to LA's warehouse underground.\
+Jazz club gigs in Tokyo that led to arena tours with some of Asia's biggest stars.\ Laptop DJ jams in Hong Kong that later carried me to LA's warehouse underground.\
 Then the better part of a decade recording and performing with Jon
 Hassell, my lifelong inspiration, recording and co-producing his final two albums.\
 Now I'm exploring new musical terrain again with some new releases, continuing my Fourth World explorations into the future.
