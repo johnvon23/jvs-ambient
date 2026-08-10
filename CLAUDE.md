@@ -47,6 +47,58 @@ New text element: add `data-copy="new.key"` in the HTML **and** a `## new.key`
 block in the copy file. `build.js` warns about a key used in HTML with no
 block, and about a block no page uses.
 
+## This repo pushes as a different GitHub account
+
+This machine is signed in to two GitHub accounts. `futureproofmusicschool` is
+the default everywhere; **this repo belongs to `johnvon23`**, so identity and
+credentials are pinned per-repo. Both stay active at once, with no switching.
+
+- **Identity** is already local config: `user.name John von Seggern`,
+  `user.email 7612096+johnvon23@users.noreply.github.com`.
+- **The remote carries the username**, which is what selects the account:
+  `https://johnvon23@github.com/johnvon23/jvs-ambient.git`.
+- **Credentials come from the macOS keychain here**, not from gh.
+
+### Why a push can fail with "could not read Password"
+
+Global config sets gh's helper for github.com
+(`!/opt/homebrew/bin/gh auth git-credential`). That helper **only answers for
+whichever account `gh` has marked active** — ask it for a different username
+and it returns nothing, git falls back to prompting, and a non-interactive
+shell dies with `Device not configured`. It is a credential miss, not a
+permissions problem. Confirm the diagnosis without exposing anything:
+
+```bash
+printf 'protocol=https\nhost=github.com\nusername=johnvon23\n\n' | gh auth git-credential get
+```
+
+Blank output means the helper will not serve this repo's account.
+
+### The fix (already applied here)
+
+Repo-local config overrides the global helper. The empty value resets the
+inherited list, so only `osxkeychain` is consulted:
+
+```bash
+git config --local --replace-all credential.https://github.com.helper ""
+git config --local --add credential.https://github.com.helper osxkeychain
+```
+
+Then seed the keychain once with the personal token. **Run this yourself; an
+agent should not be handling tokens:**
+
+```bash
+printf 'protocol=https\nhost=github.com\nusername=johnvon23\npassword=%s\n\n' \
+  "$(gh auth token -u johnvon23)" | git credential-osxkeychain store
+```
+
+Verify with `git push --dry-run origin main`.
+
+Gotchas: re-running `gh auth login` for johnvon23 rotates the token and the
+keychain copy goes stale — re-run the store command, or store a fine-grained
+PAT instead and forget about it. Do not "fix" this with `gh auth switch`; that
+is global and silently repoints every other repo on the machine.
+
 ## Everything else
 
 See README.md for layout, design tokens, asset processing, and deploy.
