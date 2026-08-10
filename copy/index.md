@@ -28,9 +28,10 @@ in sound.
 
 ## hero.sub
 I've spent thirty years exploring new musical worlds and bringing them together.\
-Jazz club gigs in Tokyo that led to arena tours with some of Asia's biggest stars.\ Laptop DJ jams in Hong Kong that later carried me to LA's warehouse underground.\
+Jazz club gigs in Tokyo that led to arena tours with some of Asia's biggest stars.\
+Early computer DJ jams in Hong Kong that eventually led me to LA's warehouse underground.\
 Then the better part of a decade recording and performing with Jon
-Hassell, my lifelong inspiration, recording and co-producing his final two albums.\
+Hassell, my lifelong inspiration, co-producing his final two albums.\
 Now I'm exploring new musical terrain again with some new releases, continuing my Fourth World explorations into the future.
 
 ## hero.cta.primary
