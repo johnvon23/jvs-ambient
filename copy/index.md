@@ -27,13 +27,12 @@ I bring worlds together\
 in sound.
 
 ## hero.sub
-I've spent thirty years colliding musical worlds: jazz clubs in Tokyo,
-arena tours across Asia, laptop cut-ups in Hong Kong, LA's warehouse
-underground, and sound design for Hollywood films including Pixar's
-WALL-E.\
+I've spent thirty years exploring new musical worlds and bringing them together.\
+My journey has taken me from playing in Tokyo jazz clubs to playing arena tours with some of the biggest stars in Asia. I've instigated laptop DJ jams in Hong Kong and rocked LA's warehouse underground with my experimental electro beats.\ 
+Along the way I've also done sound design for a number of Hollywood films including most notably Pixar's WALL-E.\
 Then the better part of a decade recording and performing with Jon
-Hassell, co-producing his final two albums.\
-Now I'm making the music all of it was pointing toward.
+Hassell, my lifelong inspiration, recording and co-producing his final two albums.\
+Now I'm exploring new musical terrain again with some new releases, continuing my Fourth World explorations into the future.
 
 ## hero.cta.primary
 The releases
@@ -42,7 +41,7 @@ The releases
 Get in touch
 
 ## hero.tile.label
-Portal VI
+Portal II
 %% Also the title shown in the video lightbox. %%
 
 
@@ -185,8 +184,7 @@ The Jon Hassell band
 ## era.hassell.p
 Core member through the decade. Recorded, co-produced and performed on
 *Listening to Pictures* (2018) and *Seeing Through Sound* (2020).
-Also performed on Hassell's final concert, London 2015, soon to be released
-by Ndeya Records.
+Also performed on two European tours, including Hassell's final concert, London 2015, soon to be released by Ndeya Records.
 
 ## era.now.when
 Now
@@ -208,9 +206,9 @@ Jon Hassell's music set my direction when I was a teenager learning
 jazz. Thirty years later, I was in his band.
 
 ## lineage.body
-By the time I met Jon, I had spent twenty years blending musical cultures
-of my own, from Tokyo jazz clubs to Cantopop arenas to cut-up laptop
-sets in Hong Kong, which is why Jon brought me into the band. I
+By the time I met Jon, I had already spent two decades blending musical cultures
+on my own, from Tokyo jazz clubs to Cantopop arenas to cut-up laptop
+sets in Hong Kong, which is why he brought me into the band. I
 recorded, co-produced, and performed on his final two albums. Playing
 that music was the fulfillment of a lifetime's direction. Carrying it
 forward is what comes next.
