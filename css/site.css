@@ -333,6 +333,21 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
     radial-gradient(110% 90% at 30% 50%, rgba(7,8,11,.62), transparent 70%);
 }
 
+/* Framed instead of cropped. Some photographs carry information at the
+   left and right edges (the band shot: a player at each end), and cover
+   eats it on a wide screen. Here the frame is fitted whole and the ground
+   shows as a margin down both sides.
+
+   The drift is off in this mode on purpose: a contained image has no
+   overflow to travel into, so any movement would expose its own edge.
+   Only above 940px, where the section is landscape enough for a 4:3 frame
+   to fill the height. Narrower than that it stays cropped, or a tall
+   section would strand a small photo in a field of black. */
+@media (min-width:940px){
+  .album-framed .album-bg{ inset:0 clamp(20px, 5vw, 110px); }
+  .album-framed .album-bg img{ object-fit:contain; animation:none; transform:none; }
+}
+
 .album-inner{ max-width:var(--maxw); margin:0 auto; }
 
 .album-status{
@@ -481,6 +496,41 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   max-width:58ch;
 }
 .era-what em{ font-style:italic; }
+
+/* photos inside an era. A flex row so more can be added later: one sits
+   small and left-aligned, several share the column and wrap on narrow
+   screens. Sized down on purpose so the timeline stays a timeline. */
+.era-photos{
+  display:flex; flex-wrap:wrap; gap:14px;
+  margin:20px 0 0; padding:0; list-style:none;
+}
+/* --nat caps a figure at the file's own pixel width, so a small scan is
+   never upscaled into mush next to the full-size shots. Omit it and the
+   photo just takes the standard 300px. */
+.era-photo{ margin:0; flex:0 1 300px; max-width:min(300px, var(--nat, 300px)); }
+.era-photo img{
+  width:100%; height:auto;
+  border:1px solid var(--line-soft);
+  filter:saturate(.9);
+}
+/* sentence case, not the uppercase-caps used elsewhere: captions are
+   sentences with proper names in them, and caps make those unreadable */
+/* video in an era. Wider than the stills (it's motion, it earns the room)
+   but still short of the text column so the timeline keeps its shape. */
+.era-video{ margin:22px 0 0; max-width:560px; }
+.era-video .frame{
+  position:relative; aspect-ratio:16/9;
+  border:1px solid var(--line-soft); background:var(--ground-2);
+}
+.era-video iframe{
+  position:absolute; inset:0; width:100%; height:100%; border:0;
+}
+
+.era-photo figcaption,
+.era-video figcaption{
+  margin-top:10px; font-size:12.5px; line-height:1.5;
+  letter-spacing:.005em; color:var(--muted);
+}
 
 /* ── story (fourth world) ───────────────────────────────────── */
 
