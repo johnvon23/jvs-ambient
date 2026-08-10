@@ -170,8 +170,8 @@ synthesizer.
 Film
 
 ## era.film.p
-Sound design and effects for numerous films, including Thomas Newman's
-Oscar-nominated score for Pixar's *WALL-E*.
+Sound design and effects for [numerous films](https://www.imdb.com/name/nm3658645/),
+including Thomas Newman's Oscar-nominated score for Pixar's *WALL-E*.
 
 ## era.hassell.when
 2010s
