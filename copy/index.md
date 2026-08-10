@@ -28,8 +28,11 @@ in sound.
 
 ## hero.sub
 I've spent thirty years exploring new musical worlds and bringing them together.\
-My journey has taken me from playing in Tokyo jazz clubs to playing arena tours with some of the biggest stars in Asia. I've instigated laptop DJ jams in Hong Kong and rocked LA's warehouse underground with my experimental electro beats.\ 
-Along the way I've also done sound design for a number of Hollywood films including most notably Pixar's WALL-E.\
+Jazz carried me to Tokyo, and Tokyo pulled me deeper into Asia: ten
+years from late-night jazz clubs to arena tours with the region's
+biggest stars. Living inside all those musical worlds made me want to
+hear them collide, so I became one of Asia's first laptop DJs, then
+carried that sound to LA's warehouse underground.\
 Then the better part of a decade recording and performing with Jon
 Hassell, my lifelong inspiration, recording and co-producing his final two albums.\
 Now I'm exploring new musical terrain again with some new releases, continuing my Fourth World explorations into the future.
