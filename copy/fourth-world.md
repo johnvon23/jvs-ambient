@@ -34,7 +34,7 @@ Carrying forward Hassell's vision.
 
 ## record.body
 Jon Hassell defined Fourth World as a search for balance between the accumulated
-cutlural wisdom of humanity and the conditions created by new technologies. On this album I continue to push this idea in new directions, just as Jon did over the course of a long career.\
+cultural wisdom of humanity and the conditions created by new technologies. On this album I continue to push this idea in new directions, just as Jon did over the course of a long career.\
 I play Chapman Stick, samplers and synthesizers on the record, joined by a number of the
 key musicians Jon worked with over his last twenty years.\
 
