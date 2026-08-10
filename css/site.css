@@ -348,6 +348,29 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
   .album-framed .album-bg img{ object-fit:contain; animation:none; transform:none; }
 }
 
+/* A framed photo has its own black around the subject, and the page ground
+   is a cold near-black with the fog and grain drifting over it. Side by
+   side the frame reads as a lit rectangle sitting on a slightly different
+   colour. So this section goes to true black and paints over the
+   atmosphere layers, and the photo's edges are feathered into it. The two
+   blacks then meet with no seam. */
+.album-framed{ background:#000; }
+/* the shared scrim fades to --ground, which is a cold near-black and would
+   put a faint blue band across a section that is now true black */
+.album-framed .album-bg::after{
+  background:
+    linear-gradient(180deg, #000 0%, transparent 22%, transparent 74%, #000 100%),
+    radial-gradient(110% 90% at 30% 50%, rgba(0,0,0,.62), transparent 70%);
+}
+.album-framed .album-bg img{
+  --edge:linear-gradient(90deg,  transparent, #000 7%, #000 93%, transparent),
+         linear-gradient(180deg, transparent, #000 9%, #000 91%, transparent);
+  -webkit-mask-image:var(--edge);
+  -webkit-mask-composite:source-in;
+  mask-image:var(--edge);
+  mask-composite:intersect;
+}
+
 .album-inner{ max-width:var(--maxw); margin:0 auto; }
 
 .album-status{
