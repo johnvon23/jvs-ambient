@@ -47,78 +47,69 @@
 
 <main id="top">
 
-  <!-- ── page head ─ full-bleed stage photograph ───────────────────── -->
-  <section class="page-head">
+  <!-- ── the record ─ one section over the stage photograph: title,
+       prose, credits, cover, and the private demo. Nothing about this
+       record lives anywhere else on the page. ───────────────────────── -->
+  <section class="album page-open" id="record">
     <div class="album-bg" aria-hidden="true">
       <img src="assets/web/img/prs-stage.jpg" alt="" fetchpriority="high">
     </div>
-    <div class="page-head-inner">
+    <div class="album-inner">
       <p class="album-status reveal" data-copy="head.status">Finished. Seeking a label.</p>
       <h1 class="h2 page-title reveal" style="--d:.06s" data-copy="head.h1">
         Live at the Philosophical<br>
         Research Society
       </h1>
-      <p class="hero-sub reveal" style="--d:.12s" data-copy="head.sub">
-        One evening of ambient bass guitar and live electronics, played
-        straight through and recorded as it happened.
-      </p>
-    </div>
-  </section>
 
+      <div class="album-grid">
+        <div class="album-body">
+          <p class="lede reveal" style="--d:.1s" data-copy="record.lede">
+            One evening of ambient bass guitar and live electronics, played straight
+            through and recorded as it happened. Nothing was overdubbed afterward.
+            What the room heard is what the record is.
+          </p>
+          <p class="body reveal" style="--d:.14s" data-copy="record.body">
+            The bass is played as a sustaining instrument. Long tones are captured,
+            thrown into delay, and folded back on themselves until the harmony moves
+            on its own. The performer's job becomes deciding what to let go of.
+          </p>
+          <dl class="album-meta reveal" style="--d:.18s">
+            <div><dt data-copy="record.meta.instrument.dt">Instrument</dt><dd data-copy="record.meta.instrument.dd">Bass guitar and live electronics</dd></div>
+            <div><dt data-copy="record.meta.recorded.dt">Recorded</dt><dd data-copy="record.meta.recorded.dd">June 15, 2023, Philosophical Research Society, Los Angeles</dd></div>
+          </dl>
 
-  <!-- ── the record ─ continues the head, so no heading of its own ─── -->
-  <section class="sec sec-tight" id="record">
-    <div class="album-grid">
-      <div class="album-body">
-        <p class="lede reveal" data-copy="record.lede">
-          Nothing was overdubbed afterward. What the room heard is what the
-          record is.
-        </p>
-        <p class="body reveal" style="--d:.06s" data-copy="record.body">
-          The bass is played as a sustaining instrument. Long tones are
-          captured, thrown into delay, and folded back on themselves until
-          the harmony moves on its own. The performer's job becomes deciding
-          what to let go of.
-        </p>
-        <dl class="album-meta reveal" style="--d:.1s">
-          <div><dt data-copy="record.meta.instrument.dt">Instrument</dt><dd data-copy="record.meta.instrument.dd">Bass guitar and live electronics</dd></div>
-          <div><dt data-copy="record.meta.recorded.dt">Recorded</dt><dd data-copy="record.meta.recorded.dd">June 15, 2023, Philosophical Research Society, Los Angeles</dd></div>
-        </dl>
+          <!-- TODO: replace .demo-slot with a real embed or <audio> once the
+               private SoundCloud (or file) exists. Deliberately obvious. -->
+          <div class="demo reveal" style="--d:.22s">
+            <h2 data-copy="demo.h2">Hear it</h2>
+            <p class="body" data-copy="demo.body">A private demo is available for labels and press.</p>
+            <div class="demo-slot" data-copy="demo.slot"><span class="todo">[ demo player: private SoundCloud embed or audio file ]</span></div>
+          </div>
+        </div>
+
+        <figure class="album-art reveal" style="--d:.1s">
+          <img src="assets/web/img/cover-prs.jpg" loading="lazy"
+               alt="Album cover: black and white photo looking up at a granite Egyptian statue, palm trees behind it, the artist's face at the lower edge of the frame">
+          <figcaption data-copy="record.figcaption">Cover art, shot at the PRS gate.</figcaption>
+        </figure>
       </div>
-
-      <figure class="album-art reveal" style="--d:.06s">
-        <img src="assets/web/img/cover-prs.jpg" loading="lazy"
-             alt="Album cover: black and white photo looking up at a granite Egyptian statue, palm trees behind it, the artist's face at the lower edge of the frame">
-        <figcaption data-copy="record.figcaption">Cover art, shot at the PRS gate.</figcaption>
-      </figure>
     </div>
   </section>
 
 
-  <!-- ── demo for labels ───────────────────────────────────────────── -->
-  <section class="sec demo-sec">
-    <h2 class="h2 reveal" data-copy="demo.h2">Hear it</h2>
-    <p class="body reveal" style="--d:.06s" data-copy="demo.body">A private demo is available for labels and press.</p>
-    <!-- TODO: replace with a real embed or <audio> once the private
-         SoundCloud (or file) exists. The block below is a labeled
-         placeholder, deliberately obvious. -->
-    <div class="demo-slot reveal" style="--d:.1s" data-copy="demo.slot"><span class="todo">[ demo player: private SoundCloud embed or audio file ]</span></div>
-  </section>
-
-
-  <!-- ── the room ─ the PRS itself, on its own photograph ──────────── -->
-  <section class="album" id="room">
+  <!-- ── the venue ─ the PRS itself, on its own photograph ─────────── -->
+  <section class="album" id="venue">
     <div class="album-bg" aria-hidden="true">
       <img src="assets/web/img/prs-outside.jpg" alt="" loading="lazy">
     </div>
     <div class="album-inner">
-      <div class="room-body">
-        <h2 class="h2 reveal" data-copy="room.h2">The room</h2>
-        <p class="lede reveal" style="--d:.06s" data-copy="room.lede">
+      <div class="venue-body">
+        <h2 class="h2 reveal" data-copy="venue.h2">The venue</h2>
+        <p class="lede reveal" style="--d:.06s" data-copy="venue.lede">
           The Philosophical Research Society sits on Los Feliz Boulevard behind a
           granite Egyptian figure, the one on the cover of this record.
         </p>
-        <p class="body reveal" style="--d:.1s" data-copy="room.body">
+        <p class="body reveal" style="--d:.1s" data-copy="venue.body">
           Manly P. Hall founded it in 1934 as a library and a place to think, and
           built it in Mayan Revival: terra cotta and seafoam green, hand-carved
           doors, stepped triangles running along the garden wall. The architect was
@@ -126,7 +117,7 @@
           holding more than thirty thousand rare volumes, and the auditorium once
           housed the Hammond organ Korla Pandit played.
         </p>
-        <p class="body reveal" style="--d:.14s" data-copy="room.body2">
+        <p class="body reveal" style="--d:.14s" data-copy="venue.body2">
           Nobody arrives there by accident. An audience that turns up at the PRS
           has already agreed to sit still and listen, which is the one condition
           this music actually needs. The building has been gathering that kind of

@@ -199,8 +199,6 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
   padding:clamp(96px, 15vh, 190px) var(--pad);
   max-width:var(--maxw); margin:0 auto;
 }
-/* a section that continues the one above it rather than starting a new beat */
-.sec-tight{ padding-top:clamp(52px, 8vh, 96px); }
 
 /* ── buttons ────────────────────────────────────────────────── */
 
@@ -488,10 +486,23 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 
 .story-body{ max-width:66ch; }
 
-/* the PRS section: prose over the exterior photograph, not a pull quote */
-.room-body{ max-width:64ch; }
-.room-body .h2{ margin-bottom:22px; }
-.room-body .body{ margin-top:18px; }
+/* the venue section: prose over the exterior photograph, not a pull quote */
+.venue-body{ max-width:64ch; }
+.venue-body .h2{ margin-bottom:22px; }
+.venue-body .body{ margin-top:18px; }
+
+/* ── the record opener (prs) ────────────────────────────────────── */
+
+/* an .album section that opens a page, so it has to clear the fixed nav */
+.page-open{ padding-top:calc(var(--nav-h) + clamp(44px, 7vh, 92px)); }
+.page-open .page-title{ margin-bottom:0; }
+
+/* the private-demo offer closes the record block instead of standing alone */
+.demo{ margin-top:clamp(32px, 5vh, 54px); }
+.demo h2{
+  margin:0 0 8px; font-size:16px; font-weight:400; letter-spacing:-.01em;
+}
+.demo .body{ margin-bottom:18px; }
 
 /* ── demo slot (prs) ────────────────────────────────────────── */
 
