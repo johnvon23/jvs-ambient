@@ -2,9 +2,10 @@
 
 Every word on `fourth-world.html`. Run `node build.js` after editing.
 
-Three sections: the record (everything about it, with the demo player), the
-vision (Jon's handwritten definition, photographed on the wall of his
-house), and one prose section on its own photograph.
+Four sections, in page order: the record (everything about it, with the
+demo players), the story on its own photograph, contact, and last of all
+the vision (Jon's handwritten definition, photographed on the wall of his
+house). The blocks below follow that order.
 
 ## meta.title
 A Fourth World Is Still Possible - John von Seggern
@@ -81,41 +82,6 @@ Kujutu
 Tinaja
 
 
-%% ── the vision ─ Jon's definition, photographed on the wall of his
-   house. The transcription below is verbatim from the photograph,
-   including his own quotation marks and parentheses. %%
-
-## vision.h2
-The vision, in Jon's hand
-
-## vision.intro
-The clearest statement of what Fourth World means is the one Jon wrote
-himself. This page hangs on the wall of his house.
-
-## vision.quote.p1
-Fourth World is a viewpoint out of which evolve guidelines for finding
-balances between accumulated knowledge (&ldquo;wisdom&rdquo; in the
-pre-media epoch) and the conditions created by new technologies.
-
-## vision.quote.p2
-The variety of cultures whose characteristics are responses to a given
-&ldquo;place&rdquo; (isolated in the pre-media epoch) are our
-&ldquo;vocabulary&rdquo; in trying to think about ways to respond to our
-&ldquo;place&rdquo; in the new geography created by our media world
-(&ldquo;cyberspace&rdquo;).
-
-## vision.quote.p3
-These pre-media cultures function as elements do in chemistry, providing
-the (relatively) pure building blocks for the new compounds necessary
-for survival.
-
-## vision.attribution
-Jon Hassell
-
-## vision.figcaption
-Photographed on the wall of Jon's house.
-
-
 %% ── the story ─ below the fold, on its own photograph ──────────────── %%
 %% John: these three paragraphs are written from studio notes and one line
    of your own framing. Make them your words. %%
@@ -159,3 +125,39 @@ Get in touch
 
 ## contact.cta.secondary
 The finished record
+
+
+%% ── the vision ─ last on the page, after contact. Jon's definition,
+   photographed on the wall of his house. The transcription is verbatim
+   from the photograph, including his own quotation marks and
+   parentheses. %%
+
+## vision.h2
+The vision, in Jon's hand
+
+## vision.intro
+The clearest statement of what Fourth World means is the one Jon wrote
+himself. This page hangs on the wall of his house.
+
+## vision.quote.p1
+Fourth World is a viewpoint out of which evolve guidelines for finding
+balances between accumulated knowledge (&ldquo;wisdom&rdquo; in the
+pre-media epoch) and the conditions created by new technologies.
+
+## vision.quote.p2
+The variety of cultures whose characteristics are responses to a given
+&ldquo;place&rdquo; (isolated in the pre-media epoch) are our
+&ldquo;vocabulary&rdquo; in trying to think about ways to respond to our
+&ldquo;place&rdquo; in the new geography created by our media world
+(&ldquo;cyberspace&rdquo;).
+
+## vision.quote.p3
+These pre-media cultures function as elements do in chemistry, providing
+the (relatively) pure building blocks for the new compounds necessary
+for survival.
+
+## vision.attribution
+Jon Hassell
+
+## vision.figcaption
+Photographed on the wall of Jon's house.
