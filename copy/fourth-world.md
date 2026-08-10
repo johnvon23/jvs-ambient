@@ -34,20 +34,9 @@ Carrying forward Hassell's vision.
 
 ## record.body
 Jon Hassell defined Fourth World as a search for balance between the accumulated
-cutlural wisdom of humanity and the conditions created by new technologies. On this album I continue to push this music forward with new technologies, just as Jon did over the course of a long career.\
-I play Chapman Stick and electronics on the record, joined by many of the
-musicians Jon worked with over his last twenty years.\
-## record.meta.instruments.dt
-Instruments
-
-## record.meta.instruments.dd
-Chapman Stick, percussion, synthesizers
-
-## record.meta.players.dt
-With
-
-## record.meta.players.dd
-Musicians from Jon's bands and sessions of his last twenty years
+cutlural wisdom of humanity and the conditions created by new technologies. On this album I continue to push this idea in new directions, just as Jon did over the course of a long career.\
+I play Chapman Stick, samplers and synthesizers on the record, joined by a number of the
+key musicians Jon worked with over his last twenty years.\
 
 ## record.meta.status.dt
 Status
@@ -86,16 +75,16 @@ Tinaja
 Thirty years inside this music
 
 ## story.lede
-I have been shaped by Jon Hassell's music since high school, when I was first learning to play. No other musician has influenced me more. The Fourth World idea, music that sounds like a place that does not exist, has been the center of my listening life since before I had a name for it.
+I have been shaped by Jon Hassell's music since high school, when I was first learning to play. The Fourth World idea, music that sounds like a place that does not exist, has been the center of my musical life since before I had a name for it.
 
 ## story.body
 In the 2010s that influence came full circle. I got the chance to join Jon's
 band and worked closely with him for the rest of the decade, on stage together through his last concert in London in 2015, and in the studio for his two final
-albums, Listening to Pictures and Seeing Through Sound. I recorded,
-co-produced, and performed on both.
+albums, *Listening to Pictures* and *Seeing Through Sound*, recording
+co-producing, and performing on both.
 
 ## story.body2
-A fourth world is still possible.
+Now I'm continuing to push these ideas into the future. Now more than ever we need to cultivate the kind of cross-cultural communication Jon fostered in his work. A fourth world is still possible.
 
 
 %% ── contact ────────────────────────────────────────────────────────── %%
@@ -123,13 +112,7 @@ The finished record
 The vision, in Jon's hand
 
 ## vision.intro
-The clearest statement of what Fourth World means is the one Jon wrote
-himself. This page hung on the wall of his house in Los Angeles, revised many times as he refined his ideas.
-
-## vision.quote.p1
-Fourth World is a viewpoint out of which evolve guidelines for finding
-balances between accumulated knowledge (&ldquo;wisdom&rdquo; in the
-pre-media epoch) and the conditions created by new technologies.
+This statement of what Fourth World meant to Jon hung on the wall of his house in Los Angeles, revised many times as he refined his ideas.
 
 ## vision.attribution
 Jon Hassell

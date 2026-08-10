@@ -66,23 +66,25 @@ can ship by accident.
 
 ## Mailing list
 
-The signup form is built and styled, in the contact section of all three
-pages. It needs an account before it can accept an address:
+The signup form is live in the contact section of all three pages, wired
+to Buttondown (newsletter `johnvon23`, wired 2026-08-10). To move the
+list to a different host, run:
 
-1. Create the list at **buttondown.com** (free to 100 subscribers). John
-   does this; an agent must not create accounts.
-2. Copy the form's POST URL out of Buttondown's own embed snippet, then:
+```
+./scripts/set-signup-endpoint.sh 'https://<new-host>/<path>'
+```
 
-   ```
-   ./scripts/set-signup-endpoint.sh 'https://buttondown.com/api/emails/embed-subscribe/<name>'
-   ```
-
-3. Submit a real address and confirm it lands in the list.
-
-- [ ] **Buttondown account and endpoint.** Until step 2 runs, the form
-      carries `SIGNUP_ENDPOINT_NOT_SET`, and `site.js` greys it out and
-      disables it, so a half-built form cannot swallow an address. The
+- [x] **Buttondown account and endpoint.** Wired and verified: the real
+      username reaches Buttondown's subscribe flow, a bogus one 404s. The
       wording lives in `copy/_shared.md` under `signup.*`.
+- [ ] **One human test.** An automated POST hits Buttondown's bot
+      verification, which an agent will not complete, so the last step is
+      John's: submit his own address in a browser, finish the
+      verification, and confirm the subscriber appears. Nothing else is
+      blocking.
+- [ ] **Newsletter name.** Still Buttondown's default, "My Awesome
+      Newsletter". It shows on the verification page a subscriber sees,
+      so rename it in Buttondown's settings before the site launches.
 - [ ] **Where else to ask.** The form is only in the contact section. A
       second placement (after the demo player, say) is worth testing once
       the list is real and there are numbers to compare.

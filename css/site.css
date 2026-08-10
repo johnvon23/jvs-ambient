@@ -618,25 +618,6 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 
 /* ── the vision ─ Jon's handwritten definition (fourth world) ── */
 
-/* the transcription reads as his words, not the page's: rule down the
-   left, body scale but in the brighter bone so it carries the section */
-.vision-quote{
-  margin:clamp(26px, 4vh, 40px) 0 0;
-  padding-left:clamp(18px, 3vw, 30px);
-  border-left:2px solid var(--accent);
-  max-width:60ch;
-}
-.vision-quote p{
-  margin:0 0 16px;
-  font-size:16.5px; line-height:1.75; color:var(--bone);
-}
-.vision-quote footer{
-  margin-top:20px;
-  font-size:11px; letter-spacing:.24em; text-transform:uppercase;
-  color:var(--muted);
-}
-.vision-quote cite{ font-style:normal; }
-
 /* the artifact itself, framed like a cover, wide because the page is
    landscape. Sized so the handwriting stays legible without zooming. */
 .vision-photo{
@@ -651,6 +632,12 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 .vision-photo figcaption{
   margin-top:14px; font-size:12px; letter-spacing:.1em;
   color:var(--muted); text-transform:uppercase;
+}
+/* the attribution leads the caption: it is who wrote the page, and the
+   caption is only where it hung */
+.vision-cite{
+  display:block; font-style:normal;
+  margin-bottom:5px; color:var(--bone-dim);
 }
 
 /* ── the record opener (prs) ────────────────────────────────────── */
