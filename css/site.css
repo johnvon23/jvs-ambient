@@ -462,6 +462,38 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 
 /* ── hear ─ embedded Bandcamp player (home) ─────────────────── */
 
+.hear{ position:relative; }
+
+/* full-bleed stage photograph behind the section. Same trick as .hero-bg:
+   z-index:-1 keeps it inside main's stacking context, so it sits under the
+   type but still over the fixed atmosphere layers. */
+.hear-bg{
+  position:absolute; top:0; bottom:0;
+  left:50%; width:100vw; margin-left:-50vw;   /* body has overflow-x:hidden */
+  z-index:-1; pointer-events:none; overflow:hidden;
+}
+.hear-bg img{
+  width:100%; height:100%; object-fit:cover;
+  /* anchored right: the silhouette and the lit screen land clear of the
+     copy column, which stays on the dark left side */
+  object-position:78% 50%;
+  opacity:.42;
+  /* feather the top and bottom so the band has no hard seam */
+  -webkit-mask-image:linear-gradient(180deg, transparent, #000 22%, #000 78%, transparent);
+          mask-image:linear-gradient(180deg, transparent, #000 22%, #000 78%, transparent);
+}
+/* scrim: darkens the left third so the heading, body and player keep contrast */
+.hear-bg::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(90deg,
+    var(--ground) 0%, rgba(7,8,11,.86) 32%, rgba(7,8,11,.42) 58%, rgba(7,8,11,.12) 100%);
+}
+@media (max-width:700px){
+  /* narrow screens put the copy over the whole frame, so pull it back */
+  .hear-bg img{ opacity:.3; object-position:70% 50%; }
+  .hear-bg::after{ background:rgba(7,8,11,.6); }
+}
+
 .hear .embed{ max-width:720px; }
 .hear iframe{
   display:block; width:100%; height:120px;
