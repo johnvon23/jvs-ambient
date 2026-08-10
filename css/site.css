@@ -493,22 +493,54 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 
 /* ── the record opener (prs) ────────────────────────────────────── */
 
-/* an .album section that opens a page, so it has to clear the fixed nav */
-.page-open{ padding-top:calc(var(--nav-h) + clamp(44px, 7vh, 92px)); }
-.page-open .page-title{ margin-bottom:0; }
+/* An .album section that opens a page, so it clears the fixed nav. This
+   block carries the whole record, and it is meant to land in one screen,
+   so every vertical gap in it is tighter than the site default and scales
+   with viewport height rather than sitting at a fixed size. */
+.page-open{
+  padding-top:calc(var(--nav-h) + clamp(24px, 3.5vh, 52px));
+  padding-bottom:clamp(56px, 8vh, 104px);
+}
+.page-open .album-status{ margin-bottom:16px; }
+.page-open .page-title{
+  margin-bottom:0;
+  font-size:clamp(30px, 3.8vw, 52px);
+}
+.page-open .album-grid{
+  margin-top:clamp(12px, 2vh, 24px);
+  gap:clamp(32px, 4.5vw, 72px);
+}
+.page-open .lede{ margin-bottom:15px; }
+.page-open .album-body > .body{ margin-bottom:0; }
+.page-open .album-meta{ margin-top:20px; }
+.page-open .album-meta > div{ padding:11px 0; }
+/* Once the grid is two columns, the cover can be the tallest thing in the
+   section, so it gets a ceiling. width:auto keeps it scaling by aspect
+   ratio rather than letterboxing, and the shortfall is taken off the inside
+   edge so the cover still lines up with the page's right margin. Below that
+   breakpoint everything is stacked and the cover should just be full width. */
+@media (min-width:940px){
+  .page-open .album-art{
+    display:flex; flex-direction:column; align-items:flex-end; text-align:right;
+  }
+  .page-open .album-art img{
+    max-height:clamp(300px, 44vh, 430px);
+    width:auto; max-width:100%;
+  }
+}
 
 /* the private-demo offer closes the record block instead of standing alone */
-.demo{ margin-top:clamp(32px, 5vh, 54px); }
+.demo{ margin-top:clamp(22px, 3vh, 34px); }
 .demo h2{
-  margin:0 0 8px; font-size:16px; font-weight:400; letter-spacing:-.01em;
+  margin:0 0 6px; font-size:16px; font-weight:400; letter-spacing:-.01em;
 }
-.demo .body{ margin-bottom:18px; }
+.demo .body{ margin-bottom:14px; }
 
 /* ── demo slot (prs) ────────────────────────────────────────── */
 
 .demo-slot{
   border:1px dashed rgba(127,163,171,.4);
-  padding:clamp(28px, 5vh, 54px) clamp(18px, 3vw, 40px);
+  padding:clamp(18px, 2.6vh, 30px) clamp(18px, 3vw, 40px);
   text-align:center;
   max-width:720px;
 }
