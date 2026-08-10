@@ -25,18 +25,15 @@ Live at the Philosophical\
 Research Society
 
 ## head.sub
-A single evening of ambient bass guitar and live electronics,
-recorded in one take in Los Angeles.
+One evening of ambient bass guitar and live electronics, played
+straight through and recorded as it happened.
 
 
-%% ── the record ─────────────────────────────────────────────────────── %%
-
-## record.h2
-One evening, one take
+%% ── the record ─ sits directly under the head, no heading of its own ── %%
 
 ## record.lede
-Nothing was overdubbed after the fact. What the room heard is what
-the record is.
+Nothing was overdubbed afterward. What the room heard is what the
+record is.
 
 ## record.body
 The bass is played as a sustaining instrument. Long tones are
@@ -54,16 +51,10 @@ Bass guitar and live electronics
 Recorded
 
 ## record.meta.recorded.dd
-{{ date }}, Philosophical Research Society, Los Angeles
-
-## record.meta.format.dt
-Format
-
-## record.meta.format.dd
-{{ digital / vinyl }}
+June 15, 2023, Philosophical Research Society, Los Angeles
 
 ## record.figcaption
-The record, in motion blur.
+Cover art, shot at the PRS gate.
 
 
 %% ── demo ───────────────────────────────────────────────────────────── %%
@@ -82,11 +73,26 @@ A private demo is available for labels and press.
 
 %% ── the room ───────────────────────────────────────────────────────── %%
 
-## room.quote
-The Philosophical Research Society has a room built for listening,
-not for volume.
-%% Placeholder written from studio notes. Two sentences in John's own
-   words about the night itself would be better. %%
+## room.h2
+The room
+
+## room.lede
+The Philosophical Research Society sits on Los Feliz Boulevard behind a
+granite Egyptian figure, the one on the cover of this record.
+
+## room.body
+Manly P. Hall founded it in 1934 as a library and a place to think, and
+built it in Mayan Revival: terra cotta and seafoam green, hand-carved
+doors, stepped triangles running along the garden wall. The architect was
+Robert Stacy-Judd. It is a Los Angeles Historic-Cultural Monument now,
+holding more than thirty thousand rare volumes, and the auditorium once
+housed the Hammond organ Korla Pandit played.
+
+## room.body2
+Nobody arrives there by accident. An audience that turns up at the PRS
+has already agreed to sit still and listen, which is the one condition
+this music actually needs. The building has been gathering that kind of
+attention since 1934. I plugged in and played into it.
 
 
 %% ── contact ────────────────────────────────────────────────────────── %%

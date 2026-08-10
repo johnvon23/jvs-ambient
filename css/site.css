@@ -199,6 +199,8 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
   padding:clamp(96px, 15vh, 190px) var(--pad);
   max-width:var(--maxw); margin:0 auto;
 }
+/* a section that continues the one above it rather than starting a new beat */
+.sec-tight{ padding-top:clamp(52px, 8vh, 96px); }
 
 /* ── buttons ────────────────────────────────────────────────── */
 
@@ -486,8 +488,10 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 
 .story-body{ max-width:66ch; }
 
-.room-quote{ text-align:center; }
-.room-quote .manifesto{ margin-bottom:0; }
+/* the PRS section: prose over the exterior photograph, not a pull quote */
+.room-body{ max-width:64ch; }
+.room-body .h2{ margin-bottom:22px; }
+.room-body .body{ margin-top:18px; }
 
 /* ── demo slot (prs) ────────────────────────────────────────── */
 
