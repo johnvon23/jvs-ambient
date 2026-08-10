@@ -164,6 +164,26 @@
       <a class="btn btn-primary" href="mailto:johnvon23@gmail.com" data-copy="contact.cta.primary">Get in touch</a>
       <a class="btn btn-ghost" href="prs.html" data-copy="contact.cta.secondary">The finished record</a>
     </div>
+  
+    <!-- ── mailing list ─ posts straight to Buttondown, no backend here.
+         The action URL is the ONLY thing to change when the list moves;
+         it is repeated on all three pages, so swap it with:
+           ./scripts/set-signup-endpoint.sh '<url>'
+         Until it is set, site.js disables the form so nothing can post
+         into the void (same idea as .player.is-broken). ─────────────── -->
+    <form class="signup reveal" style="--d:.32s" data-signup
+          action="SIGNUP_ENDPOINT_NOT_SET" method="post" target="_blank">
+      <label class="signup-label" for="signup-email" data-copy="signup.label">Hear about the next record</label>
+      <div class="signup-row">
+        <input class="signup-input" id="signup-email" type="email" name="email"
+               required autocomplete="email" spellcheck="false"
+               data-copy="signup.placeholder" data-copy-attrs="placeholder"
+               placeholder="you@example.com">
+        <input type="hidden" name="embed" value="1">
+        <button class="btn btn-primary" type="submit" data-copy="signup.button">Subscribe</button>
+      </div>
+      <p class="signup-note" data-copy="signup.note">A few emails a year, when there is a record or a show. Unsubscribe any time.</p>
+    </form>
   </section>
 
 

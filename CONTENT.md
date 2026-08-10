@@ -64,6 +64,32 @@ can ship by accident.
       the filename and his earlier message both say **Kujutu**, which is
       what shipped. Confirm the spelling before launch.
 
+## Mailing list
+
+The signup form is built and styled, in the contact section of all three
+pages. It needs an account before it can accept an address:
+
+1. Create the list at **buttondown.com** (free to 100 subscribers). John
+   does this; an agent must not create accounts.
+2. Copy the form's POST URL out of Buttondown's own embed snippet, then:
+
+   ```
+   ./scripts/set-signup-endpoint.sh 'https://buttondown.com/api/emails/embed-subscribe/<name>'
+   ```
+
+3. Submit a real address and confirm it lands in the list.
+
+- [ ] **Buttondown account and endpoint.** Until step 2 runs, the form
+      carries `SIGNUP_ENDPOINT_NOT_SET`, and `site.js` greys it out and
+      disables it, so a half-built form cannot swallow an address. The
+      wording lives in `copy/_shared.md` under `signup.*`.
+- [ ] **Where else to ask.** The form is only in the contact section. A
+      second placement (after the demo player, say) is worth testing once
+      the list is real and there are numbers to compare.
+
+No subscriber data touches this repo: the form posts straight to
+Buttondown and there is no backend here.
+
 ## Links
 
 - [x] **Contact address.** johnvon23@gmail.com, wired on all three pages.

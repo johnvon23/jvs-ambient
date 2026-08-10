@@ -246,4 +246,21 @@
       document.hidden ? stop() : start();
     });
   }
+
+
+  /* ── mailing list ────────────────────────────────────────────
+     The form posts straight to the list host; there is no code here
+     that touches an address. This only guards the half-built state:
+     until a real endpoint is pasted into the action, the form is
+     disabled so it cannot look like it works and quietly lose a
+     signup. Once the action is real this does nothing at all. */
+
+  document.querySelectorAll('[data-signup]').forEach(form => {
+    const action = form.getAttribute('action') || '';
+    if (!/^https?:\/\//.test(action) || action.includes('SIGNUP_ENDPOINT_NOT_SET')) {
+      form.classList.add('is-unset');
+      form.querySelectorAll('input, button').forEach(el => { el.disabled = true; });
+      form.addEventListener('submit', e => e.preventDefault());
+    }
+  });
 })();

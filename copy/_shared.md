@@ -30,3 +30,21 @@ Get in touch
 
 ## foot.name
 John von Seggern
+
+
+%% ── mailing list ─ the signup form in the contact section of all three
+   pages. The form posts straight to Buttondown; there is no backend
+   here and no list stored in this repo. The endpoint is set in the HTML
+   (see CONTENT.md), not here: this file is words only. %%
+
+## signup.label
+Hear about the next record
+
+## signup.placeholder
+you@example.com
+
+## signup.button
+Subscribe
+
+## signup.note
+A few emails a year, when there is a record or a show. Unsubscribe any time.
