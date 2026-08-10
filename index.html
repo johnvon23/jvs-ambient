@@ -276,6 +276,15 @@
         <span class="era-what">
           <h3 data-copy="era.now.h3">Ambient producer and performer</h3>
           <p data-copy="era.now.p">Chapman Stick, bass guitar and live electronics, under my own name.</p>
+          <!-- same deal as the hero tile: nothing but the poster loads until
+               the clip scrolls into view, and the lightbox adds the sound. -->
+          <button class="tile era-tile" data-video="assets/web/video/wanderers.mp4"
+                  data-title="Wanderers" aria-label="Play Wanderers video">
+            <video muted loop playsinline preload="none"
+                   poster="assets/web/img/poster-wanderers.jpg"
+                   src="assets/web/video/wanderers.mp4"></video>
+            <span class="tile-label" data-copy="era.now.tile">Wanderers</span>
+          </button>
         </span>
       </li>
     </ol>

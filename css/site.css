@@ -757,6 +757,11 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
 /* the color desert clip joins the monochrome world non-destructively */
 .tile-mono video{ filter:grayscale(1) contrast(1.05); }
 
+/* a tile inside a timeline era: square source, and narrow enough that the
+   text column above it still reads as the main event */
+.era-tile{ margin:22px 0 0; width:100%; max-width:360px; }
+.era-tile video{ aspect-ratio:1; }
+
 .tile-label{
   position:absolute; left:0; right:0; bottom:0;
   padding:36px 16px 14px;
