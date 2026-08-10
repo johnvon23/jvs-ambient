@@ -147,6 +147,9 @@ British partner Stephen Ives: early innovators in live laptop performance, cutti
 styles of music against each other. Two albums, *Cutup Mixdown*
 and *Network Effects*.
 
+## era.hk.caption
+Digital Cutup Lounge launch party at Club Bliss, Hong Kong
+
 ## era.la.when
 2000s
 

@@ -50,7 +50,13 @@ while IFS= read -r -d '' file; do
   fi
 
   mkdir -p "$target_dir"
-  if sips -Z "$MAX_EDGE" -s format jpeg -s formatOptions "$QUALITY" \
+  # sips -Z scales up as happily as down, which turns a small scan into a
+  # heavy, mushy file. Cap the target at the source's own longest edge.
+  edge=$(sips -g pixelWidth -g pixelHeight "$file" 2>/dev/null \
+           | awk '/pixel(Width|Height)/ {if ($2+0 > m) m = $2+0} END {print m+0}')
+  [ "${edge:-0}" -gt 0 ] && [ "$edge" -lt "$MAX_EDGE" ] || edge=$MAX_EDGE
+
+  if sips -Z "$edge" -s format jpeg -s formatOptions "$QUALITY" \
        "$file" --out "$target" >/dev/null 2>&1; then
     echo "  $rel -> ${target#"$OUT"/}"
     built=$((built+1))
