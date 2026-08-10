@@ -81,7 +81,12 @@ function esc(s) {
 // you want on the page is structure, and structure lives in the HTML.
 function inline(s) {
   return esc(s)
-    .replace(/\[([^\]\n]+)\]\(([^)\s]+)\)/g, '<a href="$2">$1</a>')
+    // an absolute URL leaves the site, so it opens in a new tab like every
+    // hand-written external link does
+    .replace(/\[([^\]\n]+)\]\(([^)\s]+)\)/g, (_, text, url) =>
+      /^https?:\/\//.test(url)
+        ? `<a href="${url}" target="_blank" rel="noopener">${text}</a>`
+        : `<a href="${url}">${text}</a>`)
     .replace(/\{\{\s*([^}]+?)\s*\}\}/g, '<span class="todo">[ $1 ]</span>')
     .replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\*([^*\n]+)\*/g, '<em>$1</em>');
