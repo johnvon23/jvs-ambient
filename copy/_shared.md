@@ -14,7 +14,7 @@ Skip to content
 John von Seggern
 
 ## brand.sub
-Ambient works
+Ambient producer and performer
 
 ## nav.about
 About

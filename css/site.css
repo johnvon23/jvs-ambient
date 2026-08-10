@@ -149,7 +149,8 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
     padding-top:12px; padding-bottom:12px;
     row-gap:6px;
   }
-  .brand-sub{ display:none; }
+  /* the sub is the site's only tagline now, so it stays on small screens */
+  .brand-sub{ font-size:9px; letter-spacing:.16em; }
   .nav-links{ width:100%; gap:18px; }
   .nav-links a{ font-size:10px; letter-spacing:.12em; }
   .nav-cta{ display:none; }
