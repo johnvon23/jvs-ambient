@@ -344,11 +344,20 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
   opacity:.38;
   will-change:transform;
 }
-/* darken toward the edges so copy always sits on quiet ground */
+/* Darken toward the edges so copy always sits on quiet ground, and so the
+   photograph fades into the sections above and below instead of starting
+   at a line.
+
+   The stops are offset because this scrim is measured on the .album-bg
+   box, not on the section. That box is inset:-18% 0, so it is 1.36x the
+   section tall and the section's top edge falls ~13% down it (18/136);
+   its bottom edge ~87%. Fading from 0% would spend 60% of the fade in the
+   part that .album's overflow:hidden clips away, and the photo would meet
+   the section above as a hard band. */
 .album-bg::after{
   content:""; position:absolute; inset:0;
   background:
-    linear-gradient(180deg, var(--ground) 0%, transparent 22%, transparent 74%, var(--ground) 100%),
+    linear-gradient(180deg, var(--ground) 13%, transparent 34%, transparent 66%, var(--ground) 87%),
     radial-gradient(110% 90% at 30% 50%, rgba(7,8,11,.62), transparent 70%);
 }
 
@@ -816,9 +825,8 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   pointer-events:none;
 }
 
-/* ── 05 lineage ─────────────────────────────────────────────── */
-
-.lineage{ text-align:center; }
+/* ── 05 lineage ─ the section is gone; the figure it was named for
+   outlived it and still carries the band photograph on prs.html ─── */
 
 .lineage-figure{
   margin:0 auto clamp(48px, 8vh, 90px);
@@ -834,22 +842,6 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
    section below adds its own, so drop the figure's trailing margin */
 .photo-break{ text-align:center; padding-bottom:0; }
 .photo-break .lineage-figure{ margin-bottom:0; }
-
-/* when a supporting paragraph follows the manifesto, close the gap */
-.lineage .manifesto{ margin-bottom:clamp(28px, 5vh, 52px); }
-.lineage-body{
-  max-width:60ch; margin:0 auto;
-  font-size:15.5px; line-height:1.75; color:var(--bone-dim);
-  text-align:center;
-}
-
-.manifesto{
-  margin:0 auto clamp(56px, 9vh, 110px);
-  max-width:24ch;
-  font-size:clamp(28px, 4.6vw, 62px);
-  font-weight:200; line-height:1.14; letter-spacing:-.03em;
-  color:var(--bone);
-}
 
 .credits{
   display:grid; gap:clamp(28px,4vw,56px);

@@ -198,24 +198,6 @@ Chapman Stick, bass guitar and live electronics, under my own name.
 Wanderers
 
 
-%% ── lineage ────────────────────────────────────────────────────────── %%
-
-## lineage.eyebrow
-Lineage
-
-## lineage.quote
-Jon Hassell's music set my direction when I was a teenager learning
-jazz. Thirty years later, I was in his band.
-
-## lineage.body
-By the time I met Jon, I had already spent two decades blending musical cultures
-on my own, from Tokyo jazz clubs to Cantopop arenas to cut-up laptop DJ
-sets in Hong Kong, which is why he brought me into the band. I
-recorded, co-produced, and performed on his final two albums. Playing
-that music was the fulfillment of a lifetime's direction. Now I'm carrying it
-forward.
-
-
 %% ── contact ─ why to reach out ─────────────────────────────────────── %%
 
 ## contact.h2
