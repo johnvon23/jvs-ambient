@@ -24,10 +24,11 @@ I bring worlds together\
 in sound.
 
 ## hero.sub
-I've spent my career exploring new musical worlds and bringing them together. I played bass on the Tokyo acid jazz scene and on global arena tours with some of the biggest stars in the Chinese music world. Computer DJ battles in Hong Kong led me to LA's electronic underground. I've always been experimenting and searching for fresh combinations of sounds and ideas.\
-Then the better part of a decade recording and performing with Jon
+I've spent my career exploring new musical worlds and bringing them together. I played bass on the Tokyo acid jazz scene and on global arena tours with some of the biggest stars in the Chinese music world. Computer DJ battles in Hong Kong led me to LA's electronic underground. Then the better part of a decade recording and performing with Jon
 Hassell, my lifelong inspiration, co-producing his final two albums.\
-Now I'm exploring new musical terrain with two forthcoming releases, continuing my Fourth World explorations into the future.
+I've always been experimenting and searching for fresh combinations of sounds and ideas.\
+
+Now I'm exploring new musical terrain with two forthcoming releases, continuing my own Fourth World explorations into the future.
 
 ## hero.cta.primary
 The releases
