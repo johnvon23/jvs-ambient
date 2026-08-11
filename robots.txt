@@ -1,0 +1,8 @@
+# johnvonseggern.com
+# Everything here is meant to be found. The 404 page carries its own
+# noindex, which is the only page that should stay out of an index.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://johnvonseggern.com/sitemap.xml

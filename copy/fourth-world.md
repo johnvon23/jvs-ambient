@@ -28,10 +28,6 @@ In progress. The next major work.
 ## head.h1
 A Fourth World\
 Is Still Possible
-
-## record.lede
-Carrying forward Hassell's vision. 
-
 ## record.body
 Jon Hassell defined Fourth World as a search for balance between the accumulated
 cultural wisdom of humanity and the conditions created by new technologies. On this album I continue to push this idea in new directions, just as Jon did over the course of a long career.\
@@ -45,7 +41,7 @@ Status
 In the studio now
 
 ## record.figcaption
-Cover study.
+Cover study
 
 
 %% ── demo ─ same player as the PRS page, once per track. The audio
