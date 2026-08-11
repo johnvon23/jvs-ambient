@@ -77,11 +77,17 @@ list to a different host, run:
 - [x] **Buttondown account and endpoint.** Wired and verified: the real
       username reaches Buttondown's subscribe flow, a bogus one 404s. The
       wording lives in `copy/_shared.md` under `signup.*`.
-- [ ] **One human test.** An automated POST hits Buttondown's bot
-      verification, which an agent will not complete, so the last step is
-      John's: submit his own address in a browser, finish the
-      verification, and confirm the subscriber appears. Nothing else is
-      blocking.
+- [x] **End-to-end test.** John submitted his own address 2026-08-10 and
+      it landed. The form works.
+- [ ] **Confirm the double opt-in.** That test subscriber is still
+      `unactivated`: Buttondown is on double opt-in by default, so every
+      signup gets a confirmation email and only becomes a real subscriber
+      after clicking the link in it. Unactivated addresses receive
+      nothing. John should click the link in that confirmation email to
+      close out his own test, and know that this is what every visitor
+      goes through. Worth leaving on (it is good for deliverability), but
+      it does mean a share of signups never complete, so the
+      confirmation email's wording is worth a look before launch.
 - [ ] **Newsletter name.** Still Buttondown's default, "My Awesome
       Newsletter". It shows on the verification page a subscriber sees,
       so rename it in Buttondown's settings before the site launches.
