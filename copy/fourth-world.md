@@ -30,9 +30,10 @@ A Fourth World\
 Is Still Possible
 ## record.body
 Jon Hassell defined Fourth World as a search for balance between the accumulated
-cultural wisdom of humanity and the conditions created by new technologies. On this album I continue to push this idea in new directions, just as Jon did over the course of a long career.\
+cultural wisdom of humanity and the conditions created by new technologies. Jon is gone now but as technology accelerates the need to find this balance has never been greater than now.\ 
+On this new album I continue this search, just as Jon did over the course of a long career.\
 I play Chapman Stick, samplers and synthesizers on the record, joined by a number of the
-key musicians Jon worked with over his last twenty years.\
+key musicians Jon worked with.\
 
 ## record.meta.status.dt
 Status
