@@ -37,7 +37,7 @@ The releases
 Get in touch
 
 ## hero.tile.label
-Portal II
+Portal III
 %% Also the title shown in the video lightbox. %%
 
 

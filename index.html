@@ -70,14 +70,19 @@
       </div>
     </div>
 
-    <!-- floating video tile, Kage-style. The inline loop is a short silent
-         encode; the lightbox (data-video) streams the full piece with sound. -->
-    <button class="hero-tile reveal" style="--d:.22s" data-video="assets/web/video/portal-ii.mp4"
-            data-title="Portal II" aria-label="Play Portal II video">
+    <!-- floating video tile, Kage-style. The inline loop is a silent encode;
+         the lightbox (data-video) streams the full piece with sound. Portal
+         III runs 42s, so the loop is the whole piece rather than an excerpt
+         the way Portal II's was. It is encoded at crf 31, not the house 27:
+         this is the one video that autoplays the moment the page opens, and
+         the tile is capped at 281px wide (hidden entirely under 900px), so
+         27 spent 1.2MB on detail that never reaches a screen. -->
+    <button class="hero-tile reveal" style="--d:.22s" data-video="assets/web/video/portal-iii.mp4"
+            data-title="Portal III" aria-label="Play Portal III video">
       <video muted loop playsinline preload="none"
-             poster="assets/web/img/poster-portal-ii.jpg"
-             src="assets/web/video/portal-ii-loop.mp4"></video>
-      <span class="hero-tile-label" data-copy="hero.tile.label">Portal II</span>
+             poster="assets/web/img/poster-portal-iii.jpg"
+             src="assets/web/video/portal-iii-loop.mp4"></video>
+      <span class="hero-tile-label" data-copy="hero.tile.label">Portal III</span>
     </button>
 
     <div class="wordmark" aria-hidden="true"><span id="wm">VON&nbsp;SEGGERN</span></div>
