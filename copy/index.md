@@ -25,8 +25,8 @@ in sound.
 
 ## hero.sub
 I've spent my career exploring new musical worlds and bringing them together. I played bass on the Tokyo acid jazz scene and on global arena tours with some of the biggest stars in the Chinese music world. Computer DJ battles in Hong Kong led me to LA's electronic underground.\
-Then the better part of a decade recording and performing with Jon
-Hassell, my lifelong inspiration, co-producing his final two albums.\
+Then the better part of a decade recording and performing with [Jon Hassell](https://en.wikipedia.org/wiki/Jon_Hassell),
+my lifelong inspiration, co-producing his final two albums.\
 I've always been experimenting and searching for fresh combinations of sounds and ideas.\
 Now I'm exploring new musical terrain with two forthcoming releases, continuing my own Fourth World explorations into the future.
 

@@ -197,12 +197,12 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 
 /* inline links inside prose. The accent carries them; the underline is
    quiet enough that a linked phrase does not shout out of the paragraph. */
-.lede a, .body a, .era p a{
+.lede a, .body a, .era p a, .hero-sub a{
   color:var(--accent);
   border-bottom:1px solid rgba(127,163,171,.35);
   transition:color .3s var(--ease), border-color .3s var(--ease);
 }
-.lede a:hover, .body a:hover, .era p a:hover{
+.lede a:hover, .body a:hover, .era p a:hover, .hero-sub a:hover{
   color:var(--accent-hot); border-color:var(--accent-hot);
 }
 
