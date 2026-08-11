@@ -46,10 +46,15 @@
 
 <main id="top">
 
-  <!-- ── the record ─ title, prose, credits, cover. Same shape as the
-       opener on prs.html, but deliberately on plain black: no .album-bg
-       here, so the cover is the only image in the section. ─────────── -->
+  <!-- ── the record ─ title, prose, credits, cover, over the columns.
+       Same shape as the opener on prs.html. The photograph is a small
+       original (640px on its long edge), which is part of why it sits
+       under the .page-open scrim: at .32 it reads as texture behind the
+       copy rather than as detail. ──────────────────────────────────── -->
   <section class="album page-open" id="record">
+    <div class="album-bg" aria-hidden="true">
+      <img src="assets/web/img/backgrounds/stone-columns.jpg" alt="" fetchpriority="high">
+    </div>
     <div class="album-inner">
       <p class="album-status reveal" data-copy="head.status">In progress. The next major work.</p>
       <h1 class="h2 page-title reveal" style="--d:.06s" data-copy="head.h1">
