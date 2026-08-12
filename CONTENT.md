@@ -19,9 +19,15 @@ only in the nav tabs.
       John.
 - [ ] **YouTube track links.** The two Hassell cards and Extreme Measures
       need the track links John picks (he supplies; do not choose for him).
-- [ ] **Upcoming live release.** A Hassell live record on Ndeya; details on
-      hold until it is announced (John has them). The timeline mentions it
-      generically. A commented slot is reserved in the releases grid.
+- [x] **Upcoming live release.** Announced and on the page as a featured
+      box above the grid (2026-08-12): *Music Is Invisible (Pentimento
+      Volume Three)*, Ndeya, out 2 October 2026, pre-order linked to
+      Bandcamp. Trio is Hassell, Rick Cox, John; edited and mixed by Jeff
+      Rona; cover is Mati Klarwein's *Leh C'est Beau*. The timeline line
+      now names the record instead of hinting at it. Details came from the
+      Bandcamp album page. Credit confirmed by John 2026-08-12: **live
+      electronics only, no bass on this record** (he played bass elsewhere
+      in the Hassell decade, but not here).
 - [ ] **Social URLs.** Footer icons (Bandcamp, Instagram, YouTube) are in;
       Bandcamp is live, the other two point at `#` until John supplies his
       socials.

@@ -47,6 +47,42 @@ Portal III
 ## releases.h2
 Selected releases
 
+%% The featured box above the grid. Only ever one record here. %%
+
+## rel.invisible.status
+Latest release
+
+## rel.invisible.artist
+Jon Hassell
+
+## rel.invisible.title
+Music Is Invisible
+
+## rel.invisible.sub
+Pentimento Volume Three
+
+## rel.invisible.role
+Ndeya &middot; out 2 October 2026 &middot; live electronics
+
+%% Keep every *italic* phrase on one line: build.js does not match across a
+   line break, and a wrapped pair silently swallows the text between. %%
+
+## rel.invisible.body1
+My latest release is *Music Is Invisible*: the last concert Jon Hassell ever
+played, a trio with Rick Cox and me at St John at Hackney in London, 2015.
+It closes the Pentimento trilogy that began with *Listening to Pictures*
+and *Seeing Through Sound*, both of which I recorded and co-produced.
+Jeff Rona edited and mixed it. The cover is a Mati Klarwein painting and
+the liner essay is Jon's own.
+
+## rel.invisible.body2
+Jon has been my greatest musical influence since I was learning to play in
+high school. Working on this music with him through his last decade was a
+privilege.
+
+## rel.invisible.cta
+Pre-order on Bandcamp
+
 ## rel.tmfn.artist
 Matt Piper &amp; John von Seggern
 
@@ -183,7 +219,7 @@ The Jon Hassell band
 ## era.hassell.p
 Core member through the decade. Recorded, co-produced and performed on
 *Listening to Pictures* (2018) and *Seeing Through Sound* (2020).
-Also performed on two European tours, including Hassell's final concert, London 2015, soon to be released by Ndeya Records.
+Also performed on two European tours, including Hassell's final concert, London 2015, released by Ndeya as *Music Is Invisible*.
 
 ## era.now.when
 Now

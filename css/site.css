@@ -459,6 +459,77 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 .page-title{ margin-bottom:20px; }
 .page-head .hero-sub{ margin-bottom:0; }
 
+/* ── featured release (home) ─ one record given the full width ──
+   Sits above .rel-grid and outranks it: accent border, cover at the
+   size of two grid cards, room for a paragraph. Only ever one. */
+
+.rel-feature{
+  display:grid; grid-template-columns:1fr;
+  border:1px solid rgba(127,163,171,.32);
+  background:var(--ground-2);
+  margin-bottom:clamp(16px, 2.2vw, 30px);
+  transition:border-color .35s var(--ease);
+}
+a.rel-feature:hover{ border-color:var(--accent); }
+@media (min-width:860px){
+  .rel-feature{ grid-template-columns:minmax(280px, 38%) 1fr; }
+}
+
+.rel-feature-art{ overflow:hidden; border-bottom:1px solid var(--line-soft); }
+@media (min-width:860px){
+  .rel-feature-art{ border-bottom:0; border-right:1px solid var(--line-soft); }
+}
+.rel-feature-art img{
+  width:100%; height:100%; aspect-ratio:1/1; object-fit:cover;
+  opacity:.92;
+  transition:opacity .4s var(--ease), transform .6s var(--ease);
+}
+a.rel-feature:hover .rel-feature-art img{ opacity:1; transform:scale(1.02); }
+
+.rel-feature-meta{
+  display:flex; flex-direction:column; align-items:flex-start;
+  padding:clamp(24px, 3.4vw, 52px);
+}
+.rel-feature-meta .album-status{ margin-bottom:20px; }
+
+.rel-feature-artist{
+  font-size:10px; letter-spacing:.24em; text-transform:uppercase;
+  color:var(--muted); margin-bottom:10px;
+}
+.rel-feature-title{
+  font-size:clamp(28px, 3.6vw, 46px);
+  font-weight:300; line-height:1.05; letter-spacing:-.025em;
+  color:var(--bone); margin:0;
+}
+.rel-feature-sub{
+  font-size:12.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--accent); margin:10px 0 0;
+}
+.rel-feature-role{
+  font-size:12.5px; color:var(--bone-dim); letter-spacing:.03em;
+  margin:16px 0 0;
+}
+.rel-feature-body{
+  font-size:14.5px; line-height:1.72; color:var(--bone-dim);
+  margin:18px 0 0; max-width:56ch;
+}
+.rel-feature-cta{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:12px; letter-spacing:.2em; text-transform:uppercase;
+  color:var(--accent); margin-top:26px;
+}
+.rel-feature-cta::after{
+  content:""; width:22px; height:1px; background:currentColor;
+  transition:width .35s var(--ease);
+}
+a.rel-feature:hover .rel-feature-cta{ color:var(--accent-hot); }
+a.rel-feature:hover .rel-feature-cta::after{ width:38px; }
+@media (prefers-reduced-motion: reduce){
+  .rel-feature-cta::after,
+  a.rel-feature:hover .rel-feature-cta::after{ width:22px; transition:none; }
+  a.rel-feature:hover .rel-feature-art img{ transform:none; }
+}
+
 /* ── releases grid (home) ─ the shelf of past records ────────── */
 
 .rel-grid{

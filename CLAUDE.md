@@ -31,6 +31,10 @@ over shared keys.
 - `copy/prs.md` → `prs.html`
 - `copy/fourth-world.md` → `fourth-world.html`
 
+**Keep each `*italic*` or `**bold**` pair on a single line.** The matcher does
+not cross a line break, so a wrapped pair silently eats the text between it and
+the next marker. Rewrap the line instead.
+
 Markdown supported inside a block: `*italic*`, `**bold**`, `[text](url)`,
 `{{ placeholder }}` (renders the accent-color `[ placeholder ]` TODO marker),
 a trailing `\` for a line break, `%% comment %%` for notes that never ship,
