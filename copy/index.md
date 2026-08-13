@@ -41,6 +41,16 @@ Portal III
 %% Also the title shown in the video lightbox. %%
 
 
+%% ── press pull-quote ───────────────────────────────────────────────── %%
+%% The link to the Bass Magazine article lives in index.html. %%
+
+## press.bass.quote
+&ldquo;A virtuosic bassist, electronic music producer, and sonic alchemist.&rdquo;
+
+## press.bass.cite
+Bass Magazine
+
+
 %% ── selected releases ──────────────────────────────────────────────── %%
 %% Reverse chronological. The cards themselves live in index.html. %%
 

@@ -319,6 +319,43 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
   .wordmark span{ color:rgba(232,228,220,.07); }
 }
 
+/* ── press pull-quote (home) ─────────────────────────────────
+   One line of outside validation between the hero's self-description
+   and the shelf of records. Deliberately slim: hairlines instead of a
+   card, so it reads as a caesura between two big sections rather than
+   becoming a third one. */
+
+.press{
+  padding:clamp(40px, 7vh, 88px) var(--pad);
+  max-width:var(--maxw); margin:0 auto;
+}
+.press-quote{
+  margin:0 auto; max-width:clamp(340px, 52vw, 660px); text-align:center;
+  padding:clamp(30px, 4.5vw, 54px) 0;
+  border-top:1px solid var(--line-soft);
+  border-bottom:1px solid var(--line-soft);
+}
+/* the measure is set on the blockquote, not the figure: ch has to resolve
+   against the quote's own display size or it comes out half as wide */
+.press-quote blockquote{
+  margin:0 auto; max-width:34ch;
+  font-size:clamp(21px, 2.7vw, 34px);
+  font-weight:200; line-height:1.3; letter-spacing:-.02em;
+  color:var(--bone);
+}
+.press-cite{
+  display:block; margin-top:22px;
+  font-size:10.5px; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--muted);
+}
+.press-cite a{
+  color:var(--accent);
+  border-bottom:1px solid rgba(127,163,171,.3);
+  transition:color .3s var(--ease), border-color .3s var(--ease);
+}
+.press-cite a:hover{ color:var(--accent-hot); border-color:var(--accent-hot); }
+.press-cite cite{ font-style:normal; }
+
 /* ── 02/03 albums ─ full-bleed photographic sections ────────── */
 
 .album{
