@@ -28,16 +28,22 @@ only in the nav tabs.
       Bandcamp album page. Credit confirmed by John 2026-08-12: **live
       electronics only, no bass on this record** (he played bass elsewhere
       in the Hassell decade, but not here).
-- [x] **Early-life and Asia photos (5), added 2026-09-17.** A new 1988
+- [x] **Early-life and Asia photos, added 2026-09-17.** A new 1988
       Benares entry opens the timeline (junior-year trimester: Buddhist
-      philosophy and meditation, bansuri with R.J. Srinivasan; recital
-      photo with Angus McDonald on tabla). Tokyo gained the acid jazz trio
-      shot — the other two players are Andy Wulf and a David whose surname
-      John does not recall, and **John's call: do not name them, they are
-      not public figures**, so the caption stays about the scene. Hong Kong
+      philosophy and meditation, bansuri with R.J. Srinivasan), illustrated
+      by the photo of Srinivasan. Tokyo gained the acid jazz trio shot —
+      the other two players are Andy Wulf and a David whose surname John
+      does not recall, and **John's call: do not name them, they are not
+      public figures**, so the caption stays about the scene. Hong Kong
       gained the Kung Chi Shing rehearsal (*City Inside a Broken Sky*,
       around 2000) and the Digital Cutup Lounge shot that ran on the cover
       of *Asiaweek* in 2000. All facts from John, 2026-09-17.
+      Same day, John cut two photos as too many: the Benares recital with
+      Angus McDonald on tabla, and the older Club Bliss launch-party DJ
+      shot. Both derivatives stay in `assets/web/img/other/`
+      (`jvs-angus-india-recital.jpg`, `dcl20.jpg`) because
+      `build-images.sh` mirrors every source and would just rebuild them;
+      nothing references them.
 - [ ] **Social URLs.** Footer icons (Bandcamp, Instagram, YouTube) are in;
       Bandcamp is live, the other two point at `#` until John supplies his
       socials.

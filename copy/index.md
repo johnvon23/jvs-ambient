@@ -168,9 +168,6 @@ Fall trimester of my junior year of college, spent in Benares studying Buddhist
 philosophy and meditation alongside Indian classical music: the bansuri bamboo
 flute, with R.J. Srinivasan.
 
-## era.india.caption.recital
-A recital for the other American students in Benares, with Angus McDonald on tabla
-
 ## era.india.caption.teacher
 R.J. Srinivasan, my bansuri teacher in Benares
 
@@ -216,9 +213,6 @@ and *Network Effects*.
 
 ## era.hk.caption.kung
 Rehearsing *City Inside a Broken Sky* with Hong Kong violinist and composer Kung Chi Shing, around 2000
-
-## era.hk.caption
-Digital Cutup Lounge launch party at Club Bliss, Hong Kong
 
 ## era.hk.caption.asiaweek
 Digital Cutup Lounge on the cover of *Asiaweek*, 2000
