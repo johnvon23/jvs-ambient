@@ -161,12 +161,12 @@ A working life in sound
 1988
 
 ## era.india.h3
-Benares
+India
 
 ## era.india.p
-Fall trimester of my junior year of college, spent in Benares studying Buddhist
-philosophy and meditation alongside Indian classical music: the bansuri bamboo
-flute, with R.J. Srinivasan.
+Fall trimester of my junior year of college spent in India studying Buddhist
+philosophy and meditation in Bodh Gaya as well as learning Indian classical
+flute (bansuri) with R.J. Srinivasan in Benares.
 
 ## era.india.caption.teacher
 R.J. Srinivasan, my bansuri teacher in Benares
