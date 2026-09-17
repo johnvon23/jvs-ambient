@@ -157,6 +157,23 @@ Ambient Bass Guitar, streaming from Bandcamp. Press play.
 ## history.h2
 A working life in sound
 
+## era.india.when
+1988
+
+## era.india.h3
+Benares
+
+## era.india.p
+Fall trimester of my junior year of college, spent in Benares studying Buddhist
+philosophy and meditation alongside Indian classical music: the bansuri bamboo
+flute, with R.J. Srinivasan.
+
+## era.india.caption.recital
+A recital for the other American students in Benares, with Angus McDonald on tabla
+
+## era.india.caption.teacher
+R.J. Srinivasan, my bansuri teacher in Benares
+
 ## era.study.when
 1991
 
@@ -178,6 +195,9 @@ Working jazz bassist across the city, playing Tokyo's jazz clubs with
 a wide range of players and getting involved in the city's burgeoning
 acid jazz scene.
 
+## era.tokyo.caption
+Playing Tokyo's acid jazz scene
+
 ## era.hk.when
 1995-2001
 
@@ -194,8 +214,14 @@ British partner Stephen Ives: early innovators in live laptop performance, cutti
 styles of music against each other. Two albums, *Cutup Mixdown*
 and *Network Effects*.
 
+## era.hk.caption.kung
+Rehearsing *City Inside a Broken Sky* with Hong Kong violinist and composer Kung Chi Shing, around 2000
+
 ## era.hk.caption
 Digital Cutup Lounge launch party at Club Bliss, Hong Kong
+
+## era.hk.caption.asiaweek
+Digital Cutup Lounge on the cover of *Asiaweek*, 2000
 
 ## era.la.when
 2000s
