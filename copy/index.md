@@ -182,6 +182,9 @@ Full performance scholarship to the New School Jazz program in
 Manhattan; studied upright bass with Gary Peacock, Reggie Workman and
 Lonnie Plaxico.
 
+## era.study.caption
+The New School, Greenwich Village
+
 ## era.tokyo.when
 1991-94
 
