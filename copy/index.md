@@ -206,14 +206,16 @@ Hong Kong
 Bass guitar for some of the biggest Asian pop stars: five world tours
 and a long run of album sessions. Off tour, a fixture in Hong Kong's
 clubs and at the Foreign Correspondents' Club, often alongside US jazz
-musician Allen Youngblood.\
+musician Allen Youngblood or with HK composer/violinist Kung Chi Shing.
+
+## era.hk.caption.kung
+Rehearsing *City Inside a Broken Sky* with Kung Chi Shing, around 2000
+
+## era.hk.p2
 Turned experimental laptop DJ around 2000 and formed Digital Cutup Lounge with
 British partner Stephen Ives: early innovators in live laptop performance, cutting
 styles of music against each other. Two albums, *Cutup Mixdown*
 and *Network Effects*.
-
-## era.hk.caption.kung
-Rehearsing *City Inside a Broken Sky* with Hong Kong violinist and composer Kung Chi Shing, around 2000
 
 ## era.hk.caption.asiaweek
 Digital Cutup Lounge on the cover of *Asiaweek*, 2000
