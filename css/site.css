@@ -699,6 +699,11 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
    never upscaled into mush next to the full-size shots. Omit it and the
    photo just takes the standard 300px. */
 .era-photo{ margin:0; flex:0 1 300px; max-width:min(300px, var(--nat, 300px)); }
+/* Two photos in one era sometimes read better stacked than side by side.
+   In a column the base rule's 300px flex-basis would size the height, so the
+   width is set outright and the figures keep a shared left edge. */
+.era-photos.stack{ flex-direction:column; align-items:flex-start; }
+.era-photos.stack .era-photo{ flex:0 0 auto; width:min(300px, 100%); }
 .era-photo img{
   width:100%; height:auto;
   border:1px solid var(--line-soft);
