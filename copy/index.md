@@ -165,8 +165,8 @@ India
 
 ## era.india.p
 Fall trimester of my junior year of college spent in India studying Buddhist
-philosophy and meditation in Bodh Gaya as well as learning Indian classical
-flute (bansuri) with R.J. Srinivasan in Benares.
+philosophy and meditation in Bodh Gaya as well as Indian classical flute
+(bansuri) in Benares.
 
 ## era.india.caption.teacher
 R.J. Srinivasan, my bansuri teacher
