@@ -179,7 +179,8 @@ New York City
 
 ## era.study.p
 Full performance scholarship to the New School Jazz program in
-Manhattan; studied with Gary Peacock and Reggie Workman.
+Manhattan; studied upright bass with Gary Peacock, Reggie Workman and
+Lonnie Plaxico.
 
 ## era.tokyo.when
 1991-94
