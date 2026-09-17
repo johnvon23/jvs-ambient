@@ -169,7 +169,7 @@ philosophy and meditation in Bodh Gaya as well as learning Indian classical
 flute (bansuri) with R.J. Srinivasan in Benares.
 
 ## era.india.caption.teacher
-R.J. Srinivasan, my bansuri teacher in Benares
+R.J. Srinivasan, my bansuri teacher
 
 ## era.study.when
 1991
