@@ -42,9 +42,9 @@ First release in the works
 
 
 %% ── demo ─ same player as the PRS page, once per track. The audio
-   files are assets/web/audio/kujutu.mp3 and tinaja.mp3, set in
+   files are assets/web/audio/gateway.m4a, floating.m4a and discoveries.m4a, set in
    fourth-world.html: original masters copied as-is from assets/sound/,
-   never re-encoded. To add a third track, copy the <figure class="player">
+   never re-encoded. To add another track, copy the <figure class="player">
    block and add a demo.track.<slug> key here. %%
 
 ## demo.h2
@@ -53,11 +53,14 @@ Hear it
 ## demo.body
 Samples from the first release of the new project, *A Fourth World Is Still Possible*.
 
-## demo.track.kujutu
-Kujutu
+## demo.track.gateway
+Gateway
 
-## demo.track.tinaja
-Tinaja
+## demo.track.floating
+Floating
+
+## demo.track.discoveries
+Discoveries
 
 
 %% ── the story ─ below the fold, on its own photograph ──────────────── %%

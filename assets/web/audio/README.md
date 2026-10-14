@@ -7,5 +7,7 @@ quality). To add a track: copy it from assets/sound/ under a lowercase,
 dash-separated name and point the page's <audio> src at it.
 
 antechamber-of-the-mind.mp3   the player on prs.html
-kujutu.mp3                    fourth-world.html, first
-tinaja.mp3                    fourth-world.html, second
+gateway.m4a                   fourth-world.html, first
+floating.m4a                  fourth-world.html, second
+discoveries.m4a               fourth-world.html, third
+kujutu.mp3, tinaja.mp3         previous demos (retained for existing links)
