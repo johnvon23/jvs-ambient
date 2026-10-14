@@ -34,12 +34,6 @@ Through the recent release of Jon Hassell's *Music Is Invisible* album, I've bee
 ## record.body
 We're working on the first release now, there are a few recent session recordings posted below. I play Chapman Stick and sampled percussion.
 
-## record.meta.status.dt
-Status
-
-## record.meta.status.dd
-First release in the works
-
 
 %% ── demo ─ same player as the PRS page, once per track. The audio
    files are assets/web/audio/gateway.m4a, floating.m4a and discoveries.m4a, set in
@@ -49,9 +43,6 @@ First release in the works
 
 ## demo.h2
 Hear it
-
-## demo.body
-Samples from recent sessions
 
 ## demo.track.gateway
 GATEWAY
