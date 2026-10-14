@@ -32,7 +32,7 @@ Is Still Possible
 Through the recent release of Jon Hassell's *Music Is Invisible* album, I've been in touch with a new generation of musicians and sound designers inspired by his work. We've been recording together here in Los Angeles and remotely with musicians in other countries, and I'm excited about the new music we're making.
 
 ## record.body
-We're working on the first release now, with music to share soon. This project will also include contributions with some of Jon's former collaborators from different eras, alongside musicians from my own global network. I play Chapman Stick, samplers and synthesizers.
+We're working on the first release now, there are a few recent session recordings posted below. I play Chapman Stick and sampled percussion.
 
 ## record.meta.status.dt
 Status
