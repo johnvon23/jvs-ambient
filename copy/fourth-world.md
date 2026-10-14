@@ -51,16 +51,16 @@ First release in the works
 Hear it
 
 ## demo.body
-Samples from the first release of the new project, *A Fourth World Is Still Possible*.
+Samples from recent sessions
 
 ## demo.track.gateway
-Gateway
+GATEWAY w Nicolas Maldonado - sax & electronics
 
 ## demo.track.floating
-Floating
+FLOATING w Audionautica [Chile] - samples and processing
 
 ## demo.track.discoveries
-Discoveries
+DISCOVERIES w Matt Piper - synth
 
 
 %% ── the story ─ below the fold, on its own photograph ──────────────── %%
