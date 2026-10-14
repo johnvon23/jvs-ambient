@@ -774,6 +774,8 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
    photograph that is not always dark, so it gets a scrim across the side the
    copy sits on. The cover keeps the bright half of the frame. */
 .page-open .album-bg img{ opacity:.32; }
+/* Give the Fourth World opening photograph 15% more visibility. */
+.fourth-world-open .album-bg img{ opacity:.368; }
 .page-open .album-bg::after{
   background:
     linear-gradient(180deg, var(--ground) 0%, transparent 24%, transparent 72%, var(--ground) 100%),

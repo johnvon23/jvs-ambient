@@ -40,9 +40,6 @@ Status
 ## record.meta.status.dd
 First release in the works
 
-## record.figcaption
-Cover study
-
 
 %% ── demo ─ same player as the PRS page, once per track. The audio
    files are assets/web/audio/kujutu.mp3 and tinaja.mp3, set in
