@@ -11,34 +11,34 @@ house). The blocks below follow that order.
 A Fourth World Is Still Possible - John von Seggern
 
 ## meta.description
-John von Seggern recorded, co-produced and performed on Jon Hassell's final two albums. Now he is carrying the Fourth World vision forward, with Chapman Stick, percussion, and synthesizers.
+A Fourth World Is Still Possible is John von Seggern's new project, bringing together a new generation inspired by Jon Hassell, former collaborators, and musicians from around the world.
 
 ## meta.og.title
 A Fourth World Is Still Possible - John von Seggern
 
 ## meta.og.description
-Carrying Jon Hassell's Fourth World vision forward. In progress.
+A new project inspired by the next generation of musicians carrying Jon Hassell's influence forward. First release in progress.
 
 
 %% ── the record ─ the whole opening section ─────────────────────────── %%
 
 ## head.status
-In progress. The next major work.
+A new project. First release in progress.
 
 ## head.h1
 A Fourth World\
 Is Still Possible
 ## record.lede
-Jon Hassell defined Fourth World as a search for balance between the accumulated
-cultural wisdom of humanity and the conditions created by new technologies. Jon is gone now but as technology accelerates the need to find this balance has never been greater.
+*A Fourth World Is Still Possible* is my new project. In the wake of Jon Hassell's *Music Is Invisible*, I heard from a new generation of musicians and sound designers inspired by his work. Hearing what they were making inspired me to bring us together and continue exploring the possibilities of Fourth World.
+
 ## record.body
-On this new album I continue this search, just as Jon did over the course of a long career. I play Chapman Stick, samplers and synthesizers on the record, joined by a number of the
-key musicians Jon worked with.
+We've been recording together here in Los Angeles and remotely with musicians in other countries, and I'm excited about the music we're making. We're working on the first release now, with music to share soon. The project will also include some of Jon's former collaborators from different eras, alongside musicians from my own global network. I play Chapman Stick, samplers and synthesizers.
+
 ## record.meta.status.dt
 Status
 
 ## record.meta.status.dd
-In the studio now
+First release in the works
 
 ## record.figcaption
 Cover study
@@ -54,7 +54,7 @@ Cover study
 Hear it
 
 ## demo.body
-Two tracks from the sessions, as the record takes shape.
+Samples from the first release of the new project, *A Fourth World Is Still Possible*.
 
 ## demo.track.kujutu
 Kujutu
@@ -89,8 +89,7 @@ Now I'm continuing to push these ideas into the future. Now more than ever we ne
 Follow it
 
 ## contact.sub
-The record is in the studio now. Labels and writers who want to hear it
-as it takes shape are welcome to get in touch.
+Our first release is taking shape. Labels and writers who want to hear the music are welcome to get in touch.
 
 ## contact.cta.primary
 Get in touch
