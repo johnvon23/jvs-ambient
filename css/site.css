@@ -859,6 +859,13 @@ a.rel:hover .rel-art img{ opacity:1; transform:scale(1.02); }
   text-transform:none; white-space:normal; overflow:visible;
   letter-spacing:.04em; line-height:1.5;
 }
+.fourth-world-open .player-track-name{
+  display:block; font-size:13px; letter-spacing:.1em;
+}
+.fourth-world-open .player-credit{
+  display:block; margin-top:3px; font-size:11px;
+  letter-spacing:.02em; overflow-wrap:anywhere;
+}
 
 .player-scrub{
   -webkit-appearance:none; appearance:none;

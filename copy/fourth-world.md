@@ -54,13 +54,22 @@ Hear it
 Samples from recent sessions
 
 ## demo.track.gateway
-GATEWAY w Nicolas Maldonado - sax & electronics
+GATEWAY
+
+## demo.credit.gateway
+w Nicolas Maldonado - sax & electronics
 
 ## demo.track.floating
-FLOATING w Audionautica [Chile] - samples and processing
+FLOATING
+
+## demo.credit.floating
+w Audionautica [Chile] - samples and processing
 
 ## demo.track.discoveries
-DISCOVERIES w Matt Piper - synth
+DISCOVERIES
+
+## demo.credit.discoveries
+w Matt Piper - synth
 
 
 %% ── the story ─ below the fold, on its own photograph ──────────────── %%
