@@ -11,13 +11,13 @@ house). The blocks below follow that order.
 A Fourth World Is Still Possible - John von Seggern
 
 ## meta.description
-A Fourth World Is Still Possible is John von Seggern's new project, bringing together a new generation inspired by Jon Hassell, former collaborators, and musicians from around the world.
+A new recording project by John von Seggern, exploring the Fourth World with musicians who played with Jon Hassell or were shaped by his music. Hear early sessions.
 
 ## meta.og.title
 A Fourth World Is Still Possible - John von Seggern
 
 ## meta.og.description
-A new project inspired by the next generation of musicians carrying Jon Hassell's influence forward. First release in progress.
+John von Seggern joins musicians who played with Jon Hassell or were shaped by his music to explore the possibilities of the Fourth World. Hear recent sessions from the new recording project as its first release takes shape.
 
 
 %% ── the record ─ the whole opening section ─────────────────────────── %%
