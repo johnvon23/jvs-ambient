@@ -88,12 +88,6 @@ Now I'm continuing to push these ideas into the future. Now more than ever we ne
 ## contact.h2
 Follow it
 
-## contact.sub
-Our first release is taking shape. Labels and writers who want to hear the music are welcome to get in touch.
-
-## contact.cta.primary
-Get in touch
-
 
 %% ── the vision ─ last on the page, after contact. Jon's definition,
    photographed on the wall of his house. The transcription is verbatim
