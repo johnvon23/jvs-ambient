@@ -22,9 +22,6 @@ A new project inspired by the next generation of musicians carrying Jon Hassell'
 
 %% ── the record ─ the whole opening section ─────────────────────────── %%
 
-## head.status
-A new project. First release in progress.
-
 ## head.h1
 A Fourth World\
 Is Still Possible
