@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  Three pages, hand-written, because three pages hardly ever change.
+  Four pages, hand-written, because four pages hardly ever change.
   Add a <url> block when a page is added; the URLs here must match the
   <link rel="canonical"> in each page's <head>, or the two disagree
   about which address is the real one.
@@ -19,6 +19,10 @@
   </url>
   <url>
     <loc>https://johnvonseggern.com/fourth-world.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://johnvonseggern.com/press.html</loc>
     <priority>0.8</priority>
   </url>
 </urlset>

@@ -1,7 +1,7 @@
 # Shared copy
 
 Words that appear on every page: the nav bar, the footer, the skip link.
-Edit a block below and run `node build.js` to push it to all three pages.
+Edit a block below and run `node build.js` to push it to all four pages.
 
 Syntax: `*italic*`, `**bold**`, `[link text](https://url)`, `{{ placeholder }}`
 for a visible TODO marker, a trailing `\` for a line break, and `%% ... %%`
@@ -24,6 +24,9 @@ Live at the PRS
 
 ## nav.fourthworld
 Fourth World
+
+## nav.press
+Press
 
 ## nav.cta
 Get in touch

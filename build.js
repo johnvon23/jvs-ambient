@@ -28,6 +28,7 @@ const PAGES = {
   'index.html': 'index',
   'prs.html': 'prs',
   'fourth-world.html': 'fourth-world',
+  'press.html': 'press',
 };
 
 const VOID_TAGS = new Set(['meta', 'link', 'img', 'input', 'br', 'hr', 'source']);

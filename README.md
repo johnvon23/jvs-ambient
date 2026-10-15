@@ -1,6 +1,6 @@
 # John von Seggern - ambient works
 
-Three-page site. Static HTML, CSS, and vanilla JS. No framework, no
+Four-page site. Static HTML, CSS, and vanilla JS. No framework, no
 dependencies. The only build step syncs the copy files into the pages.
 
 ```
@@ -9,6 +9,7 @@ build.js        writes copy/*.md into the pages
 index.html      structure for the home page
 prs.html        structure for Live at the PRS
 fourth-world.html
+press.html
 css/site.css    one stylesheet, design tokens at the top
 js/site.js      reveals, nav scrim, video tiles, lightbox, audio player, fog
 assets/web/     processed web-weight images, video and audio (committed)

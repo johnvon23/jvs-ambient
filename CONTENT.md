@@ -50,9 +50,9 @@ only in the nav tabs.
 - [ ] **Routines to keep the site current** (John's ask): not built yet.
       Candidate: a periodic check that compares working-self/board state
       against the site's status pills and drafts updates.
-- [ ] **Press quotes.** A press strip was considered and skipped: only one
-      independent quotable source found (Bass Magazine). Revisit when
-      Live at the PRS or the live record draws reviews.
+- [x] **Press page.** Added a dedicated archive of interviews and reviews
+      for *Music Is Invisible*, plus selected earlier music coverage. The
+      home-page Bass Magazine quote now links onward to the full page.
 - [ ] **New timeline facts to confirm** (from John's published bios): New
       School scholarship, Gary Peacock / Reggie Workman, M.A.
       ethnomusicology UC Riverside, Native Instruments training Herbie
