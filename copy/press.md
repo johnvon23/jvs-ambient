@@ -14,32 +14,20 @@ John von Seggern | Press
 ## meta.og.description
 Interviews and reviews of Music Is Invisible, plus selected coverage of John von Seggern's music.
 
-## hero.eyebrow
-John von Seggern / selected press
-
 ## hero.title
 The music, in conversation.
 
 ## hero.intro
-Writing and conversations around *Music Is Invisible*, Jon Hassell's final live performance with Rick Cox and me. Below that, selected interviews and coverage from my own work in music.
+Jon Hassell's *Music Is Invisible* is his final live concert, played with Rick Cox and me at St John at Hackney in 2015. It came out in 2026 as the third volume of his *Pentimento* trilogy.
 
-## hero.cta.coverage
-Explore the coverage
+## hero.body
+Interviews and reviews of the record are below, followed by selected coverage of my own work.
 
 ## hero.cta.listen
 Listen to the album ↗
 
 ## hero.cover.caption
 Jon Hassell · Music Is Invisible · Ndeya, 2026
-
-## album.eyebrow
-01 / Music Is Invisible
-
-## album.title
-The final concert, heard again.
-
-## album.intro
-A 2015 performance at St John at Hackney became the third volume of Jon Hassell's *Pentimento* trilogy in 2026. The coverage below includes conversations with me and independent responses to the record.
 
 ## group.conversations
 Conversations
@@ -137,11 +125,8 @@ Jon Hassell's First Posthumous Album to Arrive This Fall
 ## pitchfork.desc
 Nina Corcoran announces the album and identifies the trio recorded at St John at Hackney.
 
-## archive.eyebrow
-02 / Other work
-
 ## archive.title
-A longer musical conversation.
+Other work
 
 ## archive.intro
 Selected interviews and coverage spanning solo releases, collaborations, and earlier chapters of my career.
@@ -191,17 +176,14 @@ Interview with Cantopop bassist John von Seggern
 ## meniscus.desc
 An early conversation from the Hong Kong years about touring, bass playing, and crossing musical scenes.
 
-## contact.eyebrow
-Press inquiries
-
 ## contact.title
-For the next conversation.
+For the press
 
 ## contact.body
 For interviews, review copies, or live inquiries, write to me directly.
 
 ## contact.cta
-Get in touch ↗
+Get in touch
 
 ## foot.bandcamp
 Bandcamp ↗

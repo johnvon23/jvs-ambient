@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/site.css?v=press-2">
 </head>
 <body>
 <canvas id="fog" aria-hidden="true"></canvas>
@@ -44,29 +44,31 @@
 <div class="rail" aria-hidden="true"><i id="railfill"></i></div>
 
 <main id="press-main" class="press-page">
-  <section class="press-hero" aria-labelledby="press-title">
-    <div class="press-hero-copy">
-      <p class="eyebrow reveal" data-copy="hero.eyebrow">John von Seggern / selected press</p>
-      <h1 id="press-title" class="press-title reveal" style="--d:.06s" data-copy="hero.title">The music, in conversation.</h1>
-      <p class="press-intro reveal" style="--d:.12s" data-copy="hero.intro">Writing and conversations around <em>Music Is Invisible</em>, Jon Hassell's final live performance with Rick Cox and me. Below that, selected interviews and coverage from my own work in music.</p>
-      <div class="press-hero-actions reveal" style="--d:.18s">
-        <a class="btn btn-primary" href="#invisible" data-copy="hero.cta.coverage">Explore the coverage</a>
-        <a class="btn btn-ghost" href="https://jonhassell.bandcamp.com/album/music-is-invisible-pentimento-volume-three" target="_blank" rel="noopener" data-copy="hero.cta.listen">Listen to the album ↗</a>
+  <!-- ── the record ─ same opener as prs.html and fourth-world.html:
+       title, then copy beside the cover. The coverage lists follow in
+       the next section with no second introduction. ─────────────────── -->
+  <section class="album page-open" id="record">
+    <div class="album-inner">
+      <h1 id="press-title" class="h2 page-title reveal" style="--d:.06s" data-copy="hero.title">The music, in conversation.</h1>
+
+      <div class="album-grid">
+        <div class="album-body">
+          <p class="lede reveal" style="--d:.1s" data-copy="hero.intro">Jon Hassell's <em>Music Is Invisible</em> is his final live concert, played with Rick Cox and me at St John at Hackney in 2015. It came out in 2026 as the third volume of his <em>Pentimento</em> trilogy.</p>
+          <p class="body reveal" style="--d:.14s" data-copy="hero.body">Interviews and reviews of the record are below, followed by selected coverage of my own work.</p>
+          <div class="press-hero-actions reveal" style="--d:.18s">
+            <a class="btn btn-primary" href="https://jonhassell.bandcamp.com/album/music-is-invisible-pentimento-volume-three" target="_blank" rel="noopener" data-copy="hero.cta.listen">Listen to the album ↗</a>
+          </div>
+        </div>
+
+        <figure class="album-art reveal" style="--d:.1s">
+          <img src="assets/web/img/cover-invisible.jpg" alt="Music Is Invisible album cover, featuring Mati Klarwein's painting Leh C'est Beau" fetchpriority="high">
+          <figcaption data-copy="hero.cover.caption">Jon Hassell · Music Is Invisible · Ndeya, 2026</figcaption>
+        </figure>
       </div>
     </div>
-    <figure class="press-cover reveal" style="--d:.2s">
-      <img src="assets/web/img/cover-invisible.jpg" alt="Music Is Invisible album cover, featuring Mati Klarwein's painting Leh C'est Beau" fetchpriority="high">
-      <figcaption data-copy="hero.cover.caption">Jon Hassell · Music Is Invisible · Ndeya, 2026</figcaption>
-    </figure>
   </section>
 
-  <section class="press-section" id="invisible" aria-labelledby="invisible-title">
-    <div class="press-section-head reveal">
-      <p class="eyebrow" data-copy="album.eyebrow">01 / Music Is Invisible</p>
-      <h2 id="invisible-title" data-copy="album.title">The final concert, heard again.</h2>
-      <p data-copy="album.intro">A 2015 performance at St John at Hackney became the third volume of Jon Hassell's <em>Pentimento</em> trilogy in 2026. The coverage below includes conversations with me and independent responses to the record.</p>
-    </div>
-
+  <section class="press-section" id="invisible" aria-label="Music Is Invisible coverage">
     <div class="press-group" aria-labelledby="conversations-title">
       <h3 id="conversations-title" class="press-group-title reveal" data-copy="group.conversations">Conversations</h3>
       <div class="press-list">
@@ -122,9 +124,8 @@
 
   <section class="press-section press-archive" id="other-work" aria-labelledby="archive-title">
     <div class="press-section-head reveal">
-      <p class="eyebrow" data-copy="archive.eyebrow">02 / Other work</p>
-      <h2 id="archive-title" data-copy="archive.title">A longer musical conversation.</h2>
-      <p data-copy="archive.intro">Selected interviews and coverage spanning solo releases, collaborations, and earlier chapters of my career.</p>
+      <h2 id="archive-title" class="h2" data-copy="archive.title">Other work</h2>
+      <p class="body" data-copy="archive.intro">Selected interviews and coverage spanning solo releases, collaborations, and earlier chapters of my career.</p>
     </div>
     <div class="press-list">
       <a class="press-item reveal" href="https://goodpods.com/podcasts/when-words-failmusic-speaks-247829/episode-480-balancing-jazz-improvisation-and-pop-discipline-insights-f-106396815" target="_blank" rel="noopener">
@@ -150,11 +151,12 @@
     </div>
   </section>
 
-  <section class="press-end reveal" id="press-contact" aria-labelledby="contact-title">
-    <p class="eyebrow" data-copy="contact.eyebrow">Press inquiries</p>
-    <h2 id="contact-title" data-copy="contact.title">For the next conversation.</h2>
-    <p data-copy="contact.body">For interviews, review copies, or live inquiries, write to me directly.</p>
-    <a class="btn btn-primary" href="mailto:johnvon23@gmail.com" data-copy="contact.cta">Get in touch ↗</a>
+  <section class="sec listen" id="press-contact">
+    <h2 class="h2 big reveal" data-copy="contact.title">For the press</h2>
+    <p class="listen-sub reveal" style="--d:.08s" data-copy="contact.body">For interviews, review copies, or live inquiries, write to me directly.</p>
+    <div class="listen-cta reveal" style="--d:.14s">
+      <a class="btn btn-primary" href="mailto:johnvon23@gmail.com" data-copy="contact.cta">Get in touch</a>
+    </div>
   </section>
 </main>
 

@@ -362,124 +362,57 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
 }
 .press-more:hover{ color:var(--accent-hot); border-color:var(--accent-hot); }
 
-/* ── press archive ────────────────────────────────────────────
-   A quiet editorial index: album artwork opens the story; fine rules
-   and spacious rows let the publication names and headlines lead. */
-.press-page{ overflow:hidden; }
-.press-hero{
-  min-height:min(850px, 95svh);
-  max-width:var(--maxw); margin:0 auto;
-  padding:calc(var(--nav-h) + clamp(72px,11vh,150px)) var(--pad) clamp(90px,12vh,160px);
-  display:grid; grid-template-columns:minmax(0,1.18fr) minmax(290px,.82fr);
-  gap:clamp(48px,8vw,150px); align-items:center;
-}
-.press-hero-copy{ max-width:750px; }
-.press-title{
-  margin:0 0 clamp(26px,3.5vw,48px);
-  font-size:clamp(64px,9.2vw,150px); font-weight:200;
-  line-height:.91; letter-spacing:-.075em;
-  text-wrap:balance;
-}
-.press-intro{
-  max-width:52ch; margin:0;
-  font-size:clamp(16px,1.45vw,21px); line-height:1.65;
-  color:var(--bone-dim);
-}
-.press-hero-actions{ display:flex; flex-wrap:wrap; gap:12px; margin-top:36px; }
-.press-cover{ margin:0; position:relative; align-self:center; }
-.press-cover::before{
-  content:""; position:absolute; z-index:-1; inset:-30px -30px 30px 30px;
-  border:1px solid var(--line-soft);
-}
-.press-cover img{ width:100%; aspect-ratio:1; object-fit:cover; box-shadow:0 28px 70px rgba(0,0,0,.28); }
-.press-cover figcaption{
-  margin-top:16px; font-size:10px; color:var(--muted);
-  letter-spacing:.2em; text-transform:uppercase;
-}
+/* ── press page ───────────────────────────────────────────────
+   Opens with the shared .page-open record block (cover beside the copy,
+   same as prs/fourth-world), then a plain editorial index: hairline rows
+   with the outlet on the left and the headline leading. */
+.press-hero-actions{ display:flex; flex-wrap:wrap; gap:12px; margin-top:clamp(22px, 3vh, 34px); }
 .press-section{
-  padding:clamp(90px,12vw,160px) var(--pad);
+  padding:clamp(72px, 11vh, 140px) var(--pad);
   border-top:1px solid var(--line-soft);
 }
 .press-section-head, .press-group, .press-list{ max-width:var(--maxw); margin-left:auto; margin-right:auto; }
-.press-section-head{ display:grid; grid-template-columns:minmax(0,1fr) minmax(230px,.55fr); column-gap:8%; align-items:end; }
-.press-section-head .eyebrow{ grid-column:1/-1; }
-.press-section-head h2{
-  margin:0; max-width:13ch; font-size:clamp(44px,6.3vw,94px);
-  font-weight:200; letter-spacing:-.055em; line-height:1.02;
-}
-.press-section-head > p:last-child{
-  margin:0 0 5px; max-width:44ch; color:var(--bone-dim);
-  font-size:clamp(15px,1.2vw,18px); line-height:1.7;
-}
-.press-group{ margin-top:clamp(72px,8vw,130px); }
+.press-section-head{ margin-bottom:clamp(28px, 4vh, 48px); }
+.press-section-head .h2{ margin-bottom:14px; }
+.press-group + .press-group{ margin-top:clamp(56px, 8vh, 96px); }
 .press-group-title{
-  margin:0 0 18px; padding-bottom:18px; border-bottom:1px solid var(--line);
+  margin:0; padding-bottom:16px; border-bottom:1px solid var(--line);
   color:var(--accent); text-transform:uppercase; letter-spacing:.24em;
   font-size:11px; font-weight:500;
 }
 .press-list{ border-bottom:1px solid var(--line-soft); }
 .press-item{
-  display:grid; grid-template-columns:minmax(150px,.29fr) minmax(0,1fr) 36px;
-  gap:clamp(20px,4vw,65px); align-items:start;
-  padding:clamp(24px,3.2vw,42px) 0;
+  display:grid; grid-template-columns:minmax(160px,.28fr) minmax(0,1fr) 28px;
+  gap:clamp(18px,3vw,48px); align-items:baseline;
+  padding:clamp(20px,2.6vw,30px) 0;
   border-top:1px solid var(--line-soft);
-  transition:padding-left .35s var(--ease-out), color .35s var(--ease-out);
+  transition:padding-left .35s var(--ease-out);
 }
 .press-item:first-child{ border-top:0; }
-.press-item:hover{ padding-left:12px; }
+.press-item:hover{ padding-left:10px; }
 .press-item-meta{
   font-size:10.5px; line-height:1.7; letter-spacing:.17em;
   text-transform:uppercase; color:var(--muted);
 }
-.press-item-main{ display:flex; flex-direction:column; gap:10px; }
+.press-item-main{ display:flex; flex-direction:column; gap:8px; }
 .press-item-main strong{
-  font-size:clamp(21px,2.4vw,34px); font-weight:300; letter-spacing:-.025em;
-  line-height:1.17; color:var(--bone); transition:color .25s var(--ease);
+  font-size:clamp(18px,1.7vw,23px); font-weight:300; letter-spacing:-.015em;
+  line-height:1.3; color:var(--bone); transition:color .25s var(--ease);
 }
 .press-item:hover .press-item-main strong{ color:var(--accent-hot); }
-.press-item-main > span{ max-width:72ch; font-size:14px; line-height:1.65; color:var(--bone-dim); }
+.press-item-main > span{ max-width:68ch; font-size:14.5px; line-height:1.65; color:var(--bone-dim); }
 .press-item-arrow{
-  justify-self:end; color:var(--accent); font-size:26px; line-height:1;
+  justify-self:end; color:var(--accent); font-size:20px; line-height:1;
   transition:transform .3s var(--ease-out), color .3s var(--ease-out);
 }
 .press-item:hover .press-item-arrow{ transform:translate(3px,-3px); color:var(--accent-hot); }
-.press-archive{ background:rgba(16,19,25,.55); }
-.press-archive .press-list{ margin-top:clamp(72px,8vw,130px); }
-.press-end{
-  max-width:var(--maxw); margin:0 auto; padding:clamp(100px,13vw,190px) var(--pad);
-}
-.press-end h2{
-  max-width:12ch; margin:0 0 18px;
-  font-size:clamp(48px,7vw,106px); font-weight:200;
-  letter-spacing:-.055em; line-height:1;
-}
-.press-end > p:not(.eyebrow){ margin:0 0 30px; color:var(--bone-dim); font-size:17px; }
-@media (max-width:900px){
-  .press-hero{ grid-template-columns:minmax(0,1fr) minmax(240px,.7fr); gap:40px; }
-  .press-title{ font-size:clamp(60px,8.4vw,90px); }
-}
 @media (max-width:760px){
   .nav-links{ flex-wrap:wrap; gap:8px 16px; }
-  .press-hero{
-    grid-template-columns:1fr; min-height:0;
-    padding-top:calc(var(--nav-h) + 115px); gap:70px;
-  }
-  .press-title{ font-size:clamp(60px,13vw,100px); }
-  .press-cover{ width:min(76vw,440px); margin-left:auto; margin-right:20px; }
-  .press-section-head{ display:block; }
-  .press-section-head > p:last-child{ margin-top:26px; }
-  .press-item{ grid-template-columns:minmax(0,1fr) 24px; gap:10px 14px; }
+  .press-item{ grid-template-columns:minmax(0,1fr) 20px; gap:8px 14px; }
   .press-item-meta{ grid-column:1/-1; }
   .press-item-main{ grid-column:1; }
-  .press-item-arrow{ grid-column:2; grid-row:2; font-size:22px; }
+  .press-item-arrow{ grid-column:2; grid-row:2; }
   .press-item:hover{ padding-left:0; }
-}
-@media (max-width:420px){
-  .nav-links{ column-gap:12px; }
-  .nav-links a{ font-size:9px; letter-spacing:.08em; }
-  .press-hero{ padding-top:175px; }
-  .press-title{ font-size:clamp(56px,14vw,70px); }
-  .press-cover{ width:82vw; margin-right:10px; }
 }
 
 /* ── 02/03 albums ─ full-bleed photographic sections ────────── */
