@@ -29,13 +29,13 @@ A new project. First release in progress.
 A Fourth World\
 Is Still Possible
 ## record.lede
-Through the recent release of Jon Hassell's *Music Is Invisible* album, I've been connected with many musicians and sound designers around the world inspired by his work.
+A new recording project bringing together my own explorations with those of musicians who have played with Jon Hassell or were shaped by his music. Together, we’re continuing to explore the possibilities of the Fourth World.
 
 ## record.sessions
-I've been having some new Fourth World-informed sessions here in Los Angeles and remotely, and I'm excited about the new music we're making.
+Through the recent release of Jon’s *Music Is Invisible* album, I’ve connected with musicians and sound designers around the world inspired by his work. Those connections have led to new sessions here in Los Angeles and remotely, and I’m excited about the music we’re making.
 
 ## record.body
-We're working on the first release now, there are a few recent session recordings posted below. I play Chapman Stick and sampled percussion.
+Our first release is taking shape. I play Chapman Stick and sampled percussion; you can hear a few recent session recordings below.
 
 
 %% ── demo ─ same player as the PRS page, once per track. The audio
