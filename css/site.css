@@ -366,6 +366,23 @@ main, .nav, .foot, .rail{ position:relative; z-index:3; }
    Opens with the shared .page-open record block (cover beside the copy,
    same as prs/fourth-world), then a plain editorial index: hairline rows
    with the outlet on the left and the headline leading. */
+/* The press opener has no photograph, so it fills the first screen and
+   centres the copy against the cover instead of hanging from the nav. The
+   title sits inside the copy column so both columns share one top edge. */
+.press-open{
+  min-height:min(100svh, 900px);
+  display:flex; flex-direction:column; justify-content:center;
+}
+.press-open .album-inner{ width:100%; }
+.page-open.press-open .album-grid{ align-items:center; margin-top:0; }
+.page-open.press-open .page-title{
+  font-size:clamp(40px, 5.4vw, 84px); font-weight:200;
+  line-height:1.02; letter-spacing:-.04em;
+  margin-bottom:clamp(22px, 3.5vh, 38px);
+}
+@media (min-width:940px){
+  .page-open.press-open .album-art img{ max-height:clamp(320px, 52vh, 500px); }
+}
 .press-hero-actions{ display:flex; flex-wrap:wrap; gap:12px; margin-top:clamp(22px, 3vh, 34px); }
 .press-section{
   padding:clamp(72px, 11vh, 140px) var(--pad);
